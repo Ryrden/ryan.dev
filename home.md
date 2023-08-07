@@ -11,12 +11,11 @@ Aqui neste site, você encontrará informações sobre mim, meu [Blog]({{ "/blog
 
 ## Um pouco sobre mim
 
-De forma breve, sou graduando em Bacharelado de Sistema de Informações pela Universidade de São Paulo, além disso, possuo dois técnicos completos, um em Desenvolvimento de Sistemas e outro em Mecatrônica (a minha área anterior)
+De forma breve, sou graduando em Bacharelado de Sistema de Informações pela Universidade de São Paulo, além disso, sou formado em um Técnico de Desenvolvimento de Sistemas pela ETEC
 
-Atualmente faço parte do [Grupo de Extensão em Livre e Open Source (GELOS)](https://gelos.club) onde no momento estou buscando transmitir meu conhecimento técnico e melhorar minhas habilidades de gestão e outras soft-skills
-
-Para saber mais sobre mim, você pode acessar a página [Sobre]({{ "/about" | relative_url }}) onde irei falar um pouco mais da minha história, personalidade e objetivos.
+Atualmente faço parte do [Grupo de Extensão em Livre e Open Source (GELOS)](https://gelos.club) onde no momento estou buscando transmitir meu conhecimento técnico e melhorar minhas habilidades de gestão e outras soft-skills.
 
 ## Meus Projetos
 
 Possuo muitos projetos, de modo geral são projetos pessoais, mas também participo de projetos de faculdade e open source. Você pode acessar a página [Projetos]({{ "/projects" | relative_url }} ) para ver uma lista de todos os projetos que já participei e/ou criei.
+<!-- REVIEW: ok -->
