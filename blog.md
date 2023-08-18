@@ -15,7 +15,7 @@ permalink: /blog/
         {{ post.date | date_to_long_string: "ordinal" }}
       </time>
     </p>
-    <p>{{ post.summary | truncatewords: 20 }}</p>
+    <p>{{ post.description | truncatewords: 20 }}</p>
   </article>
 {% else %}
 <div style="text-align:center;">

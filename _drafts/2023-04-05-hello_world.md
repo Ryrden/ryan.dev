@@ -2,8 +2,8 @@
 layout: post
 title: Gestão de Tempo e Produtividade
 author: Ryan Souza
-summary: Gestão de tempo e produtividade são habilidades essenciais para qualquer profissional. Neste artigo, você vai aprender como melhorar sua gestão de tempo e produtividade.
-image: /assets/img/blog/2023-04-05-TimeManagment&Productivity/sampleImage.jpg
+description: Gestão de tempo e produtividade são habilidades essenciais para qualquer profissional. Neste artigo, você vai aprender como melhorar sua gestão de tempo e produtividade.
+cover_image: /assets/img/blog/2023-04-05-TimeManagment&Productivity/sampleImage.jpg
 imageAlt: Foto de uma mesa de escritório branca com duas ampulhetas, uma grande tradicional e uma pequena, há também um computador e uma mão mexendo no mouse do computador. Ao fundo há umas plantas desfocadas dando um ar de natureza.
 tags: [Gestão de Tempo, Produtividade, Soft-Skills]
 ---

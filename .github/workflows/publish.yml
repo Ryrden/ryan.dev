@@ -1,0 +1,22 @@
+name: publish
+on:
+  push: 
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Publish articles on dev.to
+        uses: sinedied/publish-devto@v2
+        with:
+          files: '_posts/**/*.md'
+          devto_key: ${{ secrets.DEVTO_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          conventional_commits: true
+          dry_run: false
