@@ -118,4 +118,4 @@ se tudo der certo, você vai ver uma mensagem de sucesso e você já pode fazer 
 
 ## Conclusão
 
-Espero que esse tutorial tenha ajudado você a configurar a sua chave SSH no github. Se você tiver alguma dúvida, você pode entrar em contato comigo pela aba de [Contato]({{ "/contact/" | relative_url }}) do meu site ou pelo meu email pessoal que está logo aqui abaixo do meu site.
+Espero que esse tutorial tenha ajudado você a configurar a sua chave SSH no github. Se você tiver alguma dúvida, você pode entrar em contato comigo pela aba de Contato do meu site ou pelo meu email pessoal que está logo aqui abaixo do meu site.
