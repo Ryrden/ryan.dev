@@ -3,9 +3,11 @@ layout: post
 title: Chave SSH no github - Windows e Linux
 published: true
 description: Como adicionar uma chave SSH ao github para que você não precise digitar sempre que for fazer um push ou pull.
-cover_image: https://i.imgur.com/9GC9TvD.jpeg
-imageAlt: Uma estatueta de um oktokat (Mascote do github) ao centro, ao fundo um laptop com a página principal do GitHub aberta.
+cover_image: 'https://i.imgur.com/9GC9TvD.jpeg'
+imageAlt: 'Uma estatueta de um oktokat (Mascote do github) ao centro, ao fundo um laptop com a página principal do GitHub aberta.'
 author: Ryan Souza
+id: 1572979
+date: '2023-08-18T23:44:11Z'
 ---
 
 - [O que é uma chave SSH?](#o-que-é-uma-chave-ssh)
