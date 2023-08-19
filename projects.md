@@ -26,6 +26,12 @@ O Projeto possui um Front-end no modelo de `Server Side Rendering` feito com `Fl
 
 Você pode ver o código fonte [aqui](https://github.com/Ryrden/SCC0541-Formula1/tree/main)
 
+### Caaso Eletroniks - [SCC-0560-Caaso-Eletroniks]
+
+Front-end de um `E-commerce de eletrônicos` feito com `React` e `Typescript` para a disciplina de Interação Humano Computador e Experiência do Usuário. O objetivo do projeto foi desenvolver uma interface com bons padrões de `usabilidade` e `experiência do usuário`, além de ser `responsivo` e `acessível`. Foi utilizado o `Material UI` por seguir guidelines de design e ser fácil de utilizar. O site está hospedado com `Github Pages` e você pode ver ele [aqui](https://ryrden.github.io/SCC-0560-Caaso-Eletroniks/).
+
+Você pode ver o Figma do projeto [aqui](https://www.figma.com/file/AfCh9CNbgu0OakBySHdMjq/Telas-Caaso-Eletroniks?type=design&node-id=0%3A1&mode=design&t=Q1Qnx7jZ4giqqMJ8-1) e o código fonte [aqui](https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks)
+
 ### Exercícios de Estrutura de Dados - [SCC0502 - Estrutura de Dados I]
 
 Na disciplina de Estrutura de Dados I, foram propostos diversos exercícios para praticar algumas das principais estruturas de dados, como `listas`, `pilhas`, `filas` e `árvores`. Eu resolvi todos os exercícios propostos e coloquei eles em um repositório para que outras pessoas pudessem ver e aprender com eles.
