@@ -25,7 +25,7 @@ date: '2023-08-19T17:00:57Z'
   - [Planejamento Semanal](#planejamento-semanal)
   - [Planejamento por Objetivos](#planejamento-por-objetivos)
   - [Pomodoro](#pomodoro)
-    - [Por quê 25 minutos? Por quê Pomodoro funciona?](#por-quê-25-minutos-por-quê-pomodoro-funciona)
+    - [Por que 25 minutos? Por que Pomodoro funciona?](#por-que-25-minutos-por-que-pomodoro-funciona)
   - [Matriz de Eisenhower](#matriz-de-eisenhower)
 - [Tudo isso na perspectiva de um Desenvolvedor](#tudo-isso-na-perspectiva-de-um-desenvolvedor)
 - [Fim ?](#fim-)
@@ -109,7 +109,7 @@ Trazendo isso para o contexto de `desenvolvimento de software`, é muito comum q
 
 O Pomodoro ajuda a evitar essas distrações, pois o desenvolvedor sabe que terá apenas 25 minutos para trabalhar na funcionalidade e não poderá se distrair com outras coisas durante esse período de tempo. Além disso, o Pomodoro também ajuda a manter o foco e a concentração, o que aumenta a produtividade e eficiência nas tarefas realizadas.
 
-#### Por quê 25 minutos? Por quê Pomodoro funciona?
+#### Por que 25 minutos? Por que Pomodoro funciona?
 
 Há 4 principios seguidos pela técnica Pomodoro que fazem com que ela funcione:
 
@@ -171,4 +171,4 @@ Já usamos uma técnica na teórica que foi o **Planejamento por Objetivos** cri
 
 Tem muitas outras técnicas que deixei de comentar aqui que podem auxiliar como metas S.M.A.R.T e OKRs, mas acredito que as técnicas que comentei aqui são as mais importantes e que podem ser aplicadas na prática. É importante lembrar que tudo listado aqui é um processo de melhoria contínua, adapte e encontre o que funciona melhor para você.
 
-Espero que tenha gostado do artigo e que ele possa te ajudar a gerenciar o seu tempo de forma eficiente. Se tiver alguma dúvida ou sugestão, deixe um comentário abaixo ou entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/ryan25/) ou pela aba de [contato](https://ryrden.github.io/ryrden.dev/contact/) aqui do meu site.
+Espero que tenha gostado do artigo e que ele possa te ajudar a gerenciar o seu tempo de forma eficiente. Se tiver alguma dúvida ou sugestão, deixe um comentário abaixo ou entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/ryan25/) ou pela aba de [contato](https://ryrden.github.io/ryrden.dev/contact/) do meu site.
