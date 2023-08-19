@@ -3,11 +3,17 @@ layout: post
 title: Gestão de tempo e produtividade para Devs
 published: true
 description: Como gerenciar seu tempo para desenvolver software com eficiência e qualidade.
-cover_image: https://i.imgur.com/oCZcIby.jpg
+cover_image: 'https://i.imgur.com/oCZcIby.jpg'
 canonical_url: 'https://ryrden.github.io/ryrden.dev/2023-08-19-timeManagementForDevs'
 imageAlt: 'Mulher com notebook em cima de um calendário gigante, ao fundo um cronoômetro e ao lado do calendário há uma planta'
-tags: [carreira, desenvolvimento, productivity, time]
+tags:
+  - carreira
+  - desenvolvimento
+  - productivity
+  - time
 author: Ryan Souza
+id: 1573429
+date: '2023-08-19T17:00:57Z'
 ---
 
 - [Por que é importante gerenciar o tempo?](#por-que-é-importante-gerenciar-o-tempo)
