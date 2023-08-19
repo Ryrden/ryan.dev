@@ -7,3 +7,6 @@
 - name: twitter
   link: https://twitter.com/ryrden25
   source: icons/twitter.svg
+- name: dev.to
+  link: https://dev.to/ryrden
+  source: icons/devto.svg
