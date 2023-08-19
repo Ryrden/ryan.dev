@@ -6,7 +6,11 @@ description: Como adicionar uma chave SSH ao github para que você não precise 
 cover_image: 'https://i.imgur.com/9GC9TvD.jpeg'
 canonical_url: 'https://ryrden.github.io/ryrden.dev/2023-04-17-githubSSH'
 imageAlt: 'Uma estatueta de um oktokat (Mascote do github) ao centro, ao fundo um laptop com a página principal do GitHub aberta.'
-tags: [github, ssh, linux, windows]
+tags:
+  - github
+  - ssh
+  - linux
+  - windows
 author: Ryan Souza
 id: 1572979
 date: '2023-08-18T23:44:11Z'
