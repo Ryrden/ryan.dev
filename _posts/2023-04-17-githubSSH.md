@@ -13,7 +13,7 @@ tags:
   - windows
 author: Ryan Souza
 id: 1572979
-date: '2023-08-18T23:44:11Z'
+date: '2023-04-17T23:44:11Z'
 ---
 
 - [O que é uma chave SSH?](#o-que-é-uma-chave-ssh)
