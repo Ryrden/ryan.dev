@@ -4,7 +4,7 @@ title: Gestão de tempo e produtividade para Devs
 published: true
 description: Como gerenciar seu tempo para desenvolver software com eficiência e qualidade.
 cover_image: 'https://i.imgur.com/oCZcIby.jpg'
-canonical_url: 'https://ryrden.github.io/ryrden.dev/2023-08-19-timeManagementForDevs'
+canonical_url: 'https://ryan.dev.br/2023-08-19-timeManagementForDevs'
 imageAlt: 'Mulher com notebook em cima de um calendário gigante, ao fundo um cronoômetro e ao lado do calendário há uma planta'
 tags:
   - carreira
@@ -171,4 +171,4 @@ Já usamos uma técnica na teórica que foi o **Planejamento por Objetivos** cri
 
 Tem muitas outras técnicas que deixei de comentar aqui que podem auxiliar como metas S.M.A.R.T e OKRs, mas acredito que as técnicas que comentei aqui são as mais importantes e que podem ser aplicadas na prática. É importante lembrar que tudo listado aqui é um processo de melhoria contínua, adapte e encontre o que funciona melhor para você.
 
-Espero que tenha gostado do artigo e que ele possa te ajudar a gerenciar o seu tempo de forma eficiente. Se tiver alguma dúvida ou sugestão, deixe um comentário abaixo ou entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/ryan25/) ou pela aba de [contato](https://ryrden.github.io/ryrden.dev/contact/) do meu site.
+Espero que tenha gostado do artigo e que ele possa te ajudar a gerenciar o seu tempo de forma eficiente. Se tiver alguma dúvida ou sugestão, deixe um comentário abaixo ou entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/ryan25/) ou pela aba de [contato](https://ryan.dev.br/contact/) do meu site.

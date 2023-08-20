@@ -1,7 +1,7 @@
 # Website
 
-![GitHub repo size](https://img.shields.io/github/repo-size/ryrden/ryrden.dev)
-![GitHub language count](https://img.shields.io/github/languages/count/ryrden/ryrden.dev)
+![GitHub repo size](https://img.shields.io/github/repo-size/ryrden/ryan.dev)
+![GitHub language count](https://img.shields.io/github/languages/count/ryrden/ryan.dev)
 
 <img src="https://i.imgur.com/7IxW3fn.png" alt="printscreen da primeira tela">
 

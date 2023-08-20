@@ -10,7 +10,7 @@ permalink: /projects/
 
 Este é um dos meus projetos mais recentes. Eu decidi criar um site para que eu pudesse compartilhar meus conhecimentos e experiências com outras pessoas, além de ser um ótimo lugar para eu guardar meus projetos e links úteis.
 
-Esse site foi feito com [Jekyll](https://jekyllrb.com/) e está hospedado no [Github Pages](https://pages.github.com/), e você pode ver o código fonte dele [aqui](https://github.com/ryrden/ryrden.dev)
+Esse site foi feito com [Jekyll](https://jekyllrb.com/) e está hospedado no [Github Pages](https://pages.github.com/), e você pode ver o código fonte dele [aqui](https://ryan.dev.br)
 
 ## Projetos de graduação
 
