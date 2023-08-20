@@ -3,7 +3,7 @@ defaults:
       layout: "default"
 
 url: ""
-baseurl: /ryrden.dev
+baseurl: ""
 
 timezone: America/Sao_Paulo
 
