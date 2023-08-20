@@ -5,6 +5,9 @@ layout: default
 <section>
     <h1 id="#top">{{ page.title }}</h1>
     <span>Escrito em {{ page.date | date: "%d/%m/%Y" | date_to_long_string }} por {{ page.author }}</span>
+    {% if page.devto_url and page.tabnews_url %}
+        <span>-- Publicado nas plataformas: <a href="{{ page.devto_url }}" target="_blank">Dev.to</a> e <a href="{{ page.tabnews_url }}" target="_blank">Tabnews</a></span>
+    {% endif %}
     <div>
         <p>
             <strong>Resumo:</strong>
