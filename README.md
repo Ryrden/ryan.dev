@@ -1,5 +1,6 @@
 # Website
 
+[![wakatime](https://wakatime.com/badge/user/ed84c523-3e63-43f7-b210-066a9dd37830/project/3d3557bb-1c2b-424e-ad80-a6354f2cabe1.svg)](https://wakatime.com/badge/user/ed84c523-3e63-43f7-b210-066a9dd37830/project/3d3557bb-1c2b-424e-ad80-a6354f2cabe1)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ryrden/ryan.dev)
 ![GitHub language count](https://img.shields.io/github/languages/count/ryrden/ryan.dev)
 
