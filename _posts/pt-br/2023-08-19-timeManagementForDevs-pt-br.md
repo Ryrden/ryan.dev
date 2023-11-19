@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Gestão de tempo e produtividade para Devs
+lang: pt-br
 published: true
 description: Como gerenciar seu tempo para desenvolver software com eficiência e qualidade.
 cover_image: 'https://i.imgur.com/oCZcIby.jpg'
 canonical_url: 'https://ryan.dev.br/2023-08-19-timeManagementForDevs'
-devto_url: 'https://dev.to/ryrden/gestao-de-tempo-e-produtividade-para-devs-2h85'
+devto_url: 'https://dev.to/ryrden/gestao-de-tempo-e-produtividade-para-devs-2h85-pt-br'
 tabnews_url: 'https://www.tabnews.com.br/ryrden/gestao-de-tempo-e-produtividade-para-devs'
 imageAlt: 'Mulher com notebook em cima de um calendário gigante, ao fundo um cronoômetro e ao lado do calendário há uma planta'
 tags:
