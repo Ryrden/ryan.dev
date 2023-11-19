@@ -17,8 +17,10 @@
 						{% if item.link %}
 							href="{{ item.link | relative_url }}"
 						{% endif %}> 
-						{% if item.text %}
-						{{ item.text | capitalize }}
+						{% if site.active_lang == "pt-br" %}
+							{{ item.text-pt-br | capitalize }}
+						{% else %}
+							{{ item.text-en | capitalize }}
 						{% endif %}
 					</a>
 				</li>

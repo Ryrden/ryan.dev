@@ -1,0 +1,38 @@
+---
+title: Contact
+lang: en
+permalink: /contact/
+---
+<form id="site-contact" onsubmit="sendEmail()">
+    <div id="form-name">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+    </div>
+    <div id="form-email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+    </div>
+    <div id="form-message">
+        <label for="message">Message</label>
+        <textarea name="message" id="message"
+                placeholder="I really liked your portfolio, can we schedule a meeting?"
+                required></textarea>
+    </div>
+    <button type="submit">Send</button>
+</form>
+
+<script>
+    const sendEmail = () => {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        const mailTo = "mailto:{{ site.data.contact.email }}";
+        const params = {
+            subject: "Portfolio Contact - " + name + "(" + email + ")",
+            body: message
+        }
+
+        window.location.href = `${mailTo}?subject=${params.subject}&body=${params.body}`;
+    }
+</script>

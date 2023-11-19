@@ -1,11 +1,13 @@
 ---
 title: Blog
+lang: pt-br
 permalink: /blog/
 ---
 
 # Últimas publicações
 
 {% for post in site.posts %}
+  {% if post.lang == site.active_lang %}
   <article>
     <header>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
@@ -17,6 +19,7 @@ permalink: /blog/
     </p>
     <p>{{ post.description | truncatewords: 20 }}</p>
   </article>
+  {% endif %}
 {% else %}
 <div style="text-align:center;">
  <h1 style="font-size: 4em;">404</h1>

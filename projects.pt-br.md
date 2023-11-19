@@ -1,7 +1,9 @@
 ---
 title: Projects
+lang: pt-br
 permalink: /projects/
 ---
+
 # Meus Projetos
 
 ## Projetos pessoais

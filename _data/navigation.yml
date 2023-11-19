@@ -1,12 +1,18 @@
-- text: Inicio
+- text-pt-br: Inicio
+  text-en: Home
   link: /
-- text: Sobre
+- text-pt-br: Sobre
+  text-en: About
   link: /about/
-- text: CV
+- text-pt-br: CV
+  text-en: CV
   id: cv
-- text: Blog
+- text-pt-br: Blog
+  text-en: Blog
   link: /blog/
-- text: Projetos
+- text-pt-br: Projetos
+  text-en: Projects
   link: /projects/
-- text: Contato
+- text-pt-br: Contato
+  text-en: Contact
   link: /contact/
