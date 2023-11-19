@@ -1,27 +1,59 @@
 <header class="site-header" role="banner">
 	<a href="{{ '/' | relative_url }}" class="site-title">Ryan S.</a>
-	<nav class="site-nav">
-		<ul class="nav-items">
-			{% for item in site.data.navigation %}
-			<li>
-				<a 	{% if page.nav_current == item.link or page.url == item.link %}
-						aria-current="page" 
-					{% endif %} 
-					{% if item.id %}
-						id="{{ item.id }}" 
-					{% endif %} 
-					{% if item.label %}
-						aria-label="{{ item.label }}" 
-					{% endif %} 
-					{% if item.link %}
-						href="{{ item.link | relative_url }}"
-					{% endif %}> 
-					{% if item.text %}
-					{{ item.text | capitalize }}
-					{% endif %}
-				</a>
-			</li>
-			{% endfor %}
-		</ul>
-	</nav>
+	<div class=site-nav-container>
+		<nav class="site-nav">
+			<ul class="nav-items">
+				{% for item in site.data.navigation %}
+				<li>
+					<a {% if page.nav_current == item.link or page.url == item.link %}
+							aria-current="page" 
+						{% endif %} 
+						{% if item.id %}
+							id="{{ item.id }}" 
+						{% endif %} 
+						{% if item.label %}
+							aria-label="{{ item.label }}" 
+						{% endif %} 
+						{% if item.link %}
+							href="{{ item.link | relative_url }}"
+						{% endif %}> 
+						{% if item.text %}
+						{{ item.text | capitalize }}
+						{% endif %}
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</nav>
+		<div class="language-switcher">
+			<!-- remove border, only show the "triangle" that show the user that this is a seleect -->
+			<select id="language-select" >
+				{% for tongue in site.languages %}
+					<option value="{{ tongue }}" {% if tongue == site.active_lang %}selected{% endif %}>
+						{{ tongue | upcase }}
+					</option>
+				{% endfor %}
+			</select>
+		</div>
+	</div>
+	<script>
+		document.getElementById("language-select").addEventListener("change", function() {
+			const selectedLang = this.value;
+			const currentUrl = "{{ page.url }}";
+			const baseUrl = "{{ site.baseurl }}";
+			
+			let newUrl = ""; 
+			
+			if (selectedLang == "{{ site.default_lang }}") {
+				newUrl = baseUrl + currentUrl;
+			} else {
+				newUrl = baseUrl + "/" + selectedLang + currentUrl;
+			}
+			
+			window.location.href = newUrl;
+		});
+
+		// Add event listener to toggle the navigation on click
+		document.querySelector('.site-title').addEventListener('click', toggleNav);
+	</script>
 </header>

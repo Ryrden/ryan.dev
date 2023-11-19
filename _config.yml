@@ -7,7 +7,13 @@ baseurl: ""
 
 timezone: America/Sao_Paulo
 
-lang: pt-BR
+plugins:
+  - jekyll-polyglot
+
+languages: ["pt-br", "en"]
+default_lang: "pt-br"
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: true
 
 description: Blog pessoal de Ryan Souza
 
