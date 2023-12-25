@@ -11,7 +11,7 @@ plugins:
   - jekyll-polyglot
 
 languages: ["pt-br", "en"]
-default_lang: ""
+default_lang: "pt-br"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 parallel_localization: true
 
