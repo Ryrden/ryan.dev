@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Gestão de tempo e produtividade para Devs
 lang: pt-br
 published: true

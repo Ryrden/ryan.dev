@@ -43,14 +43,10 @@
 			const selectedLang = this.value;
 			const currentUrl = "{{ page.url }}";
 			const baseUrl = "{{ site.baseurl }}";
-			
+			console.log(baseUrl)
 			let newUrl = ""; 
 			
-			if (selectedLang == "pt-br") {
-				newUrl = baseUrl + currentUrl;
-			} else {
-				newUrl = baseUrl + "/" + selectedLang + currentUrl;
-			}
+			newUrl = baseUrl + "/" + selectedLang + currentUrl;
 			
 			window.location.href = newUrl;
 		});
