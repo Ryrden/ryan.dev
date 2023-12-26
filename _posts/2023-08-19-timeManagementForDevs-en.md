@@ -2,7 +2,7 @@
 layout: post
 title: Time Management and Productivity for Developers
 lang: en
-description: How to manage your time and be more productive as a developer.
+description: This article provides an in-depth look at time management in the context of software development. It addresses the importance of mental, physiological and technical dimensions in productivity and presents techniques such as Weekly Planning, Pomodoro and Eisenhower Matrix. The focus is to provide practical methods for developers to improve time management and quality of work on technology projects.
 cover_image: 'https://i.imgur.com/oCZcIby.jpg'
 canonical_url: 'https://ryan.dev.br/2023-08-19-timeManagementForDevs-en'
 imageAlt: 'Woman with notebook on top of a giant calendar, in the background a stopwatch and next to the calendar there is a plant'

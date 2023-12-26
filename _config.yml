@@ -15,7 +15,7 @@ default_lang: "pt-br"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 parallel_localization: true
 
-description: Blog pessoal de Ryan Souza
+description: Blog pessoal de Ryan Souza, desenvolvedor e estudante na USP, dedicado a artigos sobre engenharia de software e experiências de carreira. Encontre reflexões, dicas e análises sobre desenvolvimento de sistemas, projetos open source e tecnologia. Um espaço para compartilhar conhecimento e insights sobre a indústria de TI.
 
 collections:
   posts:

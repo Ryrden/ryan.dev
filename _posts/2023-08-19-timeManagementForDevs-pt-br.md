@@ -4,7 +4,7 @@ comments: true
 title: Gestão de tempo e produtividade para Devs
 lang: pt-br
 published: true
-description: Como gerenciar seu tempo para desenvolver software com eficiência e qualidade.
+description: Este artigo oferece uma visão detalhada sobre gerenciamento de tempo no contexto do desenvolvimento de software. Aborda a importância das dimensões mental, fisiológica e técnica na produtividade e apresenta técnicas como Planejamento Semanal, Pomodoro e Matriz de Eisenhower. O foco é fornecer métodos práticos para desenvolvedores aprimorarem a gestão do tempo e a qualidade do trabalho em projetos de tecnologia.
 cover_image: 'https://i.imgur.com/oCZcIby.jpg'
 canonical_url: 'https://ryan.dev.br/2023-08-19-timeManagementForDevs'
 devto_url: 'https://dev.to/ryrden/gestao-de-tempo-e-produtividade-para-devs-2h85-pt-br'
