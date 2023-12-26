@@ -1,6 +1,10 @@
 defaults:
   - values:
       layout: "default"
+  - scope:
+      path: "_posts/en"
+    values:
+      permalink: /:path/index:output_ext
 
 url: "https://ryan.dev.br"
 baseurl: ""
@@ -14,6 +18,8 @@ languages: ["pt-br", "en"]
 default_lang: "pt-br"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 parallel_localization: true
+
+permalink: /:lang/:title/
 
 description: Blog pessoal de Ryan Souza
 

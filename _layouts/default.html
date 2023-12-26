@@ -19,11 +19,12 @@
 
 	{% include footer.html %}
 </body>
-<!-- <script>
+<script>
 	document.addEventListener('DOMContentLoaded', function() {
-		if (!window.location.pathname.startsWith('/pt-br/') && !window.location.pathname.startsWith('/en/')) {
-			window.location.href = '/pt-br' + window.location.pathname;
+		const active_lang = "{{ site.active_lang }}";
+		if (active_lang == "en" && !window.location.pathname.startsWith('/en/')) {
+			window.location.href = '/en' + window.location.pathname;
 		}
 	});
-</script> -->
+</script>
 </html>

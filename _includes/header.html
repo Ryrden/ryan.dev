@@ -28,7 +28,7 @@
 			</ul>
 		</nav>
 		<!-- remove border, only show the "triangle" that show the user that this is a seleect -->
-		<!-- <div class="language-switcher">
+		<div class="language-switcher">
 			<select id="language-select" >
 				{% for tongue in site.languages %}
 					<option value="{{ tongue }}" {% if tongue == site.active_lang %}selected{% endif %}>
@@ -36,18 +36,28 @@
 					</option>
 				{% endfor %}
 			</select>
-		</div> -->
+		</div>
 	</div>
 	<script>
 		document.getElementById("language-select").addEventListener("change", function() {
 			const selectedLang = this.value;
-			const currentUrl = "{{ page.url }}";
+			let currentUrl = "{{ page.url }}";
 			const baseUrl = "{{ site.baseurl }}";
-			console.log(baseUrl)
 			let newUrl = ""; 
 			
-			newUrl = baseUrl + "/" + selectedLang + currentUrl;
-			
+			// TODO: Improve this because of jekyll-polyglot
+			// if is there YYYY-MM-DD in the url, so, it's a post
+			const isPost = currentUrl.match(/\d{4}-\d{2}-\d{2}/)
+
+			const languageToReplace = selectedLang === "pt-br" ? "en" : "pt-br"
+			currentUrl = currentUrl.replace(`-${languageToReplace}`, `-${selectedLang}`);
+
+			if (selectedLang == "pt-br") {
+				newUrl = baseUrl + currentUrl;
+			} else {
+				newUrl = baseUrl + "/" + selectedLang + currentUrl;
+			}
+
 			window.location.href = newUrl;
 		});
 
