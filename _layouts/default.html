@@ -19,12 +19,4 @@
 
 	{% include footer.html %}
 </body>
-<script>
-	document.addEventListener('DOMContentLoaded', function() {
-		const active_lang = "{{ site.active_lang }}";
-		if (active_lang == "en" && !window.location.pathname.startsWith('/en/')) {
-			window.location.href = '/en' + window.location.pathname;
-		}
-	});
-</script>
 </html>
