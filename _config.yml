@@ -10,6 +10,7 @@ timezone: America/Sao_Paulo
 plugins:
   - jekyll-polyglot
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 languages: ["pt-br", "en"]
 default_lang: "pt-br"
