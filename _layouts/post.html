@@ -14,7 +14,7 @@ layout: default
             {{ page.description }}
         </p>
     </div>
-    <img src="{{ page.cover_image }}" alt="{{ page.imageAlt }}">
+    {% include lazyload.html image_src=page.cover_image image_alt=page.imageAlt image_title=page.imageAlt %}
     <h2>Conteúdo</h2>
     <p>{{ content }}</p>
     <p style="text-align:end;"><a href="#top">Voltar ao topo ⬆️</a></p>
