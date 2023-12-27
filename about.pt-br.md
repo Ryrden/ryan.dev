@@ -1,5 +1,5 @@
 ---
-title: About
+title: Sobre
 lang: pt-br
 permalink: /about/
 ---

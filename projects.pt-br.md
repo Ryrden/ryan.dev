@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Projetos
 lang: pt-br
 permalink: /projects/
 ---

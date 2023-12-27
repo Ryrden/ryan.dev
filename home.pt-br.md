@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Início
 lang: pt-br
 permalink: /
 ---
