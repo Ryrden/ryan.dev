@@ -3,7 +3,7 @@ layout: post
 title: Time Management and Productivity for Developers
 lang: en
 description: This article provides an in-depth look at time management in the context of software development. It addresses the importance of mental, physiological and technical dimensions in productivity and presents techniques such as Weekly Planning, Pomodoro and Eisenhower Matrix. The focus is to provide practical methods for developers to improve time management and quality of work on technology projects.
-cover_image: 'https://i.imgur.com/oCZcIby.jpg'
+cover_image: 'https://i.imgur.com/oCZcIby.png'
 canonical_url: 'https://ryan.dev.br/2023-08-19-timeManagementForDevs-en'
 imageAlt: 'Woman with notebook on top of a giant calendar, in the background a stopwatch and next to the calendar there is a plant'
 tags:
@@ -57,7 +57,7 @@ Devemos entender o valor do tempo e estar motivado para aproveitá-lo da melhor 
 
 A dimensão fisiológica diz respeito ao nosso corpo e aos seus limites. Como tudo na vida, temos um ponto ótimo de produtividade, que é o ponto em que conseguimos realizar as tarefas com eficiência e qualidade. Se ultrapassarmos esse ponto, podemos acabar prejudicando nossa saúde física e mental.
 
-![Ponto ótimo de produtividade](https://i.imgur.com/Eou40sx.png)
+{% include lazyload.html image_src="https://i.imgur.com/Eou40sx.png" image_alt="Ponto ótimo de produtividade" image_title="Ponto ótimo de produtividade" %}
 
 Para garantir que seu corpor sempre vai estar em potencial de estar próximo do ponto ótimo de produtividade, existem 3 mecanismos para tomar maior cuidado:
 
@@ -67,7 +67,7 @@ Para garantir que seu corpor sempre vai estar em potencial de estar próximo do 
 
 **Estresse x Relaxamento:** Tudo é dinâmico e o corpo não é diferente, você precisa de momentos de relaxamento para que seu corpo possa se recuperar do estresse causado pelas atividades do dia a dia. É quase que uma gamgorra onde ao estressar muito seu corpo mentalmente se faz necessário um estresse físico para que seu corpo possa se recuperar, por isso a importância de fazer exercícios físicos.
 
-![Estresse x relaxamento](https://i.imgur.com/QY2ShP7.png)
+{% include lazyload.html image_src="https://i.imgur.com/QY2ShP7.png" image_alt="Estresse x relaxamento" image_title="Estresse x relaxamento" %}
 
 ### Dimensão Técnica
 
@@ -81,13 +81,13 @@ Existem diversas técnicas que podem ser aplicadas na gestão do tempo. Algumas 
 
 O planejamento semanal é uma das técnicas mais simples e eficazes para gerenciar o tempo. A ideia é fazer um planejamento das atividades que serão realizadas durante a semana, definindo quais tarefas serão realizadas em cada dia da semana.
 
-![Planejamento semanal](https://i.imgur.com/2hV4fq6.png)
+{% include lazyload.html image_src="https://i.imgur.com/2hV4fq6.png" image_alt="Planejamento semanal" image_title="Planejamento semanal" %}
 
 É importante ressaltar que o planejamento semanal não deve ser muito detalhado, pois isso pode causar ansiedade e estresse. O ideal é definir apenas as atividades mais importantes e deixar o restante para ser definido no dia a dia. além disso, há um grande perigo de cair na **Falácia do Planejamento**.
 
 **Falácia do Planejamento:** A falácia do planejamento é um fenômeno que ocorre quando as pessoas superestimam sua capacidade de realizar tarefas em um determinado período de tempo. Para evitar essa armadilha, é importante ser realista e considerar imprevistos que possam surgir durante o dia. Por isso, é importante deixar um tempo livre para imprevistos e atividades não planejadas no planejamento semanal.
 
-![Fálacia do planejamento](https://i.imgur.com/1jvwGFd.png)
+{% include lazyload.html image_src="https://i.imgur.com/1jvwGFd.png" image_alt="Fálacia do planejamento" image_title="Fálacia do planejamento" %}
 
 ### Planejamento por Objetivos
 
@@ -99,7 +99,7 @@ Criar objetivos e metas é importante para manter o foco e a concentração nas 
 
 ### Pomodoro
 
-![Pomodoro](https://i.imgur.com/myYE6BT.png)
+{% include lazyload.html image_src="https://i.imgur.com/myYE6BT.png" image_alt="Pomodoro" image_title="Pomodoro" %}
 
 Provavelmente a técnica mais conhecida quando o assunto é gestão de tempo, o Pomodoro é uma técnica simples e eficaz para aumentar a produtividade e a eficiência nas tarefas realizadas. A ideia é dividir o tempo em blocos de 25 minutos, separados por intervalos de 5 minutos. Durante cada bloco de tempo, o objetivo é focar em uma única tarefa e evitar distrações.
 
@@ -111,7 +111,7 @@ O Pomodoro ajuda a evitar essas distrações, pois o desenvolvedor sabe que ter�
 
 Há 4 principios seguidos pela técnica Pomodoro que fazem com que ela funcione:
 
-![Pomodoro](https://i.imgur.com/PGfVFnk.png)
+{% include lazyload.html image_src="https://i.imgur.com/PGfVFnk.png" image_alt="Pomodoro" image_title="Pomodoro" %}
 
 **Estresse x Relaxamento:** Respeitando a dimensão fisiológica da gestão de tempo, ao encontrar um tempo bom ao qual você consegue manter o foco e a concentração, você consegue trabalhar de forma mais eficiente e produtiva. O tempo de 25 minutos é um tempo bom para a maioria das pessoas, mas você pode testar outros tempos e ver qual funciona melhor para você.
 
@@ -125,17 +125,17 @@ Além destes 4 principios, há duas teorias que explicam o porquê de o Pomodoro
 
 **Lei de Parkinson:** "O trabalho se expande de modo a preencher o tempo disponível para a sua realização". Ao estipular um tempo para realizar uma tarefa, seu cerebro inconscientemente vai se esforçar para realizar a tarefa dentro do tempo estipulado. Quantas tarefas em sua vida você sabe que faz em minutos mas não a faz por que não existe prazo para ela? Agora reflita sobre quantas tarefas que pareciam muito complexas e que você achava que levaria horas para realizar, mas que você conseguiu realizar antes do tempo estipulado simplesmente por que você tinha um prazo para ela.
 
-![Lei de Parkisson](https://i.imgur.com/v9cTGVv.png)
+{% include lazyload.html image_src="https://i.imgur.com/v9cTGVv.png" image_alt="Lei de Parkisson" image_title="Lei de Parkisson" %}
 
 **Princípio de Pareto:** "80% dos seus resultados só dependem de 20% do seu esforço". Para entender esse princípio aplicado ao pomodoro, vamos supor que temos uma prova para ser feita em um dia x (prazo), você sabe que tem 5 dias para estudar para essa prova, você sabe que estudar um pouco do conteúdo da prova todos os dias até o dia da prova (20% do conteúdo por dia durante 5 dias) é muito mais eficiente do que estudar todo o conteúdo da prova no dia anterior a prova. Isso acontece por que o seu cerebro vai estar trabalhando no problema durante os 5 dias, mesmo que você não esteja estudando, e quando você for para a ação, você vai estar mais preparado para resolver o problema. Agora na perspectiva pomodoro isso se aplica com os lotes 25min de pomodoros, ao dividir a tarefa você se esforça menos e obtêm mais resultados.
 
-![Princípio de Pareto](https://i.imgur.com/9tUAcAz.png)
+{% include lazyload.html image_src="https://i.imgur.com/9tUAcAz.png" image_alt="Princípio de Pareto" image_title="Princípio de Pareto" %}
 
 ### Matriz de Eisenhower
 
 Quando estiver tudo um caos e você não souber por onde começar, a Matriz de Eisenhower pode te ajudar a priorizar as tarefas e organizar o seu dia. A ideia é dividir as tarefas em 4 quadrantes, de acordo com a importância e urgência de cada tarefa.
 
-![Matriz de Eisenhower](https://i.imgur.com/1dLZK6G.png)
+{% include lazyload.html image_src="https://i.imgur.com/1dLZK6G.png" image_alt="Matriz de Eisenhower" image_title="Matriz de Eisenhower" %}
 
 - **Importante e Urgente:** Tarefas que precisam ser realizadas imediatamente.
 - **Importante e Não Urgente:** Tarefas que precisam ser realizadas, mas não precisam ser realizadas imediatamente.
