@@ -23,4 +23,7 @@ layout: default
             Encontrou algum erro? sinta-se a vontade para abrir um pull request no arquivo <a href="https://github.com/ryrden/ryan.dev/blob/main/{{ page.path }}" target="_blank">fonte</a> deste post no Github.
         </quote>
     </p>
+    {% if page.comments %}
+        {% include comments.html %}
+    {% endif %}
 </section>
