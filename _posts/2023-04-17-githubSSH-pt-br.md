@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Chave SSH no github - Windows e Linux
 lang: pt-br
 published: true

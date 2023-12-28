@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Time Management and Productivity for Developers
 lang: en
 description: This article provides an in-depth look at time management in the context of software development. It addresses the importance of mental, physiological and technical dimensions in productivity and presents techniques such as Weekly Planning, Pomodoro and Eisenhower Matrix. The focus is to provide practical methods for developers to improve time management and quality of work on technology projects.
