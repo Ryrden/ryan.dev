@@ -8,7 +8,11 @@
     data-emit-metadata="0"
     data-input-position="top"
     data-theme="{{ '/assets/custom_style.css' | relative_url }}"
-    data-lang="{{ site.active_lang == 'pt-br' ? 'pt' : site.active_lang }}"
+    {% if site.active_lang == 'pt-br' %}
+    data-lang="pt"
+    {% else %}
+    data-lang="{{ site.active_lang }}"
+    {% endif %}
     data-loading="lazy"
     crossorigin="anonymous"
     async>
