@@ -4,7 +4,7 @@ title: Dominando a Programação - As Três Virtudes Essenciais para Programador
 published: false
 description: Descubra como as três virtudes inusitadas - Preguiça, Impaciência e Arrogância - podem ser a chave para a excelência na programação. Este artigo explora como essas características, longe de serem falhas, são fundamentais para inovação, eficiência e confiança no desenvolvimento de software
 cover_image: ''
-canonical_url: 'https://ryan.dev.br/2023-10-11-threeVirtuesOfAGreatProgrammer-pt-br'
+canonical_url: 'https://ryan.dev.br/2023-10-11-three-virtues-of-a-great-programmer-pt-br'
 devto_url: ''
 tabnews_url: ''
 imageAlt: ''
@@ -30,7 +30,7 @@ Larry Wall descreve a preguiça como:
 
 Esta virtude nos encoraja a buscar soluções eficientes e reutilizáveis. A preguiça não é sobre evitar o trabalho, mas sobre maximizar a produtividade, criando ferramentas que automatizam tarefas e melhorando a documentação para facilitar o uso e a manutenção do software.
 
-A preguiça produtiva é exemplificada pela automação de tarefas repetitivas. Por exemplo, um desenvolvedor que escreve um script para automatizar a implantação de atualizações de software. Em vez de realizar manualmente os mesmos passos várias vezes, o script executa todo o processo automaticamente, economizando tempo valioso. Esta abordagem não só reduz a carga de trabalho, mas também minimiza a margem de erro, garantindo maior consistência e confiabilidade no trabalho
+Por exemplo, um desenvolvedor que escreve um script para automatizar a implantação de atualizações de software. Em vez de realizar manualmente os mesmos passos várias vezes, o script executa todo o processo automaticamente, economizando tempo valioso. Esta abordagem não só reduz a carga de trabalho, mas também minimiza a margem de erro, garantindo maior consistência e confiabilidade no trabalho
 
 ## 2. Impaciência
 
@@ -40,7 +40,7 @@ Wall descreve a impaciência assim:
 
 A impaciência nos impulsiona a desenvolver soluções mais rápidas e eficientes. Ela está ligada à insatisfação com a lentidão e ineficiência, levando à otimização de algoritmos e à procura de respostas mais ágeis. Esta virtude complementa a preguiça, visando a eficiência não só em automação, mas também em tempo de execução.
 
-A impaciência, aliada à preguiça, manifesta-se na otimização de testes. Por exemplo, um programador pode desenvolver um sistema de testes automatizados que não apenas executa testes de forma mais rápida e eficiente, mas também identifica e se concentra em áreas críticas do software. Em vez de testar manualmente cada aspecto após cada alteração, o sistema realiza testes direcionados, reduzindo significativamente o tempo de espera e aumentando a produtividade. Isso reflete a impaciência construtiva de um desenvolvedor que deseja resultados imediatos e precisos, sem comprometer a qualidade.
+Por exemplo, um programador pode desenvolver um sistema de testes automatizados que não apenas executa testes de forma mais rápida e eficiente, mas também identifica e se concentra em áreas críticas do software. Em vez de testar manualmente cada aspecto após cada alteração, o sistema realiza testes direcionados, reduzindo significativamente o tempo de espera e aumentando a produtividade. Isso reflete a impaciência construtiva de um desenvolvedor que deseja resultados imediatos e precisos, sem comprometer a qualidade.
 
 ## 3. Arrogância
 
