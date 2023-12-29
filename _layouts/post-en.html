@@ -1,0 +1,43 @@
+---
+layout: default
+lang: en
+---
+
+<section>
+    <h1 id="#top">
+        {{ page.title }}
+    </h1>
+    <span>
+        Written on {{ page.date | date: "%d/%m/%Y" | date_to_long_string }} by {{ page.author }}
+    </span>
+    {% if page.devto_url or page.tabnews_url %}
+    <span>
+        -- Also published on:
+        {% if page.devto_url %}
+        <a href="{{ page.devto_url }}" target="_blank">Dev.to</a>
+        {% endif %}
+        {% if page.devto_url and page.tabnews_url %} & {% endif %}
+        {% if page.tabnews_url %}
+        <a href="{{ page.tabnews_url }}" target="_blank">Tabnews</a>
+        {% endif %}
+    </span>
+    {% endif %}
+    <div>
+        <p>
+            <strong>Summary:</strong>
+            {{ page.description }}
+        </p>
+    </div>
+    {% include lazyload.html image_src=page.cover_image image_alt=page.imageAlt image_title=page.imageAlt %}
+    <h2>Content</h2>
+    <p>{{ content }}</p>
+    <p style="text-align:end;"><a href="#top">Back to top ⬆️</a></p>
+    <p>
+        <quote>
+            Found any error? feel free to open a pull request on the <a href="https://github.com/ryrden/ryan.dev/blob/main/{{ page.path }}" target="_blank">fonte</a> deste post no Github.
+        </quote>
+    </p>
+    {% if page.comments %}
+        {% include comments.html %}
+    {% endif %}
+</section>

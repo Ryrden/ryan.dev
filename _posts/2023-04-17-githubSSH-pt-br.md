@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-pt-br
 comments: true
 title: Chave SSH no github - Windows e Linux
 lang: pt-br

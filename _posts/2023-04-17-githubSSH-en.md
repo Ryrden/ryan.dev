@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-en
 comments: true
 title: SSH key on github - Windows and Linux
 lang: en

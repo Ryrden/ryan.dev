@@ -1,12 +1,26 @@
 ---
 layout: default
+lang: pt-br
 ---
 
 <section>
-    <h1 id="#top">{{ page.title }}</h1>
-    <span>Escrito em {{ page.date | date: "%d/%m/%Y" | date_to_long_string }} por {{ page.author }}</span>
-    {% if page.devto_url and page.tabnews_url %}
-        <span>-- Publicado nas plataformas: <a href="{{ page.devto_url }}" target="_blank">Dev.to</a> e <a href="{{ page.tabnews_url }}" target="_blank">Tabnews</a></span>
+    <h1 id="#top">
+        {{ page.title }}
+    </h1>
+    <span>
+        Escrito em {{ page.date | date: "%d/%m/%Y" | date_to_long_string }} por {{ page.author }}
+    </span>
+    {% if page.devto_url or page.tabnews_url %}
+        <span>
+            -- Publicado também em: 
+            {% if page.devto_url %}
+            <a href="{{ page.devto_url }}" target="_blank">Dev.to</a>
+            {% endif %}
+            {% if page.devto_url and page.tabnews_url %} e {% endif %}
+            {% if page.tabnews_url %}
+            <a href="{{ page.tabnews_url }}" target="_blank">Tabnews</a>
+            {% endif %}
+        </span>
     {% endif %}
     <div>
         <p>
