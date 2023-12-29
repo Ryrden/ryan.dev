@@ -4,7 +4,7 @@ title: Dominando a Programação - As Três Virtudes Essenciais para Programador
 published: false
 description: Descubra como as três virtudes inusitadas - Preguiça, Impaciência e Arrogância - podem ser a chave para a excelência na programação. Este artigo explora como essas características, longe de serem falhas, são fundamentais para inovação, eficiência e confiança no desenvolvimento de software
 cover_image: ''
-canonical_url: 'https://ryan.dev.br/2023-10-11-threeVirtuesOfAGreatProgrammer'
+canonical_url: 'https://ryan.dev.br/2023-10-11-threeVirtuesOfAGreatProgrammer-pt-br'
 devto_url: ''
 tabnews_url: ''
 imageAlt: ''
