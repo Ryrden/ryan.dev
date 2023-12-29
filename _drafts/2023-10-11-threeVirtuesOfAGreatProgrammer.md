@@ -1,8 +1,8 @@
 ---
-layout: post
-title: As três virtudes de um programador
+layout: post-pt-br
+title: Dominando a Programação - As Três Virtudes Essenciais para Programadores
 published: false
-description: Preguiça, Impaciência e Arrogância 
+description: Descubra como as três virtudes inusitadas - Preguiça, Impaciência e Arrogância - podem ser a chave para a excelência na programação. Este artigo explora como essas características, longe de serem falhas, são fundamentais para inovação, eficiência e confiança no desenvolvimento de software
 cover_image: ''
 canonical_url: 'https://ryan.dev.br/2023-10-11-threeVirtuesOfAGreatProgrammer'
 devto_url: ''
@@ -11,7 +11,7 @@ imageAlt: ''
 tags:
   - carreira
   - desenvolvimento
-  - coding
+  - produtividade
   - programação
 author: Ryan Souza
 ---
@@ -24,41 +24,44 @@ Para responder a essas perguntas e nos aprofundarmos na definição de um progra
 
 ## 1. Preguiça
 
-> The quality that makes you go to great effort to reduce overall energy expenditure. It makes you write labor-saving programs that other people will find useful and document what you wrote so you don't have to answer so many questions about it.
+Larry Wall descreve a preguiça como:
 
-"A Preguiça é a qualidade que nos faz fazer um grande esforço para reduzir o consumo geral de energia. Isso nos leva a escrever programas que economizam trabalho e que outras pessoas acharão úteis. Além disso, nos motiva a documentar o que escrevemos para não termos que responder a tantas perguntas sobre isso".
+> "A qualidade que te faz se esforçar muito para reduzir o gasto total de energia. Faz você escrever programas que economizam trabalho para outros e documentar o que escreveu para não ter que responder a tantas perguntas."
 
-Em outras palavras, a Preguiça nos incentiva a buscar soluções mais eficientes e reutilizáveis, como a automação de tarefas rotineiras.
+Esta virtude nos encoraja a buscar soluções eficientes e reutilizáveis. A preguiça não é sobre evitar o trabalho, mas sobre maximizar a produtividade, criando ferramentas que automatizam tarefas e melhorando a documentação para facilitar o uso e a manutenção do software.
 
-Existem N exemplos de como a preguiça é importante no desenvolvimento de software. Qualquer coisa que você usa mais de uma vez pode e deve ser automatizada.
+A preguiça produtiva é exemplificada pela automação de tarefas repetitivas. Por exemplo, um desenvolvedor que escreve um script para automatizar a implantação de atualizações de software. Em vez de realizar manualmente os mesmos passos várias vezes, o script executa todo o processo automaticamente, economizando tempo valioso. Esta abordagem não só reduz a carga de trabalho, mas também minimiza a margem de erro, garantindo maior consistência e confiabilidade no trabalho
 
 ## 2. Impaciência
 
-> The anger you feel when the computer is being lazy. This makes you write programs that don't just react to your needs, but actually anticipate them. Or at least pretend to.
+Wall descreve a impaciência assim:
 
-"A Impaciência é a raiva que sentimos quando o computador está sendo lento. Isso nos leva a escrever programas que não apenas reagem às nossas necessidades, mas realmente as antecipam. Ou pelo menos fingem".
+> "A raiva que você sente quando o computador está sendo lento. Isso te faz escrever programas que não só reagem às suas necessidades, mas as antecipam."
 
-Em outras palavras, a Impaciência nos incentiva a buscar soluções mais rápidas e eficazes, como a otimização de algoritmos.
+A impaciência nos impulsiona a desenvolver soluções mais rápidas e eficientes. Ela está ligada à insatisfação com a lentidão e ineficiência, levando à otimização de algoritmos e à procura de respostas mais ágeis. Esta virtude complementa a preguiça, visando a eficiência não só em automação, mas também em tempo de execução.
 
-Essa virtude anda junto com a preguiça. Se você sempre testa o seu software para uma determinada tarefa, você não quer testar-lo novamente, você gostaria que apenas 1 teste fosse suficiente. Criar testes é ser não só preguiçoso mas também impaciente para não ter que testar novamente.
+A impaciência, aliada à preguiça, manifesta-se na otimização de testes. Por exemplo, um programador pode desenvolver um sistema de testes automatizados que não apenas executa testes de forma mais rápida e eficiente, mas também identifica e se concentra em áreas críticas do software. Em vez de testar manualmente cada aspecto após cada alteração, o sistema realiza testes direcionados, reduzindo significativamente o tempo de espera e aumentando a produtividade. Isso reflete a impaciência construtiva de um desenvolvedor que deseja resultados imediatos e precisos, sem comprometer a qualidade.
 
 ## 3. Arrogância
 
-> The quality that makes you write (and maintain) programs that other people won't want to say bad things about.
+Wall define a arrogância da seguinte forma:
 
-"A qualidade que nos faz escrever (e manter) programas sobre os quais as outras pessoas não vão querer falar mal".
+> "A qualidade que faz você escrever (e manter) programas sobre os quais as outras pessoas não vão querer falar mal."
 
-Essa virtude é a mais difícil de entender, mas é a mais importante. A Arrogância nos incentiva a buscar soluções mais simples e elegantes, como a simplificação de código e a redução de complexidade.
+A arrogância, longe de ser um traço negativo, reflete a confiança na qualidade do próprio trabalho. É o impulso para criar soluções elegantes e eficazes, que resistem ao escrutínio e ganham admiração. Esta virtude é um sinal de maturidade e experiência, incentivando a busca contínua por melhorias e inovações no código.
 
-É certo que essa virtude é completamente atrelada a sua experiência na área. Quanto mais experiência você tem, mais "arrogante" você pode ser. Você pode se perguntar: "Mas uma pessoa arrogante é uma pessoa chata, que se acha melhor que os outros". Não, não é isso. A arrogância aqui é a confiança que você tem no seu trabalho, é quando você tem mais do que orgulho daquele pequeno código ou parte do software que você construiu. É quando você sabe que aquilo é bom e que não precisa de mais nada.
+Essa virtude está intrinsecamente ligada à experiência. Com o tempo, desenvolvemos uma "arrogância construtiva" uma confiança profunda no valor do nosso trabalho. Isso não se trata de um sentimento de superioridade, mas sim de um reconhecimento da qualidade do que produzimos, ela se traduz em uma espécie de orgulho positivo pelo seu trabalho. É aquele sentimento de satisfação quando você olha para um código que escreveu e pensa: "Isso ficou realmente bom".
 
-Um último exemplo dessa virtude que já pode ser percebida desde o primeiro contato com programação é quando você escreve seu primeiro "Hello World". Você se sente o máximo, você se sente o melhor programador do mundo. Você se sente arrogante. E isso é bom.
+Por exemplo, quando você enfrenta um código complicado e consegue simplificá-lo, isso é arrogância no melhor sentido. Você reconhece a eficácia do seu trabalho e sente uma justificada autoconfiança em suas habilidades.
+
+Essa sensação começa até mesmo nos primeiros passos, como ao escrever seu primeiro "Hello World". Pode parecer simples, mas é seu e representa um início promissor. Mesmo sendo um pequeno passo, você se sente o máximo, você se sente o melhor programador do mundo. Você se sente arrogante. E isso é bom.
 
 ## Conclusão
 
-Nesse artigo então vimos as três virtudes de um programador. É certo pensar que essas virtudes são mais do que apenas qualidades abstratas, mas princípios práticos que podem levar a melhorias significativas.
+Explorando as três virtudes de um programador, percebemos que são mais do que qualidades abstratas. Elas são princípios práticos para o aprimoramento contínuo. Um programador exemplar é aquele que alia preguiça (para automatizar), impaciência (para otimizar) e arrogância (para aperfeiçoar), enfrentando os desafios com habilidade e confiança.
 
 Uma boa definição pessoal minha é:
-> "Um bom programador é preguiçoso o suficiente para automatizar tarefas repetitivas, impaciente o bastante para otimizar o código e resolver problemas de forma ágil, e arrogante o bastante para acreditar que pode sempre fazer o código melhor."
+
+> Um bom programador é naturalmente preguiçoso, sempre buscando formas de automatizar o repetitivo; instintivamente impaciente, agilizando e aprimorando códigos com rapidez; e suficientemente arrogante para acreditar que sempre pode fazer o código melhor."
 
 Espero que tenha gostado do artigo e que ele tenha feito você refletir ao menos um pouquinho. Se tiver alguma dúvida ou sugestão, deixe um comentário abaixo ou entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/ryan25/) ou pela aba de [contato](https://ryan.dev.br/contact/) do meu site.
