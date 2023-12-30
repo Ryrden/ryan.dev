@@ -18,6 +18,12 @@ tags:
 author: Ryan Souza
 ---
 
+- [Você é um bom programador?](#você-é-um-bom-programador)
+- [1. Preguiça](#1-preguiça)
+- [2. Impaciência](#2-impaciência)
+- [3. Arrogância](#3-arrogância)
+- [Conclusão](#conclusão)
+
 ## Você é um bom programador?
 
 Você se considera um ótimo programador? No universo da programação, a autoavaliação é uma tarefa comum e, muitas vezes, intrincada. Ao nos depararmos com linhas de código, algoritmos complexos e desafios de desenvolvimento, é natural nos questionarmos: "Será que estou no caminho certo? Será que sou um bom programador?" Essas dúvidas, no entanto, são inerentes a todos que buscam a excelência nessa área.
