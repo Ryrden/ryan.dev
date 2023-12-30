@@ -1,6 +1,8 @@
 ---
 layout: post-pt-br
+comments: true
 title: Dominando a Programação - As Três Virtudes Essenciais para Programadores
+lang: pt-br
 published: false
 description: Descubra como as três virtudes inusitadas - Preguiça, Impaciência e Arrogância - podem ser a chave para a excelência na programação. Este artigo explora como essas características, longe de serem falhas, são fundamentais para inovação, eficiência e confiança no desenvolvimento de software
 cover_image: 'https://i.imgur.com/n53IPTD.png'
@@ -69,5 +71,7 @@ Explorando as três virtudes de um programador, percebemos que são mais do que 
 Uma boa definição pessoal minha é:
 
 > Um bom programador é naturalmente preguiçoso, sempre buscando formas de automatizar o repetitivo; instintivamente impaciente, agilizando e aprimorando códigos com rapidez; e suficientemente arrogante para acreditar que sempre pode fazer o código melhor."
+
+Uma coisa importante de ressaltar é que essas virtudes são todas desenvolvidas com o tempo e a experiência, você não precisa se preocupar de que não é um bom programador por não se encaixar em todas elas, isso é normal. O importante é que você esteja sempre buscando melhorar e se aprimorar, e com o tempo você vai desenvolver essas virtudes e se tornar um programador melhor, pelo menos na visão de Larry Wall ;).
 
 Espero que tenha gostado do artigo e que ele tenha feito você refletir ao menos um pouquinho. Se tiver alguma dúvida ou sugestão, deixe um comentário abaixo ou entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/ryan25/) ou pela aba de [contato](https://ryan.dev.br/contact/) do meu site.
