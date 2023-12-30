@@ -3,13 +3,13 @@ layout: post-pt-br
 comments: true
 title: Dominando a Programação - As Três Virtudes Essenciais para Programadores
 lang: pt-br
-published: false
+published: true
 description: Descubra como as três virtudes inusitadas - Preguiça, Impaciência e Arrogância - podem ser a chave para a excelência na programação. Este artigo explora como essas características, longe de serem falhas, são fundamentais para inovação, eficiência e confiança no desenvolvimento de software
 cover_image: 'https://i.imgur.com/n53IPTD.png'
 canonical_url: 'https://ryan.dev.br/2023-10-11-three-virtues-of-a-great-programmer-pt-br'
 devto_url: ''
 tabnews_url: ''
-imageAlt: ''
+image_alt: 'Três programadores representando as três virtudes, preguiça, impaciência e arrogância.'
 tags:
   - carreira
   - desenvolvimento
@@ -26,7 +26,7 @@ Para responder a essas perguntas e nos aprofundarmos na definição de um progra
 
 ## 1. Preguiça
 
-![programador preguiçoso](https://i.imgur.com/VtF0cpk.png)
+{% include lazyload.html image_src="https://i.imgur.com/VtF0cpk.webp" image_alt="programador preguiçoso" image_title="programador preguiçoso" %}
 
 Larry Wall descreve a preguiça como:
 
@@ -38,7 +38,7 @@ Por exemplo, um desenvolvedor que escreve um script para automatizar a implanta�
 
 ## 2. Impaciência
 
-![programador impaciente](https://i.imgur.com/j3koCJ8.png)
+{% include lazyload.html image_src="https://i.imgur.com/j3koCJ8.webp" image_alt="programador impaciente" image_title="programador impaciente" %}
 
 Wall descreve a impaciência assim:
 
@@ -50,7 +50,7 @@ Por exemplo, um programador pode desenvolver um sistema de testes automatizados 
 
 ## 3. Arrogância
 
-![programador arrogante](https://i.imgur.com/B3xzH5z.png)
+{% include lazyload.html image_src="https://i.imgur.com/B3xzH5z.webp" image_alt="programador arrogante" image_title="programador arrogante" %}
 
 Wall define a arrogância da seguinte forma:
 

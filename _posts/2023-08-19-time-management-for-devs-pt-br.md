@@ -9,7 +9,7 @@ cover_image: 'https://i.imgur.com/oCZcIby.webp'
 canonical_url: 'https://ryan.dev.br/2023-08-19-time-management-for-devs-pt-br'
 devto_url: 'https://dev.to/ryrden/gestao-de-tempo-e-produtividade-para-devs-2h85'
 tabnews_url: 'https://www.tabnews.com.br/ryrden/gestao-de-tempo-e-produtividade-para-devs'
-imageAlt: 'Mulher com notebook em cima de um calendário gigante, ao fundo um cronoômetro e ao lado do calendário há uma planta'
+image_alt: 'Mulher com notebook em cima de um calendário gigante, ao fundo um cronoômetro e ao lado do calendário há uma planta'
 tags:
   - carreira
   - desenvolvimento

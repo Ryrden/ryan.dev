@@ -8,7 +8,7 @@ description: Guia passo a passo sobre como gerar e adicionar uma chave SSH ao Gi
 cover_image: 'https://i.imgur.com/9GC9TvD.webp'
 canonical_url: 'https://ryan.dev.br/2023-04-17-github-ssh-pt-br'
 devto_url: 'https://dev.to/ryrden/chave-ssh-no-github-windows-e-linux-3gj6'
-imageAlt: 'Uma estatueta de um oktokat (Mascote do github) ao centro, ao fundo um laptop com a página principal do GitHub aberta.'
+image_alt: 'Uma estatueta de um oktokat (Mascote do github) ao centro, ao fundo um laptop com a página principal do GitHub aberta.'
 tags:
   - github
   - ssh
