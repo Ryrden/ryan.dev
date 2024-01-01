@@ -32,6 +32,8 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-paginate-v2 (3.0.0)
+      jekyll (>= 3.0, < 5.0)
     jekyll-polyglot (1.7.0)
       jekyll (>= 4.0, >= 3.0)
     jekyll-sass-converter (3.0.0)
@@ -75,6 +77,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-paginate-v2
   jekyll-polyglot
   jekyll-seo-tag
   jekyll-sitemap

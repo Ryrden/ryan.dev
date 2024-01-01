@@ -1,0 +1,51 @@
+---
+title: Blog
+lang: pt-br
+permalink: /blog/
+pagination: 
+  enabled: true
+  locale: pt_BR
+---
+
+<h1>Últimas publicações</h1>
+
+{% for post in paginator.posts %}
+  <article>
+    <header>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    </header>
+    <p>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date_to_long_string: "ordinal" }}
+      </time>
+    </p>
+    <p>{{ post.description | truncatewords: 20 }}</p>
+  </article>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+<center>
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    {% else %}
+      <span>&laquo; Anterior</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <em>{{ page }}</em>
+      {% elsif page == 1 %}
+        <a href="/blog">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.pagination.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}">Próximo &raquo;</a>
+    {% else %}
+      <span>Next &raquo;</span>
+    {% endif %}
+  </div>
+<center/>
+{% endif %}

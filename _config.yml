@@ -11,6 +11,7 @@ plugins:
   - jekyll-polyglot
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate-v2
 
 languages: ["pt-br", "en"]
 default_lang: "pt-br"
@@ -20,6 +21,16 @@ parallel_localization: true
 # Site settings
 title: ryan.dev
 description: Blog pessoal de Ryan Souza, desenvolvedor e estudante na USP, dedicado a artigos sobre engenharia de software e experiências de carreira. Encontre reflexões, dicas e análises sobre desenvolvimento de sistemas, projetos open source e tecnologia. Um espaço para compartilhar conhecimento e insights sobre a indústria de TI.
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 3
+  limit: 0
+  paginate_path: "/blog/page:num/"
+  sort_field: 'date'
+  sort_reverse: true
+
 
 collections:
   posts:

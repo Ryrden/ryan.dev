@@ -3,6 +3,7 @@ layout: post-pt-br
 comments: true
 title: Gestão de tempo e produtividade para Devs
 lang: pt-br
+locale: pt_BR
 published: true
 description: Este artigo oferece uma visão detalhada sobre gerenciamento de tempo no contexto do desenvolvimento de software. Aborda a importância das dimensões mental, fisiológica e técnica na produtividade e apresenta técnicas como Planejamento Semanal, Pomodoro e Matriz de Eisenhower. O foco é fornecer métodos práticos para desenvolvedores aprimorarem a gestão do tempo e a qualidade do trabalho em projetos de tecnologia.
 cover_image: 'https://i.imgur.com/oCZcIby.webp'
