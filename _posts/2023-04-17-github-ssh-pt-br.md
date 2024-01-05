@@ -1,7 +1,6 @@
 ---
 layout: post-pt-br
 title: Chave SSH no github - Windows e Linux
-published: true
 description: Guia passo a passo sobre como gerar e adicionar uma chave SSH ao GitHub para autenticação segura em repositórios. O artigo aborda a criação de chaves SSH usando o algoritmo ED25519, oferecendo instruções detalhadas para usuários Linux e Windows. Aprenda a configurar a chave SSH no GitHub para facilitar operações como push e pull sem a necessidade de autenticação repetida.
 cover_image: 'https://i.imgur.com/9GC9TvD.webp'
 canonical_url: 'https://ryan.dev.br/2023-04-17-github-ssh-pt-br'
@@ -12,10 +11,10 @@ tags:
   - linux
   - windows
 author: Ryan Souza
-devto_url: 'https://dev.to/ryrden/chave-ssh-no-github-windows-e-linux-3gj6'
 comments: true
 lang: pt-br
 locale: pt_BR
+published: true
 id: 1572979
 date: '2023-08-18T23:44:11Z'
 ---
@@ -48,7 +47,7 @@ Para gerar uma chave SSH no Linux, você precisa abrir o terminal e digitar o se
 ssh-keygen -t ed25519 -C <seu-email>
 ```
 
-{% include lazyload.html image_src="https://i.imgur.com/J56UKtq.webp" image_alt="ssh-keygen on linux" image_title="ssh-keygen on linux" %}
+![ssh-keygen on linux](https://i.imgur.com/J56UKtq.webp)
 
 Após digitar o comando, você vai ser solicitado a preencher alguns dados, como o nome da chave e a senha da chave. Você pode digitar o nome que quiser desde que não se esqueça dele, no meu caso, eu apenas apertei `enter` para que o git gerasse o nome da chave automaticamente e que a chave não tenha senha.
 
@@ -60,7 +59,7 @@ cat id_ed25519.pub
 
 e copie a chave que aparecer na tela.
 
-{% include lazyload.html image_src="https://i.imgur.com/nT9OTKx.webp" image_alt="getting the key in linux" image_title="getting the key in linux" %}
+![getting the key in linux](https://i.imgur.com/nT9OTKx.webp)
 
 Agora você precisa ir até a página de configurações do github e adicionar a chave que você acabou de copiar.
 
@@ -68,7 +67,7 @@ aqui um atalho para você ir direto para a página de configurações de chaves 
 
 aqui você deve ir em `New SSH key` e cole a chave que você copiou anteriormente.
 
-{% include lazyload.html image_src="https://i.imgur.com/5L6KrD8.webp" image_alt="paste key on github - linux" image_title="paste key on github - linux" %}
+![paste key on github - linux](https://i.imgur.com/5L6KrD8.webp)
 
 Clicando em Add SSH key, você vai adicionar a chave SSH ao github.
 
@@ -80,7 +79,7 @@ ssh git@github.com
 
 se tudo der certo, você vai ver uma mensagem de sucesso e você já pode fazer o clone de qualquer repositório que você tenha acesso, no meu caso eu fiz o clone do meu próprio repositório.
 
-{% include lazyload.html image_src="https://i.imgur.com/eDKiWUy.webp" image_alt="Testing ssh key - linux" image_title="Testing ssh key - linux" %}
+![Testing ssh key - linux](https://i.imgur.com/eDKiWUy.webp)
 
 ### Windows
 
@@ -94,7 +93,7 @@ ssh-keygen -t ed25519 -C <seu-email>
 
 substitua `<seu-email>` pelo seu email do github.
 
-{% include lazyload.html image_src="https://i.imgur.com/bCSWptA.webp" image_alt="ssh-keygen on windows" image_title="ssh-keygen on windows" %}
+![ssh-keygen on windows](https://i.imgur.com/bCSWptA.webp)
 
 Após digitar o comando, você vai ser solicitado a preencher alguns dados, como o nome da chave e a senha da chave. Você pode digitar o nome que quiser desde que não se esqueça dele, no meu caso, eu apenas apertei `enter` para que o git gerasse o nome da chave automaticamente e que a chave não tenha senha.
 
@@ -106,13 +105,13 @@ type id_ed25519.pub
 
 e copie a chave que aparecer na tela.
 
-{% include lazyload.html image_src="https://i.imgur.com/XdeXkT1.webp" image_alt="getting ssh key in windows" image_title="getting ssh key in windows" %}
+![getting ssh key in windows](https://i.imgur.com/XdeXkT1.webp)
 
 Enfim, agora você precisa ir até a página de configurações do github e adicionar a chave que você acabou de copiar. aqui um atalho para você ir direto para a página de configurações de chaves SSH do github: [Página de configurações de chaves SSH](https://github.com/settings/keys)
 
 aqui você deve ir em `New SSH key` e cole a chave que você copiou anteriormente.
 
-{% include lazyload.html image_src="https://i.imgur.com/fYitTGb.webp" image_alt="paste key on github - windows" image_title="paste key on github - windows" %}
+![paste key on github - windows](https://i.imgur.com/fYitTGb.webp)
 
 Clicando em Add SSH key, você vai adicionar a chave SSH ao github.
 
@@ -124,8 +123,8 @@ ssh git@github.com
 
 se tudo der certo, você vai ver uma mensagem de sucesso e você já pode fazer o clone de qualquer repositório que você tenha acesso, no meu caso eu fiz o clone do meu próprio repositório.
 
-{% include lazyload.html image_src="https://i.imgur.com/OQaJNyj.webp" image_alt="Testing ssh key - linux" image_title="Testing ssh key - linux" %}
+![Testing ssh key - linux](https://i.imgur.com/OQaJNyj.webp)
 
 ## Conclusão
 
-Espero que esse tutorial tenha ajudado você a configurar a sua chave SSH no github. Se você tiver alguma dúvida, você pode entrar em contato comigo pela aba de Contato do meu site.
+Espero que esse tutorial tenha ajudado você a configurar a sua chave SSH no github. Se tiver alguma dúvida ou sugestão, deixe um comentário abaixo ou entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/ryan25/) ou pela aba de [contato](https://ryan.dev.br/contact/) do meu site.

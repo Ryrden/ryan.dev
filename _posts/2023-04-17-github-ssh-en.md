@@ -1,7 +1,6 @@
 ---
 layout: post-en
 title: SSH key on github - Windows and Linux
-published: true
 description: 'Step-by-step guide on how to generate and add an SSH key to GitHub for secure authentication to repositories. The article covers creating SSH keys using the ED25519 algorithm, offering detailed instructions for Linux and Windows users. Learn how to configure the SSH key on GitHub to facilitate operations such as push and pull without the need for repeated authentication.'
 cover_image: 'https://i.imgur.com/9GC9TvD.webp'
 canonical_url: 'https://ryan.dev.br/2023-04-17-github-ssh-en'
@@ -15,6 +14,7 @@ author: Ryan Souza
 locale: en_US
 lang: en
 comments: true
+published: true
 id: 1718348
 date: '2024-01-05T15:41:34Z'
 ---
@@ -47,7 +47,7 @@ To generate an SSH key on Linux, you need to open the terminal and type the foll
 ssh-keygen -t ed25519 -C <your-email>
 ```
 
-![ssh-keygen on linux](https://i.imgur.com/J56UKtq.webp)="ssh-keygen on linux" %}
+![ssh-keygen on linux](https://i.imgur.com/J56UKtq.webp)
 
 After typing the command, you will be prompted to fill in some information, such as the key name and password. You can type any name as long as you don't forget it; in my case, I just pressed `enter` so that Git would automatically generate the key name and have no password.
 
@@ -59,8 +59,8 @@ cat id_ed25519.pub
 
 and copy the key that appears on the screen.
 
-![getting the key in linux](https://i.imgur.com/nT9OTKx.webp) image_title="getting the key in linux" %}
-
+<<<<<<< HEAD
+>>>>>>> 3e2b0f3 (post: all post were translated to english and new post!!)
 Now you need to go to the GitHub settings page and add the key you just copied.
 
 here a shortcut for you to go directly to the GitHub SSH keys settings page: [SSH Keys Settings Page](https://github.com/settings/keys)
@@ -127,4 +127,4 @@ if everything goes well, you will see a success message, and you can clone any r
 
 ## Conclusão
 
-I hope this tutorial has helped you set up your SSH key on github. If you have any questions, you can contact me through the Contact tab on my website.
+I hope this tutorial has helped you set up your SSH key on github. If you have any questions or suggestions, leave a comment below or contact me through [LinkedIn](https://www.linkedin.com/in/ryan25/) or the [contact](https://ryan.dev.br/contact/) tab on my website.

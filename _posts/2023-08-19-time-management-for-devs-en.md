@@ -1,7 +1,6 @@
 ---
 layout: post-en
 title: Time Management and Productivity for Developers
-published: true
 description: This article provides an in-depth look at time management in the context of software development. It addresses the importance of mental, physiological and technical dimensions in productivity and presents techniques such as Weekly Planning, Pomodoro and Eisenhower Matrix. The focus is to provide practical methods for developers to improve time management and quality of work on technology projects.
 cover_image: 'https://i.imgur.com/oCZcIby.webp'
 canonical_url: 'https://ryan.dev.br/2023-08-19-time-management-for-devs-en'
@@ -15,6 +14,7 @@ author: Ryan Souza
 comments: true
 lang: en
 locale: en_US
+published: true
 ---
 
 - [Why is time management important?](#why-is-time-management-important)
@@ -59,7 +59,7 @@ We must understand the value of time and be motivated to make the most of it. Of
 
 The physiological dimension concerns our body and its limits. Like everything in life, we have an optimal point of productivity, which is the point at which we can perform tasks efficiently and with quality. If we exceed this point, we may end up harming our physical and mental health.
 
-{% include lazyload.html image_src="https://i.imgur.com/Eou40sx.webp" image_alt="Optimal point of productivity" image_title="Optimal point of productivity" %}
+![Optimal point of productivity](https://i.imgur.com/Eou40sx.webp)
 
 To ensure that your body is always close to the optimal point of productivity, there are 3 mechanisms to take greater care of:
 
@@ -69,7 +69,7 @@ To ensure that your body is always close to the optimal point of productivity, t
 
 **Stress vs. Relaxation:** Everything is dynamic and the body is no different, you need moments of relaxation so that your body can recover from the stress caused by day-to-day activities. It is almost like a see-saw where if you stress your body mentally too much, it is necessary to have physical stress so that your body can recover, hence the importance of doing physical exercises.
 
-{% include lazyload.html image_src="https://i.imgur.com/QY2ShP7.webp" image_alt="Stress vs relaxation" image_title="Stress vs relaxation" %}
+![Stress vs relaxation](https://i.imgur.com/QY2ShP7.webp)
 
 ### Technical Dimension
 
@@ -83,13 +83,13 @@ There are various techniques that can be applied in time management. Some of the
 
 Weekly planning is one of the simplest and most effective techniques for managing time. The idea is to plan the activities that will be carried out during the week, defining which tasks will be performed on each day of the week.
 
-{% include lazyload.html image_src="https://i.imgur.com/2hV4fq6.webp" image_alt="Weekly planning" image_title="Weekly planning" %}
+![Weekly planning](https://i.imgur.com/2hV4fq6.webp)
 
 It is important to note that weekly planning should not be too detailed, as this can cause anxiety and stress. The ideal is to define only the most important activities and leave the rest to be defined on a day-to-day basis. In addition, there is a great danger of falling into the **Planning Fallacy**.
 
 **Planning Fallacy:** The planning fallacy is a phenomenon that occurs when people overestimate their ability to perform tasks in a given period of time. To avoid this trap, it is important to be realistic and consider unforeseen events that may arise during the day. Therefore, it is important to leave free time for unforeseen events and unplanned activities in the weekly planning.
 
-{% include lazyload.html image_src="https://i.imgur.com/1jvwGFd.webp" image_alt="Planning fallacy" image_title="Planning fallacy" %}
+![Planning fallacy](https://i.imgur.com/1jvwGFd.webp)
 
 ### Goal-Based Planning
 
@@ -101,7 +101,7 @@ Creating goals and targets is important to maintain focus and concentration on t
 
 ### Pomodoro
 
-{% include lazyload.html image_src="https://i.imgur.com/myYE6BT.webp" image_alt="Pomodoro" image_title="Pomodoro" %}
+![Pomodoro](https://i.imgur.com/myYE6BT.webp)
 
 Probably the most well-known technique when it comes to time management, Pomodoro is a simple and effective technique to increase productivity and efficiency in tasks performed. The idea is to divide time into blocks of 25 minutes, separated by 5-minute intervals. During each time block, the goal is to focus on a single task and avoid distractions.
 
@@ -113,7 +113,7 @@ Pomodoro helps to avoid these distractions, as the developer knows that they wil
 
 There are 4 principles followed by the Pomodoro technique that make it work:
 
-{% include lazyload.html image_src="https://i.imgur.com/PGfVFnk.webp" image_alt="Pomodoro" image_title="Pomodoro" %}
+![Pomodoro](https://i.imgur.com/PGfVFnk.webp)
 
 **Stress vs. Relaxation:** Respecting the physiological dimension of time management, by finding a good time at which you can maintain focus and concentration, you can work more efficiently and productively. The time of 25 minutes is a good time for most people, but you can test other times and see which works best for you.
 
@@ -127,17 +127,17 @@ Besides these 4 principles, there are two theories that explain why Pomodoro wor
 
 **Parkinson's Law:** "Work expands to fill the time available for its completion." By setting a time to perform a task, your brain unconsciously strives to complete the task within the stipulated time. How many tasks in your life do you know you can do in minutes but don't do because there is no deadline for them? Now think about how many tasks that seemed very complex and that you thought would take hours to complete, but that you were able to complete before the stipulated time simply because you had a deadline for them.
 
-{% include lazyload.html image_src="https://i.imgur.com/v9cTGVv.webp" image_alt="Parkinson's Law" image_title="Parkinson's Law" %}
+![Parkinson's Law](https://i.imgur.com/v9cTGVv.webp)
 
 **Pareto Principle:** "80% of your results only depend on 20% of your effort." To understand this principle applied to Pomodoro, let's suppose we have a test to be taken on day x (deadline), you know you have 5 days to study for this test, you know that studying a little of the test content every day until the day of the test (20% of the content per day for 5 days) is much more efficient than studying all the content of the test the day before the test. This happens because your brain will be working on the problem during the 5 days, even if you are not studying, and when you go to take action, you will be more prepared to solve the problem. Now in the Pomodoro perspective, this applies with the 25min batches of Pomodoros, by dividing the task you exert less effort and obtain more results.
 
-{% include lazyload.html image_src="https://i.imgur.com/9tUAcAz.webp" image_alt="Pareto Principle" image_title="Pareto Principle" %}
+![Pareto Principle](https://i.imgur.com/9tUAcAz.webp)
 
 ### Eisenhower Matrix
 
 When everything is chaos and you don't know where to start, the Eisenhower Matrix can help you prioritize tasks and organize your day. The idea is to divide tasks into 4 quadrants, according to the importance and urgency of each task.
 
-{% include lazyload.html image_src="https://i.imgur.com/1dLZK6G.webp" image_alt="Eisenhower Matrix" image_title="Eisenhower Matrix" %}
+![Eisenhower Matrix](https://i.imgur.com/1dLZK6G.webp)
 
 - **Important and Urgent:** Tasks that need to be performed immediately.
 - **Important and Not Urgent:** Tasks that need to be performed, but do not need to be performed immediately.

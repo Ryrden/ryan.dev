@@ -1,7 +1,6 @@
 ---
 layout: post-en
 title: Mastering Programming - The Three Essential Virtues for Programmers
-published: true
 description: Discover how the unusual virtues - Laziness, Impatience and Arrogance - can be the key to excellence in programming. This article explores how these characteristics, far from being flaws, are fundamental to innovation, efficiency and confidence in software development
 cover_image: https://i.imgur.com/n53IPTD.webp
 canonical_url: https://ryan.dev.br/2023-10-11-three-virtues-of-a-great-programmer-en
@@ -17,6 +16,7 @@ author: Ryan Souza
 comments: true
 lang: en
 locale: en_US
+published: true
 ---
 
 - [Are You a Good Programmer?](#are-you-a-good-programmer)
@@ -33,7 +33,7 @@ To answer these questions and delve deeper into the definition of a successful p
 
 ## 1. Laziness
 
-{% include lazyload.html image_src="https://i.imgur.com/VtF0cpk.webp" image_alt="lazy programmer" image_title="lazy programmer" %}
+![lazy programmer](https://i.imgur.com/VtF0cpk.webp)
 
 Larry Wall describes laziness as:
 
@@ -45,7 +45,7 @@ For example, a developer who writes a script to automate the deployment of softw
 
 ## 2. Impatience
 
-{% include lazyload.html image_src="https://i.imgur.com/j3koCJ8.webp" image_alt="impatient programmer" image_title="impatient programmer" %}
+![impatient programmer](https://i.imgur.com/j3koCJ8.webp)
 
 Wall describes impatience as:
 
@@ -57,7 +57,7 @@ For example, a programmer may develop an automated testing system that not only 
 
 ## 3. Arrogance
 
-{% include lazyload.html image_src="https://i.imgur.com/B3xzH5z.webp" image_alt="arrogant programmer" image_title="arrogant programmer" %}
+![arrogant programmer](https://i.imgur.com/B3xzH5z.webp)
 
 Wall defines arrogance as:
 
