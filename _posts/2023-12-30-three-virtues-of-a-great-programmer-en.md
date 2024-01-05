@@ -11,7 +11,7 @@ tags:
   - productivity
   - programming
 author: Ryan Souza
-devto_url: null
+devto_url: https://dev.to/ryrden/mastering-programming-the-three-essential-virtues-for-programmers-4812
 tabnews_url: null
 comments: true
 lang: en

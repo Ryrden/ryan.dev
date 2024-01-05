@@ -11,7 +11,7 @@ tags:
   - produtividade
   - programação
 author: Ryan Souza
-devto_url: null
+devto_url: https://dev.to/ryrden/dominando-a-programacao-as-tres-virtudes-essenciais-para-programadores-5gf7
 tabnews_url: null
 comments: true
 lang: pt-br
