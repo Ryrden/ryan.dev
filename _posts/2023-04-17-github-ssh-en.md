@@ -19,13 +19,13 @@ id: 1718348
 date: '2024-01-05T15:41:34Z'
 ---
 
-- [What is an SSH Key?](#what-is-an-ssh-key)
-- [Generating an SSH Key](#generating-an-ssh-key)
+- [What is a SSH Key?](#what-is-a-ssh-key)
+- [Generating a SSH Key](#generating-a-ssh-key)
   - [Linux](#linux)
   - [Windows](#windows)
 - [Conclusão](#conclusão)
 
-## What is an SSH Key?
+## What is a SSH Key?
 
 An SSH key is a pair of keys used to authenticate a user on a server. The public key is used to encrypt data, and the private key is used to decrypt it. The public key is shared with the server, while the private key is kept secret by the user.
 
@@ -33,7 +33,7 @@ There are various encryption algorithms to generate SSH keys, but in this tutori
 
 To learn more about this topic, I recommend this article from Teleport: [Article](https://goteleport.com/blog/comparing-ssh-keys/) (in English)
 
-## Generating an SSH Key
+## Generating a SSH Key
 
 From now on, I will divide this tutorial into two parts, one for Linux and another for Windows.
 
