@@ -1,7 +1,7 @@
 ---
 layout: post-en
 title: Time Management and Productivity for Developers
-description: This article provides an in-depth look at time management in the context of software development. It addresses the importance of mental, physiological and technical dimensions in productivity and presents techniques such as Weekly Planning, Pomodoro and Eisenhower Matrix. The focus is to provide practical methods for developers to improve time management and quality of work on technology projects.
+description: 'This article provides an in-depth look at time management in the context of software development. It addresses the importance of mental, physiological and technical dimensions in productivity and presents techniques such as Weekly Planning, Pomodoro and Eisenhower Matrix. The focus is to provide practical methods for developers to improve time management and quality of work on technology projects.'
 cover_image: 'https://i.imgur.com/oCZcIby.webp'
 canonical_url: 'https://ryan.dev.br/2023-08-19-time-management-for-devs-en'
 image_alt: 'Woman with notebook on top of a giant calendar, in the background a stopwatch and next to the calendar there is a plant'
@@ -15,6 +15,8 @@ comments: true
 lang: en
 locale: en_US
 published: true
+id: 1718444
+date: '2024-01-05T16:57:19Z'
 ---
 
 - [Why is time management important?](#why-is-time-management-important)
