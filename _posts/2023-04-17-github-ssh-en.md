@@ -2,7 +2,7 @@
 layout: post-en
 title: SSH key on github - Windows and Linux
 published: true
-description: Step-by-step guide on how to generate and add an SSH key to GitHub for secure authentication to repositories. The article covers creating SSH keys using the ED25519 algorithm, offering detailed instructions for Linux and Windows users. Learn how to configure the SSH key on GitHub to facilitate operations such as push and pull without the need for repeated authentication.
+description: 'Step-by-step guide on how to generate and add an SSH key to GitHub for secure authentication to repositories. The article covers creating SSH keys using the ED25519 algorithm, offering detailed instructions for Linux and Windows users. Learn how to configure the SSH key on GitHub to facilitate operations such as push and pull without the need for repeated authentication.'
 cover_image: 'https://i.imgur.com/9GC9TvD.webp'
 canonical_url: 'https://ryan.dev.br/2023-04-17-github-ssh-en'
 image_alt: 'A statue of an oktokat (github mascot) in the center, in the background a laptop with the main page of GitHub open.'
@@ -15,6 +15,8 @@ author: Ryan Souza
 locale: en_US
 lang: en
 comments: true
+id: 1718348
+date: '2024-01-05T15:41:34Z'
 ---
 
 - [What is an SSH Key?](#what-is-an-ssh-key)
