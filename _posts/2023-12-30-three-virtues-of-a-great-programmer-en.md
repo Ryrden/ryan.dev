@@ -1,10 +1,10 @@
 ---
 layout: post-en
 title: Mastering Programming - The Three Essential Virtues for Programmers
-description: Discover how the unusual virtues - Laziness, Impatience and Arrogance - can be the key to excellence in programming. This article explores how these characteristics, far from being flaws, are fundamental to innovation, efficiency and confidence in software development
-cover_image: https://i.imgur.com/n53IPTD.webp
-canonical_url: https://ryan.dev.br/2023-10-11-three-virtues-of-a-great-programmer-en
-image_alt: Three programmers representing the three virtues, laziness, impatience and arrogance.
+description: 'Discover how the unusual virtues - Laziness, Impatience and Arrogance - can be the key to excellence in programming. This article explores how these characteristics, far from being flaws, are fundamental to innovation, efficiency and confidence in software development'
+cover_image: 'https://i.imgur.com/n53IPTD.webp'
+canonical_url: 'https://ryan.dev.br/2023-10-11-three-virtues-of-a-great-programmer-en'
+image_alt: 'Three programmers representing the three virtues, laziness, impatience and arrogance.'
 tags:
   - career
   - development
@@ -17,6 +17,8 @@ comments: true
 lang: en
 locale: en_US
 published: true
+id: 1718441
+date: '2024-01-05T16:52:28Z'
 ---
 
 - [Are You a Good Programmer?](#are-you-a-good-programmer)
