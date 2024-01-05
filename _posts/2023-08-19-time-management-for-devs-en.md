@@ -11,7 +11,7 @@ tags:
   - productivity
   - time
 author: Ryan Souza
-devto_url: https://dev.to/ryrden/time-management-and-productivity-for-developers-3hp0
+devto_url: 'https://dev.to/ryrden/time-management-and-productivity-for-developers-3hp0'
 tabnews_url: null
 comments: true
 lang: en
