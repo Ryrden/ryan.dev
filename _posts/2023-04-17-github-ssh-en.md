@@ -59,8 +59,6 @@ cat id_ed25519.pub
 
 and copy the key that appears on the screen.
 
-<<<<<<< HEAD
->>>>>>> 3e2b0f3 (post: all post were translated to english and new post!!)
 Now you need to go to the GitHub settings page and add the key you just copied.
 
 here a shortcut for you to go directly to the GitHub SSH keys settings page: [SSH Keys Settings Page](https://github.com/settings/keys)
@@ -123,7 +121,7 @@ ssh git@github.com
 
 if everything goes well, you will see a success message, and you can clone any repository you have access to; in my case, I cloned my own repository.
 
-![Testing ssh key - linux"](https://i.imgur.com/OQaJNyj.webp) image_title="Testing ssh key - linux" %}
+![Testing ssh key - linux"](https://i.imgur.com/OQaJNyj.webp)
 
 ## Conclusão
 
