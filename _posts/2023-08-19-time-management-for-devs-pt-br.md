@@ -11,8 +11,8 @@ tags:
   - productivity
   - time
 author: Ryan Souza
-devto_url: https://dev.to/ryrden/gestao-de-tempo-e-produtividade-para-devs-2h85
-tabnews_url: https://www.tabnews.com.br/ryrden/gestao-de-tempo-e-produtividade-para-devs
+devto_url: 'https://dev.to/ryrden/gestao-de-tempo-e-produtividade-para-devs-2h85'
+tabnews_url: 'https://www.tabnews.com.br/ryrden/gestao-de-tempo-e-produtividade-para-devs'
 comments: true
 lang: pt-br
 locale: pt_BR

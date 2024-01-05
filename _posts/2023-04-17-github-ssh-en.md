@@ -11,7 +11,7 @@ tags:
   - linux
   - windows
 author: Ryan Souza
-devto_url: https://dev.to/ryrden/ssh-key-on-github-windows-and-linux-877
+devto_url: 'https://dev.to/ryrden/ssh-key-on-github-windows-and-linux-877'
 tabnews_url: null
 locale: en_US
 lang: en

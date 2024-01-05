@@ -11,7 +11,7 @@ tags:
   - linux
   - windows
 author: Ryan Souza
-devto_url: https://dev.to/ryrden/chave-ssh-no-github-windows-e-linux-3gj6
+devto_url: 'https://dev.to/ryrden/chave-ssh-no-github-windows-e-linux-3gj6'
 tabnews_url: null
 comments: true
 lang: pt-br
