@@ -1,14 +1,10 @@
 ---
 layout: post-pt-br
-comments: true
 title: Chave SSH no github - Windows e Linux
-lang: pt-br
-locale: pt_BR
 published: true
 description: Guia passo a passo sobre como gerar e adicionar uma chave SSH ao GitHub para autenticação segura em repositórios. O artigo aborda a criação de chaves SSH usando o algoritmo ED25519, oferecendo instruções detalhadas para usuários Linux e Windows. Aprenda a configurar a chave SSH no GitHub para facilitar operações como push e pull sem a necessidade de autenticação repetida.
 cover_image: 'https://i.imgur.com/9GC9TvD.webp'
 canonical_url: 'https://ryan.dev.br/2023-04-17-github-ssh-pt-br'
-devto_url: 'https://dev.to/ryrden/chave-ssh-no-github-windows-e-linux-3gj6'
 image_alt: 'Uma estatueta de um oktokat (Mascote do github) ao centro, ao fundo um laptop com a página principal do GitHub aberta.'
 tags:
   - github
@@ -16,6 +12,10 @@ tags:
   - linux
   - windows
 author: Ryan Souza
+devto_url: 'https://dev.to/ryrden/chave-ssh-no-github-windows-e-linux-3gj6'
+comments: true
+lang: pt-br
+locale: pt_BR
 id: 1572979
 date: '2023-08-18T23:44:11Z'
 ---

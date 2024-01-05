@@ -1,15 +1,10 @@
 ---
 layout: post-pt-br
-comments: true
 title: Gestão de tempo e produtividade para Devs
-lang: pt-br
-locale: pt_BR
 published: true
 description: Este artigo oferece uma visão detalhada sobre gerenciamento de tempo no contexto do desenvolvimento de software. Aborda a importância das dimensões mental, fisiológica e técnica na produtividade e apresenta técnicas como Planejamento Semanal, Pomodoro e Matriz de Eisenhower. O foco é fornecer métodos práticos para desenvolvedores aprimorarem a gestão do tempo e a qualidade do trabalho em projetos de tecnologia.
 cover_image: 'https://i.imgur.com/oCZcIby.webp'
 canonical_url: 'https://ryan.dev.br/2023-08-19-time-management-for-devs-pt-br'
-devto_url: 'https://dev.to/ryrden/gestao-de-tempo-e-produtividade-para-devs-2h85'
-tabnews_url: 'https://www.tabnews.com.br/ryrden/gestao-de-tempo-e-produtividade-para-devs'
 image_alt: 'Mulher com notebook em cima de um calendário gigante, ao fundo um cronoômetro e ao lado do calendário há uma planta'
 tags:
   - carreira
@@ -17,6 +12,11 @@ tags:
   - productivity
   - time
 author: Ryan Souza
+devto_url: 'https://dev.to/ryrden/gestao-de-tempo-e-produtividade-para-devs-2h85'
+tabnews_url: 'https://www.tabnews.com.br/ryrden/gestao-de-tempo-e-produtividade-para-devs'
+comments: true
+lang: pt-br
+locale: pt_BR
 id: 1573429
 date: '2023-08-19T17:00:57Z'
 ---

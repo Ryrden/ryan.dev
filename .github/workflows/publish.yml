@@ -10,15 +10,16 @@ jobs:
     if: "contains(github.event.head_commit.message, 'post:')"
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 12
+
       - name: Publish articles on dev.to
         uses: sinedied/publish-devto@v2
         with:
-          files: '_posts/**/*.md'
           devto_key: ${{ secrets.DEVTO_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          files: '_posts/**/*.md'
           branch: main
           conventional_commits: true
-          dry_run: false
