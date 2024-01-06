@@ -25,7 +25,7 @@ date: '2024-01-05T15:41:34Z'
 - [Generating a SSH Key](#generating-a-ssh-key)
   - [Linux](#linux)
   - [Windows](#windows)
-- [Conclusão](#conclusão)
+- [Conclusion](#conclusion)
 
 ## What is a SSH Key?
 
@@ -88,7 +88,7 @@ The same process as Linux except that here I used PowerShell to create the SSH k
 First, you need to open PowerShell and type the following command:
 
 ```powershell
-ssh-keygen -t ed25519 -C <seu-email>
+ssh-keygen -t ed25519 -C <your-email>
 ```
 
 replace `<your-email>` with your GitHub email.
@@ -125,6 +125,6 @@ if everything goes well, you will see a success message, and you can clone any r
 
 ![Testing ssh key - linux"](https://i.imgur.com/OQaJNyj.webp)
 
-## Conclusão
+## Conclusion
 
 I hope this tutorial has helped you set up your SSH key on github. If you have any questions or suggestions, leave a comment below or contact me through [LinkedIn](https://www.linkedin.com/in/ryan25/) or the [contact](https://ryan.dev.br/contact/) tab on my website.
