@@ -7,33 +7,25 @@
 		"source_code": "https://github.com/ryrden/ryrden.dev"
 	},
 	{
-		"title": "Formula 1 - SCC0541 - Laboratório de Banco de Dados",
-		"description": "Sistema completo com consultas e queries para um banco de dados real da Formula 1, incluindo dados de corridas, pilotos, equipes, etc.",
-		"technologies": ["python", "flask", "postgresql", "docker"],
-		"image": "https://camo.githubusercontent.com/a72c76f0e46f80c4412149b0c4709ba9fc9df2d38579da3e7a15638119326fae/68747470733a2f2f692e696d6775722e636f6d2f67316f334937762e706e67",
-		"source_code": "https://github.com/Ryrden/SCC0541-Formula1/tree/main"
-	},
-	{
-		"title": "Projeto Exemplo 1",
+		"title": "Adoção Cãosciente - [SSC0536 - Projeto e Desenvolvimento de Sistemas de Informação]",
 		"description": "Descrição do projeto exemplo 1",
-		"technologies": ["go", "java"],
-		"image": "https://source.unsplash.com/featured/1280x720",
-		"source_code": ""
+		"technologies": ["python", "fastapi", "mongodb", "docker", "react", "typescript", "cypressio", "jira"],
+		"image": "https://camo.githubusercontent.com/535c154091b43efb55d4fbd1a686783f7067adcfccff968d8034cb3fb84496a7/68747470733a2f2f692e696d6775722e636f6d2f33436d474b76412e706e67",
+		"source_code": "https://github.com/orgs/Projeto-Adocao-Caosciente/repositories"
 	},
 	{
-		"title": "Projeto Exemplo 2",
-		"description": "Descrição do projeto exemplo 2",
-		"technologies": ["go", "java"],
-		"image": "https://source.unsplash.com/featured/1280x720",
-		"source_code": ""
+		"title": "Formula 1 - [SCC0541 - Laboratório de Banco de Dados]",
+		"description": "Sistema completo com consultas e queries para um banco de dados real da Formula 1, incluindo dados de corridas, pilotos, equipes, etc.",
+		"technologies": ["python", "flask", "postgresql", "docker", "html5", "css3"],
+		"image": "https://camo.githubusercontent.com/a72c76f0e46f80c4412149b0c4709ba9fc9df2d38579da3e7a15638119326fae/68747470733a2f2f692e696d6775722e636f6d2f67316f334937762e706e67",
+		"source_code": "https://github.com/Ryrden/SCC0541-Formula1"
 	},
 	{
-		"title": "Projeto Exemplo 3",
+		"title": "Caaso Eletroniks - [SCC0560 - Interação Humano Computador e Experiência do Usuário]",
 		"description": "Descrição do projeto exemplo 3",
-		"technologies": ["go", "java"],
-		"image": "https://source.unsplash.com/featured/1280x720",
-		"source_code": ""
+		"technologies": ["react", "typescript", "figma", "materialui"],
+		"image": "https://camo.githubusercontent.com/9c92e6d81b4c4baad6432b8c2b4bea9e48b86d815e6aafb5706c9b563b4e7bd2/68747470733a2f2f692e696d6775722e636f6d2f47694f796853522e706e67",
+		"source_code": "https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks"
 	}
-	
 ]
 
