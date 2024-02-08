@@ -1,0 +1,42 @@
+
+#projects {
+    width: 100%;
+    gap: 2em;
+
+    .project {
+        display: flex;
+        border: 1px solid blue;
+        margin-bottom: 2em; /* Adjust as per design */
+        width: 100%;
+        
+        img {
+            align-self: center;
+            object-fit: contain;
+            max-width: 27em;
+            aspect-ratio: 16/9;
+        }
+    }
+
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .project-about {
+            display: flex;
+
+            .project-languages {
+                display: flex;
+                align-items: flex-start;
+                .project-languages-title {
+                    font-weight: bold;
+                }
+                .project-languages-content img {
+                    // height="30" width="42"
+                    height: 1.875em;
+                    width:  2.625em
+                }
+            }
+        }
+    }
+}

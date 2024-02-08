@@ -1,0 +1,39 @@
+[
+	{
+		"title": "Website - Você está aqui!",
+		"description": "Este é um dos meus projetos mais recentes. Eu decidi criar um site para que eu pudesse compartilhar meus conhecimentos e experiências com outras pessoas, além de ser um ótimo lugar para eu guardar meus projetos e links úteis.",
+		"technologies": ["html5", "css3", "javascript", "jekyll", "github"],
+		"image": "https://camo.githubusercontent.com/642d2c88a764e86b427a95c397a1ca3f807dc5c75a010976c62623d937a50ded/68747470733a2f2f692e696d6775722e636f6d2f3749785733666e2e77656270",
+		"source_code": "https://github.com/ryrden/ryrden.dev"
+	},
+	{
+		"title": "Formula 1 - SCC0541 - Laboratório de Banco de Dados",
+		"description": "Sistema completo com consultas e queries para um banco de dados real da Formula 1, incluindo dados de corridas, pilotos, equipes, etc.",
+		"technologies": ["python", "flask", "postgresql", "docker"],
+		"image": "https://camo.githubusercontent.com/a72c76f0e46f80c4412149b0c4709ba9fc9df2d38579da3e7a15638119326fae/68747470733a2f2f692e696d6775722e636f6d2f67316f334937762e706e67",
+		"source_code": "https://github.com/Ryrden/SCC0541-Formula1/tree/main"
+	},
+	{
+		"title": "Projeto Exemplo 1",
+		"description": "Descrição do projeto exemplo 1",
+		"technologies": ["go", "java"],
+		"image": "https://source.unsplash.com/featured/1280x720",
+		"source_code": ""
+	},
+	{
+		"title": "Projeto Exemplo 2",
+		"description": "Descrição do projeto exemplo 2",
+		"technologies": ["go", "java"],
+		"image": "https://source.unsplash.com/featured/1280x720",
+		"source_code": ""
+	},
+	{
+		"title": "Projeto Exemplo 3",
+		"description": "Descrição do projeto exemplo 3",
+		"technologies": ["go", "java"],
+		"image": "https://source.unsplash.com/featured/1280x720",
+		"source_code": ""
+	}
+	
+]
+
