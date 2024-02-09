@@ -16,33 +16,43 @@
             box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.35);
             transition: transform 0.2s ease-in-out;
         }
-    }
 
-    .project-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding-left: 1em;
-
-        .project-title {
-            margin: 0;
-        }
-
-        .project-about {
+        .project-content {
             display: flex;
-
-            .project-languages {
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-left: 1em;
+    
+            .project-title {
+                margin: 0;
+            }
+    
+            .project-about {
                 display: flex;
-                align-items: flex-start;
-                .project-languages-title {
-                    font-weight: bold;
-                }
-                .project-languages-content img {
-                    // height="30" width="42"
-                    height: 1.75em;
-                    width:  2.5em;
+    
+                .project-languages {
+                    display: flex;
+                    align-items: flex-start;
+                    .project-languages-title {
+                        font-weight: bold;
+                    }
+                    .project-languages-content img {
+                        // height="30" width="42"
+                        height: 1.75em;
+                        width:  2.5em;
+                    }
                 }
             }
+        }
+    }
+
+    
+    hr.solid {
+        border-top: 1px solid gray;
+        margin: 2em 0;
+
+        &:last-child {
+            display: none;
         }
     }
 }
@@ -61,3 +71,29 @@
     }
 }
 
+
+@media (max-width: 768px) {
+    #projects {
+        .project {
+            flex-direction: column;
+            gap: 1em;
+
+            .project-logo {
+                max-width: 100%;
+                aspect-ratio: 16/9;
+            }
+
+            .project-content {
+                padding-left: 0;
+            }
+
+            .project-about {
+                margin-bottom: 1em;
+                .project-languages {
+                    flex-direction: column;
+                    gap: 0.75em;
+                }
+            }
+        }
+    }
+}
