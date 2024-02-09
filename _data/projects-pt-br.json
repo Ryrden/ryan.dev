@@ -1,31 +1,47 @@
 [
 	{
-		"title": "Website - Você está aqui!",
-		"description": "Este é um dos meus projetos mais recentes. Eu decidi criar um site para que eu pudesse compartilhar meus conhecimentos e experiências com outras pessoas, além de ser um ótimo lugar para eu guardar meus projetos e links úteis.",
+		"title": "Website - [Você está aqui!]",
+		"description": "Eu decidi criar um site para que eu pudesse compartilhar meus conhecimentos e experiências com outras pessoas, além de ser um ótimo lugar para eu guardar meus projetos e ter um blog!",
 		"technologies": ["html5", "css3", "javascript", "jekyll", "github"],
 		"image": "https://camo.githubusercontent.com/642d2c88a764e86b427a95c397a1ca3f807dc5c75a010976c62623d937a50ded/68747470733a2f2f692e696d6775722e636f6d2f3749785733666e2e77656270",
-		"source_code": "https://github.com/ryrden/ryrden.dev"
+		"source_code": "https://github.com/ryrden/ryrden.dev",
+		"demonstration": "https://ryan.dev.br",
+		"created_at": "2021-08-01",
+		"updated_at": "2021-08-01",
+		"category": ["personal", "website"]
 	},
 	{
 		"title": "Adoção Cãosciente - [SSC0536 - Projeto e Desenvolvimento de Sistemas de Informação]",
-		"description": "Descrição do projeto exemplo 1",
-		"technologies": ["python", "fastapi", "mongodb", "docker", "react", "typescript", "cypressio", "jira"],
+		"description": "Plataforma para automação de processos de adoção de animais, incluindo cadastro de animais, usuários, formulários de adoções, etc.",
+		"technologies": ["python", "fastapi", "mongodb", "docker", "react", "typescript", "tailwindcss", "cypressio"],
 		"image": "https://camo.githubusercontent.com/535c154091b43efb55d4fbd1a686783f7067adcfccff968d8034cb3fb84496a7/68747470733a2f2f692e696d6775722e636f6d2f33436d474b76412e706e67",
-		"source_code": "https://github.com/orgs/Projeto-Adocao-Caosciente/repositories"
+		"source_code": "https://github.com/orgs/Projeto-Adocao-Caosciente/repositories",
+		"demonstration": "https://adocao-caosciente-frontend.vercel.app/login",
+		"created_at": "2021-08-01",
+		"updated_at": "2021-08-01",
+		"category": ["university", "website"]
 	},
 	{
 		"title": "Formula 1 - [SCC0541 - Laboratório de Banco de Dados]",
 		"description": "Sistema completo com consultas e queries para um banco de dados real da Formula 1, incluindo dados de corridas, pilotos, equipes, etc.",
 		"technologies": ["python", "flask", "postgresql", "docker", "html5", "css3"],
 		"image": "https://camo.githubusercontent.com/a72c76f0e46f80c4412149b0c4709ba9fc9df2d38579da3e7a15638119326fae/68747470733a2f2f692e696d6775722e636f6d2f67316f334937762e706e67",
-		"source_code": "https://github.com/Ryrden/SCC0541-Formula1"
+		"source_code": "https://github.com/Ryrden/SCC0541-Formula1",
+		"demonstration": "#",
+		"created_at": "2021-08-01",
+		"updated_at": "2021-08-01",
+		"category": ["university", "website"]
 	},
 	{
 		"title": "Caaso Eletroniks - [SCC0560 - Interação Humano Computador e Experiência do Usuário]",
-		"description": "Descrição do projeto exemplo 3",
+		"description": "Website para uma loja fictícia de eletrônicos com foco em usabilidade e experiência do usuário, incluindo prototipação e testes de usabilidade.",
 		"technologies": ["react", "typescript", "figma", "materialui"],
 		"image": "https://camo.githubusercontent.com/9c92e6d81b4c4baad6432b8c2b4bea9e48b86d815e6aafb5706c9b563b4e7bd2/68747470733a2f2f692e696d6775722e636f6d2f47694f796853522e706e67",
-		"source_code": "https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks"
+		"source_code": "https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks",
+		"demonstration": "https://ryrden.github.io/SCC-0560-Caaso-Eletroniks/",
+		"created_at": "2021-08-01",
+		"updated_at": "2021-08-01",
+		"category": ["university", "website"]
 	}
 ]
 
