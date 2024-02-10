@@ -8,7 +8,14 @@
 		"demonstration": "https://ryan.dev.br",
 		"created_at": "2021-08-01",
 		"updated_at": "2021-08-01",
-		"category": ["personal", "website"]
+		"category": ["personal", "website"],
+		"details": {
+			"problemSolved": "O problema que este projeto resolve é a necessidade de um lugar para compartilhar meus conhecimentos e experiências, além de mostrar meu perfil como desenvolvedor através de meus projetos e habilidades",
+			"howItWasDeveloped": "O desenvolvimento foi feito utilizando Jekyll, um gerador de sites estáticos, e hospedado no GitHub Pages. O site é responsivo e utiliza HTML5, CSS3 e JavaScript. O conteúdo é escrito em Markdown e o site é versionado no GitHub, além de utilizar GitHub Actions para automatizar o deploy do site no GitHub Pages, adquiri um domínio e configurei o DNS para apontar para o GitHub Pages.",
+			"technologyReason": "Hoje em dia o mais comum é utilizar frameworks como React, Vue ou Angular para criar websites, mas eu decidi utilizar Jekyll por ser um gerador de sites estáticos, o que significa que o site é mais rápido e seguro, além de ser mais barato para hospedar. Além disso, o Jekyll é muito fácil de usar e tem uma comunidade muito ativa.",
+			"learning": "Diversos aprendizados já foram adquiridos com este projeto, desde a configuração de um domínio e DNS, até a criação de um blog com Jekyll e a utilização de GitHub Actions para automatizar o deploy do site. Já tive diversos problemas e já aprendi muito com eles também, sempre buscando a melhor solução para cada problema.",
+			"nextSteps": "Há diversos próximos passos para este projeto, como permitir o usuário a trocar entre modo claro e noturno, entre diversas melhorias de usabilidade e acessibilidade, além de adicionar novos conteúdos e funcionalidades ao site."
+		}
 	},
 	{
 		"title": "Adoção Cãosciente - [SSC0536 - Projeto e Desenvolvimento de Sistemas de Informação]",
@@ -19,7 +26,14 @@
 		"demonstration": "https://adocao-caosciente-frontend.vercel.app/login",
 		"created_at": "2021-08-01",
 		"updated_at": "2021-08-01",
-		"category": ["university", "website"]
+		"category": ["university", "website"],
+		"details": {
+			"problemSolved": "Uma ONG pode receber muitos animais e muitos pedidos de adoção, e o processo de adoção pode ser muito burocrático e demorado, então a plataforma resolve o problema de automação de processos de adoção de animais",
+			"howItWasDeveloped": "O projeto foi desenvolvido durante uma disciplina final de Engenharia de Software da Universidade. O Frontend foi feito usando React e Typescript além de TailwindCSS usando a biblioteca NextUI, toda a estrutura de pastas segue o Clean Architecture. O Backend foi feito usando Python FastAPI e MongoDB, e foi dockerizado para facilitar o deploy. Além disso, foram feitos testes de integração e e2e com Cypress.io. Todas estas tecnologias e funcionalidades foram feitas por um time de 8 pessoas.",
+			"technologyReason": "Além do conhecimento em comum da equipe, a escolha das tecnologias foi feita pensando em escalabilidade e facilidade de manutenção, além de serem tecnologias modernas e com uma comunidade ativa",
+			"learning": "Meu papel neste projeto foi de Scrum Master e Desenvolvedor Backend, aprendi muito sobre liderança e gerenciamento de projetos, além de ter aprendido novas tecnologias e práticas de desenvolvimento de software.",
+			"nextSteps": "Por ter sido um projeto de disciplina, diversas features não foram 100% entregues, o próximo passo seria permitir controlar melhor os formulários de adoção dos animais. Pretendo continuar o desenvolvimento deste projeto de maneira open-source em algum momento, pois acredito que ele pode ser muito útil para ONGs de adoção de animais."
+		}
 	},
 	{
 		"title": "Formula 1 - [SCC0541 - Laboratório de Banco de Dados]",
@@ -27,10 +41,17 @@
 		"technologies": ["python", "flask", "postgresql", "docker", "html5", "css3"],
 		"image": "https://camo.githubusercontent.com/a72c76f0e46f80c4412149b0c4709ba9fc9df2d38579da3e7a15638119326fae/68747470733a2f2f692e696d6775722e636f6d2f67316f334937762e706e67",
 		"source_code": "https://github.com/Ryrden/SCC0541-Formula1",
-		"demonstration": "#",
+		"demonstration": null,
 		"created_at": "2021-08-01",
 		"updated_at": "2021-08-01",
-		"category": ["university", "website"]
+		"category": ["university", "website"],
+		"details": {
+			"problemSolved": "Existe uma grande quantidade de dados sobre a Formula 1, e seria muito díficil de analisar e entender estes dados sem um sistema que facilite a visualização e manipulação destes dados. Diante disso, o sistema resolve o problema de visualização e manipulação de dados da Formula 1.",
+			"howItWasDeveloped": "O Desenvolvimento foi feito durante uma disciplina de Laboratório de Banco de Dados da Universidade. O Backend foi feito usando Python Flask e PostgreSQL, Docker foi utilizados para simular o banco de dados PostgreSQL. O Frontend foi feito usando HTML5 e CSS3 com Jinja2 que é o padrão utilizados pelo Flask, todo o projeto foi feito de maneira bem simples, pois o foco do projeto era o banco de dados e as queries.",
+			"technologyReason": "A escolha das tecnologias foi feita pensando em simplicidade e facilidade de uso, Python é altamente utilizado para manipulação de dados e Flask é um framework web muito simples e fácil de usar, além de ser muito rápido para prototipar e testar ideias. PostgreSQL foi o banco de dados utilizado na maior parte da disciplina, e Docker foi utilizado para facilitar a simulação do banco de dados. Por fim, o motivo de não criar um frontend a parte com algum framework SPA foi justamente para focar no banco de dados e nas queries, e não no frontend em si.",
+			"learning": "Diversos aprendizados de Banco de dados foram adquiridos com este projeto, desde a modelagem do banco de dados até a criação de queries complexas. Alguns dos principais conceitos de Banco de dados utilizados para a criação do projeto foram Windows Functions, PGSQL, Views, Triggers, Indíces, Stored Procedures e Functions.",
+			"nextSteps": "O projeto todo foi feito em aproximadamente 1 semana e meia (prazo da disciplina), então diversas decisões foram tomadas para simplificar o projeto, como o exemplo ja dito de não criar um frontend a parte. Outro ponto esta no código backend, que poderia ser melhorado e modularizado seguindo boas práticas e padrões de projeto. Além disso, o projeto pode ser melhorado drasticamente com a adição de um frontend mais completo e interativo para visualização e manipulação dos dados."
+		}
 	},
 	{
 		"title": "Caaso Eletroniks - [SCC0560 - Interação Humano Computador e Experiência do Usuário]",
@@ -39,9 +60,17 @@
 		"image": "https://camo.githubusercontent.com/9c92e6d81b4c4baad6432b8c2b4bea9e48b86d815e6aafb5706c9b563b4e7bd2/68747470733a2f2f692e696d6775722e636f6d2f47694f796853522e706e67",
 		"source_code": "https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks",
 		"demonstration": "https://ryrden.github.io/SCC-0560-Caaso-Eletroniks/",
+		"figma": "https://www.figma.com/file/AfCh9CNbgu0OakBySHdMjq/Telas-Caaso-Eletroniks?type=design&node-id=0%3A1&mode=design&t=Q1Qnx7jZ4giqqMJ8-1",
 		"created_at": "2021-08-01",
 		"updated_at": "2021-08-01",
-		"category": ["university", "website"]
+		"category": ["university", "website"],
+		"details": {
+			"problemSolved": "Esse projeto não resolve um problema de fato, mas sim um desafio proposto pela disciplina de Interação Humano Computador e Experiência do Usuário, que era criar um website com tema de e-commerce com foco em usabilidade e experiência do usuário, incluindo prototipação e testes de usabilidade.",
+			"howItWasDeveloped": "O projeto passou por diversas etapas do Design Thinking, desde a pesquisa de mercado e personas, houve prototipagem nos 3 níveis (baixa, média e alta fidelidade), e por fim, o desenvolvimento do website. O Frontend foi feito usando React e Typescript, e o MaterialUI. O projeto foi hospedado no GitHub Pages gratuitamente.",
+			"technologyReason": "React era a tecnologia do momento na época, e o MaterialUI foi a biblioteca escolhida devido ao grande número de pesquisas e testes de usabilidade que mostraram que o Material Design é muito eficiente para usabilidade e experiência do usuário, além de ser bonito e moderno. Typescript foi escolhido para garantir a qualidade do código e facilitar a futura manutenção do projeto.",
+			"learning": "Neste projeto eu fiz um dos meus primeiros deployments de um website usando GitHub Pages, e aprendi muito responsividade de um website e sobre usabilidade e experiência do usuário graças a disciplina e o quão importante é a acessibilidade em sistemas de software.",
+			"nextSteps": "Os próximos passos para este projeto seria criar um backend para simular um e-commerce real, e adicionar mais funcionalidades e interatividade ao website, pois dado o foco do projeto, foi feito apenas o caminho feliz de compra, e não foi mapeado caminhos de erro ou de interação do usuário com o sistema. Além disso, o projeto pode ser melhorado com a adição de testes de usabilidade e acessibilidade, e com a adição de mais funcionalidades e interatividade ao website."
+		}
 	}
 ]
 

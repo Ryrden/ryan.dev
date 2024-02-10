@@ -13,18 +13,36 @@ permalink: /projects/
 		<img class="project-logo" src="{{ project.image }}" alt="{{ project.title }}">
 		<div class="project-content">
 			<div>
-				<h2 class="project-title">
+				<h3 class="project-title">
 					{{ project.title }}
-				</h2>
+				</h3>
 				<p>
 					{{ project.description }}
 				</p>
 			</div>
 			<div class="project-about">
-				<!-- <span>
-                    <a href="{{ project.source_code }}">Código Fonte</a><br>
-                    <a href="{{ project.url }}">Aplicação</a>
-                </span> -->
+				<div class="project-links">
+					<div class="project-links-title">
+						Links do projeto:
+					</div>
+					<div class="project-links-content">
+						<a href="{{ project.source_code }}" target="_blank" rel="noopener noreferrer">
+							Código Fonte
+						</a>
+						{% if project.demonstration %}
+						<span class="vr">&#183;</span>
+						<a href="{{ project.demonstration }}" target="_blank" rel="noopener noreferrer">
+							Demonstração
+						</a>
+						{% endif %}
+						{% if project.figma %}
+						<span class="vr">&#183;</span>
+						<a href="{{ project.figma }}" target="_blank" rel="noopener noreferrer">
+							Figma
+						</a>
+						{% endif %}
+					</div>
+				</div>
 				<div class="project-languages">
 					<div class="project-languages-title">
 						Tecnologias utilizadas:
@@ -32,7 +50,7 @@ permalink: /projects/
 					<div class="project-languages-content">
 						{% for technology in project.technologies %}
 						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ technology }}/{{ technology }}-original.svg"
-								alt="{{ technology }} logo">
+								alt="{{ technology }}">
 						{% endfor %}
 					</div>
 				</div>
@@ -48,14 +66,17 @@ permalink: /projects/
 <dialog class="modal" id="modal-{{ project.title }}">
 	<div class="modal-content">
 		<span class="modal-close" onclick="document.getElementById('modal-{{ project.title }}').close()">&times;</span>
-		<h2>
-			{{ project.title }}
-		</h2>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-			distinctio quibusdam molestias. Vitae fugit quia omnis veritatis fuga
-			illum a quibusdam dolorem ex eligendi minus enim itaque, odit ad
-			consectetur.
-		</p>
+		<h3>{{ project.title }}</h3>
+        <h4>Qual problema este projeto resolve?</h4>
+		<p>{{ project.details.problemSolved }}</p>
+		<h4>Como este projeto foi desenvolvido?</h4>
+		<p>{{ project.details.howItWasDeveloped }}</p>
+		<h4>Por que escolhi estas tecnologias?</h4>
+		<p>{{ project.details.technologyReason }}</p>
+		<h4>Aprendizado adquirido</h4>
+		<p>{{ project.details.learning }}</p>
+		<h4>Próximos passos</h4>
+		<p>{{ project.details.nextSteps }}</p>
+    </div>
 </dialog>
 {% endfor %}
