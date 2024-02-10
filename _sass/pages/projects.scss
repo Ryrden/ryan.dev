@@ -29,10 +29,36 @@
     
             .project-about {
                 display: flex;
+                flex-direction: column;
+                margin-bottom: 1em;
+
+                .project-links {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5em;
+                    .project-links-title {
+                        font-weight: bold;
+                    }
+                    .project-links-content {
+                        display: flex;
+
+                        .vr {
+                            margin: 0 1em;
+                        }
+
+                        a {
+                            transition: color 0.2s ease-in-out;
+                            &:hover {
+                                color: #007bff;
+                            }
+                        }
+                    }
+                }
     
                 .project-languages {
                     display: flex;
-                    align-items: flex-start;
+                    flex-wrap: wrap;
+
                     .project-languages-title {
                         font-weight: bold;
                     }
@@ -57,20 +83,24 @@
     }
 }
 
-.modal-close {
-    color: #aaa;
-    float: right;
-    font-size: 2em;
-    font-weight: bold;
+.modal{
+    padding: 1em;
+    height: fit-content;
+    width: 75%;
+    .modal-close {
+        color: #aaa;
+        float: right;
+        font-size: 2em;
+        font-weight: bold;
 
-    &:hover,
-    &:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
+        &:hover,
+        &:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
     }
 }
-
 
 @media (max-width: 768px) {
     #projects {
