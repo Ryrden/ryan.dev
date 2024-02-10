@@ -7,3 +7,8 @@ vendor
 
 # Compiled Sass
 *.css*
+
+
+.vscode
+
+*.py

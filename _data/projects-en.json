@@ -1,0 +1,76 @@
+[
+	{
+		"title": "Website - [You are here!]",
+		"description": "I decided to create a website so that I could share my knowledge and experience with other people, as well as being a great place to store my projects and have a blog!",
+		"technologies": ["html5", "css3", "javascript", "jekyll", "markdown", "github", "githubactions"],
+		"image": "https://camo.githubusercontent.com/642d2c88a764e86b427a95c397a1ca3f807dc5c75a010976c62623d937a50ded/68747470733a2f2f692e696d6775722e636f6d2f3749785733666e2e77656270",
+		"source_code": "https://github.com/ryrden/ryrden.dev",
+		"demonstration": "https://ryan.dev.br",
+		"created_at": "2021-08-01",
+		"updated_at": "2021-08-01",
+		"category": ["personal", "website"],
+		"details": {
+			"problemSolved": "The problem that this project solves is the need for a place to share my knowledge and experience, as well as showing my profile as a developer through my projects and skills.",
+			"howItWasDeveloped": "The development was done using Jekyll, a static site generator, and hosted on GitHub Pages. The site is responsive and uses HTML5, CSS3 and JavaScript. The content is written in Markdown and the site is versioned on GitHub, in addition to using GitHub Actions to automate the deployment of the site on GitHub Pages, I purchased a domain and configured the DNS to point to GitHub Pages.",
+			"technologyReason": "Nowadays it's more common to use frameworks like React, Vue or Angular to create websites, but I decided to use Jekyll because it's a static site generator, which means the site is faster and more secure, as well as being cheaper to host. In addition, Jekyll is very easy to use and has a very active community.",
+			"learning": "Several lessons have already been learned with this project, from setting up a domain and DNS, to creating a blog with Jekyll and using GitHub Actions to automate the deployment of the site. I've had a lot of problems and I've learned a lot from them too, always looking for the best solution for each problem.",
+			"nextSteps": "There are several next steps for this project, such as allowing the user to switch between light and night mode, among several usability and accessibility improvements, as well as adding new content and features to the site."
+		}
+	},
+	{
+		"title": "Adoção Cãosciente - [SSC0536 - Design and Development of Information Systems]",
+		"description": "Platform for automating animal adoption processes, including registering animals, users, adoption forms, etc.",
+		"technologies": ["python", "fastapi", "mongodb", "docker", "react", "typescript", "tailwindcss", "cypressio"],
+		"image": "https://camo.githubusercontent.com/535c154091b43efb55d4fbd1a686783f7067adcfccff968d8034cb3fb84496a7/68747470733a2f2f692e696d6775722e636f6d2f33436d474b76412e706e67",
+		"source_code": "https://github.com/orgs/Projeto-Adocao-Caosciente/repositories",
+		"demonstration": "https://adocao-caosciente-frontend.vercel.app/login",
+		"created_at": "2021-08-01",
+		"updated_at": "2021-08-01",
+		"category": ["university", "website"],
+		"details": {
+			"problemSolved": "An NGO can receive many animals and many adoption requests, and the adoption process can be very bureaucratic and time-consuming, so the platform solves the problem of automating animal adoption processes.",
+			"howItWasDeveloped": "The project was developed during a final course in Software Engineering at the University. The Frontend was built using React and Typescript as well as TailwindCSS using the NextUI library, the entire folder structure follows Clean Architecture. The Backend was built using Python FastAPI and MongoDB, and was dockerized to facilitate deployment. In addition, integration and e2e tests were carried out with Cypress.io. All these technologies and functionalities were done by a team of 8 people.",
+			"technologyReason": "In addition to the team's common knowledge, the choice of technologies was made with scalability and ease of maintenance in mind, as well as being modern technologies with an active community.",
+			"learning": "My role in this project was as Scrum Master and Backend Developer, I learned a lot about leadership and project management, as well as learning new technologies and software development practices.",
+			"nextSteps": "My role in this project was as Scrum Master and Backend Developer, I learned a lot about leadership and project management, as well as learning new technologies and software development practices."
+		}
+	},
+	{
+		"title": "Formula 1 - [SCC0541 - Databases Laboratory]",
+		"description": "Complete system with queries and queries for a real Formula 1 database, including data on races, drivers, teams, etc.",
+		"technologies": ["python", "flask", "postgresql", "docker", "html5", "css3"],
+		"image": "https://camo.githubusercontent.com/a72c76f0e46f80c4412149b0c4709ba9fc9df2d38579da3e7a15638119326fae/68747470733a2f2f692e696d6775722e636f6d2f67316f334937762e706e67",
+		"source_code": "https://github.com/Ryrden/SCC0541-Formula1",
+		"demonstration": null,
+		"created_at": "2021-08-01",
+		"updated_at": "2021-08-01",
+		"category": ["university", "website"],
+		"details": {
+			"problemSolved": "There is a huge amount of data about Formula 1, and it would be very difficult to analyze and understand this data without a system that facilitates the visualization and manipulation of this data. The system solves the problem of visualizing and manipulating Formula 1 data.",
+			"howItWasDeveloped": "The development was done during a Database Laboratory course at the University. The Backend was built using Python Flask and PostgreSQL, Docker was used to simulate the PostgreSQL database. The Frontend was done using HTML5 and CSS3 with Jinja2, which is the standard used by Flask. The whole project was done in a very simple way, because the focus of the project was the database and the queries.",
+			"technologyReason": "The choice of technologies was made with simplicity and ease of use in mind, Python is highly used for data manipulation and Flask is a very simple and easy to use web framework, as well as being very quick to prototype and test ideas. PostgreSQL was the database used for most of the course, and Docker was used to facilitate database simulation. Finally, the reason for not creating a separate frontend with some SPA framework was precisely to focus on the database and the queries, and not on the frontend itself.",
+			"learning": "I learned a lot about databases with this project, from modeling the database to creating complex queries. Some of the main database concepts used to create the project were Windows Functions, PGSQL, Views, Triggers, Indices, Stored Procedures and Functions.",
+			"nextSteps": "The whole project was done in about a week and a half (course deadline), so several decisions were made to simplify the project, such as the example of not creating a separate frontend. Another point is the backend code, which could be improved and modularized following good practices and design standards. In addition, the project could be drastically improved with the addition of a more complete and interactive frontend for data visualization and manipulation."
+		}
+	},
+	{
+		"title": "Caaso Eletroniks - [SCC0560 - Human-Computer Interaction and User Experience]",
+		"description": "Website for a fictitious electronics store with a focus on usability and user experience, including prototyping and usability testing.",
+		"technologies": ["react", "typescript", "figma", "materialui"],
+		"image": "https://camo.githubusercontent.com/9c92e6d81b4c4baad6432b8c2b4bea9e48b86d815e6aafb5706c9b563b4e7bd2/68747470733a2f2f692e696d6775722e636f6d2f47694f796853522e706e67",
+		"source_code": "https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks",
+		"demonstration": "https://ryrden.github.io/SCC-0560-Caaso-Eletroniks/",
+		"figma": "https://www.figma.com/file/AfCh9CNbgu0OakBySHdMjq/Telas-Caaso-Eletroniks?type=design&node-id=0%3A1&mode=design&t=Q1Qnx7jZ4giqqMJ8-1",
+		"created_at": "2021-08-01",
+		"updated_at": "2021-08-01",
+		"category": ["university", "website"],
+		"details": {
+			"problemSolved":  "This project does not actually solve a problem, but rather a challenge proposed by the Human-Computer Interaction and User Experience course, which was to create an e-commerce-themed website with a focus on usability and user experience, including prototyping and usability testing.",
+			"howItWasDeveloped": "The project went through several stages of Design Thinking, from market research and personas, there was prototyping at the 3 levels (low, medium and high fidelity), and finally, the development of the website. The frontend was built using React and Typescript, and MaterialUI. The project was hosted on GitHub Pages for free.",
+			"technologyReason": "React was the technology of the moment at the time, and MaterialUI was the library chosen due to the large number of research and usability tests that showed that Material Design is very efficient for usability and user experience, as well as being beautiful and modern. Typescript was chosen to guarantee the quality of the code and facilitate future maintenance of the project.",
+			"learning": "In this project I did one of my first deployments of a website using GitHub Pages, and I learned a lot about website responsiveness and about usability and user experience thanks to discipline and how important accessibility is in software systems.",
+			"nextSteps": "The next steps for this project would be to create a backend to simulate real e-commerce, and add more features and interactivity to the website, because given the focus of the project, only the happy path to purchase was made, and no error paths or user interaction with the system were mapped. In addition, the project could be improved by adding usability and accessibility tests, and by adding more features and interactivity to the website."
+		}
+	}
+]
+
