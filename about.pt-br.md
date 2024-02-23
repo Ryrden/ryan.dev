@@ -8,15 +8,15 @@ permalink: /about/
 
 ## Quem sou eu?
 
-Sou um Engenheiro de Software, especializado em desenvolvimento web, com um forte interesse em simplificar desafios técnicos complexos. Como estudante de Sistemas de Informação e Técnico certificado em Desenvolvimento de Sistemas, cultivei um profundo entendimento da paisagem tecnológica, complementado por uma forte capacidade de comunicar efetivamente em equipes diversas.
+Sou um Engenheiro de Software, me especializando em desenvolvimento web, possuo um forte interesse em simplificar desafios técnicos complexos. Me formando em um Bacharelado Sistemas de Informação pela USP e possuo um técnico completo em Desenvolvimento de Sistemas pela ETEC.
 
 ## Experiência
 
-Ao longo da minha carreira, desenvolvi um conjunto diversificado de habilidades em várias tecnologias. Na área de frontend, sou proficiente em construir interfaces de usuário envolventes usando Typescript com frameworks SPA como ReactJs e VueJs, bem como implementar com frameworks SSR com HTML puro. Minha expertise em backend inclui Python, Golang e NodeJs, o que me permite construir sistemas robustos e escaláveis.
+Com aproximadamente 2 anos de experiência tenho experiência em desenvolvimento de software com levantamento de requisitos, modelagem, escrita de documentação, testes e codificação.
 
-Quando se trata de bancos de dados, estou igualmente confortável trabalhando tanto com bancos de dados relacionais como PostgreSQL, MySQL e OracleDB, quanto com bancos de dados NoSQL como MongoDB. Todos os meus projetos são meticulosamente gerenciados com Git para controle de versão e hospedados em plataformas como GitHub, GitLab, BitBucket ou Azure.
+Possuo experiência em desenvolvimento Frontend e Backend, sou capaz de construir interfaces usando Typescript com frameworks como ReactJs e VueJs e com as linguagens Python, Java, Golang e NodeJs posso construir sistemas robustos e escaláveis.
 
-Mais de um ano trabalhando em projetos significativos aprimorou minhas habilidades em desenvolvimento de software, incluindo a escrita de documentação abrangente, realização de testes minuciosos e refinamento de código para garantir qualidade e eficiência.
+Quando se trata de bancos de dados, estou confortável trabalhando tanto com bancos de dados relacionais (SQL) como PostgreSQL, MySQL e OracleDB, quanto com bancos de dados não relacionais (NoSQL) como MongoDB.
 
 ## Meus principais feitos são
 
@@ -25,7 +25,7 @@ Mais de um ano trabalhando em projetos significativos aprimorou minhas habilidad
 - Desenvolvi um sistema de gestão de reembolsos na OPUS Software, automatizando 50% dos processos manuais de RH e economizando um tempo administrativo significativo.
 - Projetei um ChatBot na Take Blip que gerencia mais de 1.000 interações de clientes diariamente, melhorando a experiência do usuário e a confiabilidade do sistema.
 
-_Mais informações profissionais podem ser encontradas na aba CV acima._
+_Mais informações profissionais podem ser encontradas na aba CV acima e no meu [LinkedIn](https://www.linkedin.com/in/ryan25)._
 
 ## Curiosidades
 
