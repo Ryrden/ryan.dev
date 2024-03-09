@@ -4,7 +4,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/ryrden/ryan.dev)
 ![GitHub language count](https://img.shields.io/github/languages/count/ryrden/ryan.dev)
 
-<img src="https://i.imgur.com/7IxW3fn.webp" alt="printscreen da primeira tela">
+<img src="https://github.com/Ryrden/ryan.dev/assets/76923948/627f01b8-98bd-4024-b518-ecca52ca8186" alt="printscreen da primeira tela">
 
 > Esse é o meu website pessoal, onde eu mostro um pouco sobre mim e meus projetos.
 
