@@ -14,9 +14,8 @@ Aqui neste site, você encontrará informações sobre mim, meu [Blog]({{ "/blog
 
 De forma breve, sou graduando em Bacharelado de Sistema de Informações pela Universidade de São Paulo, além disso, sou formado em um Técnico de Desenvolvimento de Sistemas pela ETEC
 
-Atualmente faço parte do [Grupo de Extensão em Livre e Open Source (GELOS)](https://gelos.club) onde no momento estou buscando transmitir meu conhecimento técnico e melhorar minhas habilidades de gestão e outras soft-skills.
+Atualmente estou no último ano meu curso de `Bacharelado em Sistemas de Informação` e tenho estudado bastante sobre desenvolvimento de API Backends escaláveis e arquitetura em nuvem, além disso estou buscando me capacitar em Inteligência artificial estudando Aprendizado de Máquina e aplicações.
 
 ## Meus Projetos
 
-Possuo muitos projetos, de modo geral são projetos pessoais, mas também participo de projetos de faculdade e open source. Você pode acessar a página [Projetos]({{ "/projects" | relative_url }} ) para ver uma lista de todos os projetos que já participei e/ou criei.
-<!-- REVIEW: ok -->
+Possuo muitos projetos, de modo geral são projetos de faculdade mas também tenho alguns pessoais e contribuições pequenas em open-source. Você pode acessar a página [Projetos]({{ "/projects" | relative_url }} ) para ver meus principais projetos.
