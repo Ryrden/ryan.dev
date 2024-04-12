@@ -3,7 +3,7 @@
 		"title": "Website - [Você está aqui!]",
 		"description": "Eu decidi criar um site para que eu pudesse compartilhar meus conhecimentos e experiências com outras pessoas, além de ser um ótimo lugar para eu guardar meus projetos e ter um blog!",
 		"technologies": ["html5", "css3", "javascript", "jekyll", "markdown", "github", "githubactions"],
-		"image": "https://github.com/Ryrden/ryan.dev/assets/76923948/627f01b8-98bd-4024-b518-ecca52ca8186",
+		"image": "https://private-user-images.githubusercontent.com/76923948/311440447-627f01b8-98bd-4024-b518-ecca52ca8186.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI5MjgzNzcsIm5iZiI6MTcxMjkyODA3NywicGF0aCI6Ii83NjkyMzk0OC8zMTE0NDA0NDctNjI3ZjAxYjgtOThiZC00MDI0LWI1MTgtZWNjYTUyY2E4MTg2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA0MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNDEyVDEzMjExN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY4MjU5YTJmYTM4ZmRkYjM5M2I1ZTc2YWRiOGFmY2VkYTFjY2I5YjU4ZjQ2ZGFlYzUzNTkxMDhlYzdkNDc1M2EmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ls7m0FFFMdO6ka6inAzvf_00js20fu5JzwPj0hXrb6Q",
 		"source_code": "https://github.com/ryrden/ryrden.dev",
 		"demonstration": "https://ryan.dev.br",
 		"created_at": "2021-08-01",
