@@ -8,7 +8,25 @@ lang: pt-br
         {{ page.title }}
     </h1>
     <span>
-        Escrito em {{ page.date | date: "%d/%m/%Y" | date_to_long_string }} por {{ page.author }}
+        Escrito em 
+        {% assign m = page.date | date: "%-m" %}
+        {{ page.date | date: "%-d de" }}
+        {% case m %}
+            {% when '1' %}Janeiro
+            {% when '2' %}Fevereiro
+            {% when '3' %}Março
+            {% when '4' %}Abril
+            {% when '5' %}Maio
+            {% when '6' %}Junho
+            {% when '7' %}Julho
+            {% when '8' %}Agosto
+            {% when '9' %}Setembro
+            {% when '10' %}Outubro
+            {% when '11' %}Novembro
+            {% when '12' %}Dezembro
+        {% endcase %}
+        {{ page.date | date: " de %Y" }}
+        por {{ page.author }}
     </span>
     {% if page.devto_url or page.tabnews_url %}
         <span>
