@@ -16,3 +16,12 @@
     crossorigin="anonymous"
     async>
 </script>
+<script>
+    // Check if the user has a preferred theme set in local storage
+    let theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    theme = theme === 'dark' ? "{{ site.giscus.dark_theme }}" : "{{ site.giscus.light_theme }}";
+    const existingGiscus = document.querySelector('script[src="https://giscus.app/client.js"]');
+    if (existingGiscus) {
+        existingGiscus.setAttribute('data-theme', theme);
+    }
+</script>
