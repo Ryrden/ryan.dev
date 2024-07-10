@@ -8,3 +8,5 @@ function AddEventListenerToCvButton() {
 }
 
 AddEventListenerToCvButton(); 
+
+document.body.classList.add('transition-enabled');
