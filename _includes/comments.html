@@ -1,4 +1,4 @@
-<script src="https://giscus.app/client.js"
+<!-- <script src="https://giscus.app/client.js"
     data-repo="ryrden/ryan.dev"
     data-repo-id="R_kgDOJRCb-A"
     data-category-id="DIC_kwDOJRCb-M4CcCwA"
@@ -15,13 +15,34 @@
     data-loading="lazy"
     crossorigin="anonymous"
     async>
-</script>
+</script> -->
 <script>
-    // Check if the user has a preferred theme set in local storage
-    let theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    theme = theme === 'dark' ? "{{ site.giscus.dark_theme }}" : "{{ site.giscus.light_theme }}";
-    const existingGiscus = document.querySelector('script[src="https://giscus.app/client.js"]');
-    if (existingGiscus) {
-        existingGiscus.setAttribute('data-theme', theme);
+    const current_theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const themeToApply = current_theme === 'dark' ? "{{ site.giscus.dark_theme }}" : "{{ site.giscus.light_theme }}";
+
+    let lang = "{{ site.active_lang }}";
+    if (lang === 'pt-br') {
+        lang = 'pt';
     }
+
+    let giscusAttributes = {
+        "src": "https://giscus.app/client.js",
+        "data-repo": "ryrden/ryan.dev",
+        "data-repo-id": "R_kgDOJRCb-A",
+        "data-category-id": "DIC_kwDOJRCb-M4CcCwA",
+        "data-mapping": "og:title",
+        "data-strict": "1",
+        "data-reactions-enabled": "1",
+        "data-emit-metadata": "0",
+        "data-input-position": "top",
+        "data-lang": lang,
+        "data-theme": themeToApply,
+        "data-loading": "lazy",
+        "crossorigin": "anonymous",
+        "async": true
+    };
+
+    let giscusScript = document.createElement('script');
+    Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+    document.body.appendChild(giscusScript);
 </script>
