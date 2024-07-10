@@ -24,7 +24,7 @@
     }
 
     .site-title, .site-title:visited {
-        color: $black;
+        color: var(--site-title-color);
     }
 
     .site-nav-container {
@@ -51,13 +51,10 @@
                 border: none;
             }
         }
-    }
-}
 
-@media (prefers-color-scheme: dark) {
-    .site-header {
-        .site-title, .site-title:visited {
-            color: $white;
+        .theme-switcher {
+            cursor: pointer;
+            margin-left: 1em;
         }
     }
 }
@@ -78,6 +75,10 @@
             }
 
             .language-switcher {
+                margin-left: 0.5em;
+            }
+
+            .theme-switcher {
                 margin-left: 0.5em;
             }
         }

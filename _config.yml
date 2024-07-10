@@ -31,6 +31,12 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
+# Giscus Settings
+
+giscus:
+  dark_theme: dark_protanopia
+  light_theme: light_protanopia
+
 
 collections:
   posts:
