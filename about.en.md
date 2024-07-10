@@ -21,9 +21,9 @@ Regarding databases, I'm comfortable working with relational (SQL) databases suc
 ## My key achievements are
 
 - Enhanced BTG Pactual's incident management system by designing and launching 10+ RESTful API endpoints, improving performance by 30%.
-- Mentored 30+ students in full-stack web development at USPCodeLab Sanca, leading 95% to successfully build their first web applications.
+- Mentored 30+ students in full-stack web development at USPCodeLab Sanca, leading 95% of the students to successfully build their first web applications.
 - Developed a refund management system at OPUS Software, automating 50% of manual HR processes and saving significant administrative time.
-- Engineered a ChatBot at Take Blip handling over 1,000 daily customer interactions, improving user experience and system reliability.
+- Took part in the development of a ChatBot at Take Blip which handled over 1,000 daily customer interactions.
 
 _More information can be found in the CV tab above and on my [LinkedIn](https://www.linkedin.com/in/ryan25)._
 

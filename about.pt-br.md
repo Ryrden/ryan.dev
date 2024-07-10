@@ -21,9 +21,9 @@ Quando se trata de bancos de dados, estou confortável trabalhando tanto com ban
 ## Meus principais feitos são
 
 - Melhorei o sistema de gerenciamento de incidentes da BTG Pactual projetando e lançando mais de 10 endpoints API RESTful, melhorando o desempenho em 30%.
-- Orientei mais de 30 estudantes em desenvolvimento web full-stack no USPCodeLab Sanca, levando 95% a construir com sucesso suas primeiras aplicações web.
+- Orientei mais de 30 estudantes em desenvolvimento web full-stack no USPCodeLab Sanca, levando 95% da turma a construir com sucesso suas primeiras aplicações web.
 - Desenvolvi um sistema de gestão de reembolsos na OPUS Software, automatizando 50% dos processos manuais de RH e economizando um tempo administrativo significativo.
-- Projetei um ChatBot na Take Blip que gerencia mais de 1.000 interações de clientes diariamente, melhorando a experiência do usuário e a confiabilidade do sistema.
+- Participei do desenvolvimento de um ChatBot na Take Blip que gerenciava mais de 1000 interações de clientes diariamente.
 
 _Mais informações profissionais podem ser encontradas na aba CV acima e no meu [LinkedIn](https://www.linkedin.com/in/ryan25)._
 
