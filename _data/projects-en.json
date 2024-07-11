@@ -18,6 +18,24 @@
 		}
 	},
 	{
+		"title": "Rinha de Backend 2024/01 - Race condition with Financial operations",
+		"description": "Rinha de Backend is a brazillian challenge whose main objective is to share knowledge in the form of a challenge! This was the second edition where the main topic was concurrency control with credit and debit financial operations",
+		"technologies": ["go", "fiber", "postgresql", "nginx", "docker"],
+		"image": "https://i.imgur.com/NkUgA5g.jpeg",
+		"source_code": "https://github.com/ryrden/rinha-de-backend-go",
+		"demonstration": null,
+		"created_at": "2021-08-01",
+		"updated_at": "2021-08-01",
+		"category": ["backend", "challenge"],
+		"details": {
+			"problemSolved": "Not exactly a real problem, but a challenge within the dev community. Rinha de Backend is a challenge organized by Francisco Zanfranceschi (@zanfranceschi) and its main objective is to develop an API with a focus on architecture and optimization in resource-limited scenarios. In this competition, resources were limited so as not to exceed 1.5 CPU units and 550MB of memory between all the components of the architecture. This was the second edition of the competition and the challenge was about competition with financial operations.",
+			"howItWasDeveloped": "This challenge was solved using the Go language using the Fiber framework (w/ fasthttp), a PostgreSQL database and Ngix as a reverse proxy. The project was dockerized to facilitate execution within a controlled environment and to facilitate load testing. Gatling was used for the load tests. The project took me about a month to develop so that it would perform well within the competition. To deal with concurrency issues and guarantee data integrity, I used the Pessimistic Lock technique within postgres. The architecture of the project was designed to be scalable and performant, and within the scenario of limited resources and the issue of competition, the use of caching was not necessary, but the concept of pooling connections to the database was used.",
+			"technologyReason": "Golang is one of today's most performant programming languages and is widely used in highly competitive scenarios, as well as being very simple and easy to learn. Fiber is a very performant and easy-to-use web framework, as well as being very fast and having a very active community. PostgreSQL is one of the most widely used databases in the world because of its robustness. Gatling and Nginx were pre-selected tools within the rules of the competition for the load test",
+			"learning": "This challenge was something beyond my comfort zone and it was great to have completed it, I learned a lot interacting in the community and I made a lot of mistakes too, I believe the biggest challenge was to find the main performance bottleneck and optimize it, fortunately I managed to find and optimize the problem. I learned a lot about concurrency and architecture optimization with this challenge.",
+			"nextSteps": "the rinha was finished meeting all the requirements and without any penalties I got the maximum grade, what is missing for this project would be the addition of tests to ensure the integrity of the system in cases of adding new features. Another point would be to develop the rinha in other technology stacks to learn more about other languages and frameworks."
+		}
+	},
+	{
 		"title": "Adoção Cãosciente - [SSC0536 - Design and Development of Information Systems]",
 		"description": "Platform for automating animal adoption processes, including registering animals, users, adoption forms, etc.",
 		"technologies": ["python", "fastapi", "mongodb", "docker", "react", "typescript", "tailwindcss", "cypressio"],
