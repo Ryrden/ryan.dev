@@ -20,7 +20,9 @@ parallel_localization: true
 
 # Site settings
 title: ryan.dev
-description: Blog pessoal de Ryan Souza, desenvolvedor e estudante na USP, dedicado a artigos sobre engenharia de software e experiências de carreira. Encontre reflexões, dicas e análises sobre desenvolvimento de sistemas, projetos open source e tecnologia. Um espaço para compartilhar conhecimento e insights sobre a indústria de TI.
+description:
+  en: Personal blog of Ryan Souza, developer and student at USP, dedicated to articles about software engineering and career experiences. Find reflections, tips and analysis on system development, open source projects and technology. A space to share knowledge and insights about the IT industry.
+  pt-BR: Blog pessoal de Ryan Souza, desenvolvedor e estudante na USP, dedicado a artigos sobre engenharia de software e experiências de carreira. Encontre reflexões, dicas e análises sobre desenvolvimento de sistemas, projetos open source e tecnologia. Um espaço para compartilhar conhecimento e insights sobre a indústria de TI.
 
 # Pagination Settings
 pagination:
