@@ -2,7 +2,7 @@
 layout: post-en
 title: Time Management and Productivity for Developers
 seo_title: Time Management and Productivity Tips for Developers - Improve Your Efficiency
-seo_description: 'Explore time management techniques tailored for software developers. Learn about Weekly Planning, Pomodoro, and the Eisenhower Matrix. Enhance your productivity and the quality of your work on technology projects with our practical methods.'
+seo_description: 'Explore time management techniques tailored for software developers. Learn about Weekly Planning, Pomodoro, and the Eisenhower Matrix. Enhance your productivity and the quality of your work on technology projects with practical methods.'
 excerpt: 'In-depth look at time management in software development. Addresses mental, physiological, and technical productivity dimensions. Presents techniques like Weekly Planning, Pomodoro, and Eisenhower Matrix. Provides practical methods for developers to improve time management and work quality.'
 cover_image: 'https://i.imgur.com/oCZcIby.webp'
 canonical_url: 'https://ryan.dev.br/en/2023-08-19-time-management-for-devs-en'
