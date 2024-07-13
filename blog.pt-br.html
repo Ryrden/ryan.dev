@@ -35,7 +35,7 @@ pagination:
         {{ post.date | date: " de %Y" }}
       </time>      
     </p>
-    <p>{{ post.description | truncatewords: 20 }}</p>
+    <p>{{ post.seo_description | truncatewords: 20 }}</p>
   </article>
 {% endfor %}
 {% if paginator.total_pages > 1 %}
