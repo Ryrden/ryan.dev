@@ -88,7 +88,7 @@ Uma coisa importante de ressaltar é que essas virtudes são todas desenvolvidas
 
 ## Referências
 
-- [The Three Virtues of a Great Programmer](https://threevirtues.com/)
+- [The Three Virtues of a Great Programmer](https://thethreevirtues.com/)
 
 ---
 
