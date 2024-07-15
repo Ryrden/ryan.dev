@@ -2,7 +2,7 @@
 layout: post-pt-br
 title: Chave SSH no github - Windows e Linux
 seo_title: Como Gerar e Adicionar uma Chave SSH ao GitHub - Guia de Autenticação Segura
-seo_description: 'Aprenda a gerar e adicionar uma chave SSH ao GitHub para autenticação segura. Siga nosso guia passo a passo com instruções detalhadas para usuários de Linux e Windows. Configure sua chave SSH no GitHub para facilitar operações como push e pull sem a necessidade de autenticação repetida. Otimize sua experiência no GitHub agora!'
+seo_description: Aprenda a gerar e adicionar uma chave SSH ao GitHub para autenticação segura. Siga nosso guia passo a passo com instruções detalhadas para usuários de Linux e Windows. Configure sua chave SSH no GitHub para facilitar operações como push e pull sem a necessidade de autenticação repetida. Otimize sua experiência no GitHub agora!
 exerpt: Guia passo a passo sobre como gerar e adicionar uma chave SSH ao GitHub para autenticação segura. Aprenda a criar chaves SSH usando o algoritmo ED25519 com instruções detalhadas para Linux e Windows. Configure sua chave SSH no GitHub para facilitar operações como push e pull sem a necessidade de autenticação repetida.
 cover_image: 'https://i.imgur.com/9GC9TvD.webp'
 canonical_url: 'https://ryan.dev.br/2023-04-17-github-ssh-pt-br'
