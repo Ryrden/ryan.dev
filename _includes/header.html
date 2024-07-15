@@ -1,46 +1,48 @@
 <header class="site-header" role="banner">
 	<a href="{{ '/' | relative_url }}" class="site-title">Ryan S.</a>
+	<!-- Start of Hamburguer Menu -->
+    <input type="checkbox" id="active">
+	<label for="active" class="menu-btn"><span></span></label>
+	<label for="active" class="close"></label>
+	<!-- End of Hamburguer Menu -->
 	<div class=site-nav-container>
-		<nav class="site-nav">
-			<ul class="nav-items">
-				{% for item in site.data.navigation %}
-				<li>
-					<a {% if page.nav_current == item.link or page.url == item.link %}
-							aria-current="page" 
-						{% endif %} 
-						{% if item.id %}
-							id="{{ item.id }}" 
-						{% endif %} 
-						{% if item.label %}
-							aria-label="{{ item.label }}" 
-						{% endif %} 
-						{% if item.link %}
-							href="{{ item.link | relative_url }}"
-						{% endif %}> 
-						{% if site.active_lang == "pt-br" %}
-							{{ item.text-pt-br | capitalize }}
-						{% else %}
-							{{ item.text-en | capitalize }}
-						{% endif %}
-					</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</nav>
-		<!-- remove border, only show the "triangle" that show the user that this is a seleect -->
-		<div class="language-switcher">
-			<select id="language-select" aria-label="Select language">
-				{% for tongue in site.languages %}
-					<option value="{{ tongue }}" {% if tongue == site.active_lang %}selected{% endif %}>
-						{{ tongue | upcase }}
-					</option>
-				{% endfor %}
-			</select>
-		</div>
-		<div class="theme-switcher">
-			{% include icons/brightness-left.svg %}
-			<!-- {% include icons/brightness-right.svg %} // TODO: Allow to use both icons -->
-		</div>
+        <ul class="nav-items">
+            {% for item in site.data.navigation %}
+            <li>
+                <a {% if page.nav_current == item.link or page.url == item.link %}
+                        aria-current="page" 
+                    {% endif %} 
+                    {% if item.id %}
+                        id="{{ item.id }}" 
+                    {% endif %} 
+                    {% if item.label %}
+                        aria-label="{{ item.label }}" 
+                    {% endif %} 
+                    {% if item.link %}
+                        href="{{ item.link | relative_url }}"
+                    {% endif %}> 
+                    {% if site.active_lang == "pt-br" %}
+                        {{ item.text-pt-br | capitalize }}
+                    {% else %}
+                        {{ item.text-en | capitalize }}
+                    {% endif %}
+                </a>
+            </li>
+            {% endfor %}
+            <li class="language-switcher">
+                <select id="language-select" aria-label="Select language">
+                    {% for tongue in site.languages %}
+                    <option value="{{ tongue }}" {% if tongue == site.active_lang %}selected{% endif %}>
+                        {{ tongue | upcase }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </li>
+            <li class="theme-switcher">
+                {% include icons/brightness-left.svg %}
+                <!-- {% include icons/brightness-right.svg %} // TODO: Allow to use both icons -->
+            </li>
+        </ul>
 	</div>
 	<script>
 		function sendMessage(message) {

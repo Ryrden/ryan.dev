@@ -4,8 +4,8 @@
 - text-pt-br: Sobre
   text-en: About
   link: /about/
-- text-pt-br: CV
-  text-en: CV
+- text-pt-br: Currículo ↗
+  text-en: Resume ↗
   id: cv
 - text-pt-br: Blog
   text-en: Blog
