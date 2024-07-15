@@ -27,7 +27,7 @@ date: '2024-01-05T15:41:34Z'
 - [Generating a SSH Key](#generating-a-ssh-key)
   - [Linux](#linux)
   - [Windows](#windows)
-- [Conclusion](#conclusion)
+- [References](#references)
 
 ## What is a SSH Key?
 
@@ -127,6 +127,8 @@ if everything goes well, you will see a success message, and you can clone any r
 
 ![Testing ssh key - linux"](https://i.imgur.com/OQaJNyj.webp)
 
-## Conclusion
+## References
+
+- [Github Documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
 I hope this tutorial has helped you set up your SSH key on github. If you have any questions or suggestions, leave a comment below or contact me through [LinkedIn](https://www.linkedin.com/in/ryan25/) or the [contact](https://ryan.dev.br/contact/) tab on my website.

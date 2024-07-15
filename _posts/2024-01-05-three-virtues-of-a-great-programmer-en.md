@@ -28,6 +28,7 @@ date: '2024-01-05T16:52:28Z'
 - [2. Impatience](#2-impatience)
 - [3. Arrogance](#3-arrogance)
 - [Conclusion](#conclusion)
+- [References](#references)
 
 ## Are You a Good Programmer?
 
@@ -84,5 +85,11 @@ A good personal definition of mine is:
 > "A good programmer is naturally lazy, always looking for ways to automate the repetitive; instinctively impatient, speeding up and improving codes quickly; and sufficiently arrogant to believe that they can always make the code better."
 
 An important thing to highlight is that these virtues are all developed over time and with experience, you don't need to worry that you're not a good programmer for not fitting all of them, that's normal. The important thing is that you are always seeking to improve and refine, and over time you will develop these virtues and become a better programmer, at least in Larry Wall's view ;).
+
+## References
+
+- [The Three Virtues of a Great Programmer](https://threevirtues.com/)
+
+---
 
 I hope you enjoyed the article and that it made you reflect at least a little. If you have any questions or suggestions, leave a comment below or contact me through [LinkedIn](https://www.linkedin.com/in/ryan25/) or the [contact](https://ryan.dev.br/contact/) tab on my site.

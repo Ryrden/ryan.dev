@@ -36,6 +36,7 @@ date: '2023-08-19T17:00:57Z'
   - [Matriz de Eisenhower](#matriz-de-eisenhower)
 - [Tudo isso na perspectiva de um Desenvolvedor](#tudo-isso-na-perspectiva-de-um-desenvolvedor)
 - [Fim ?](#fim-)
+- [Referências](#referências)
 
 Talvez uma das perguntas que mais recebo de pessoas que estão começando a estudar ou trabalhar com desenvolvimento de software é: "Como você consegue estudar tantas coisas diferentes e ainda ter tempo para trabalhar e se divertir?". A resposta é simples: **Gestão de Tempo**.
 
@@ -177,5 +178,13 @@ Já usamos uma técnica na teórica que foi o **Planejamento por Objetivos** cri
 ## Fim ?
 
 Tem muitas outras técnicas que deixei de comentar aqui que podem auxiliar como metas S.M.A.R.T e OKRs, mas acredito que as técnicas que comentei aqui são as mais importantes e que podem ser aplicadas na prática. É importante lembrar que tudo listado aqui é um processo de melhoria contínua, adapte e encontre o que funciona melhor para você.
+
+## Referências
+
+- [Curso - Gestão de Tempo: como aumentar sua produtividade](https://www.udemy.com/course/gestao-de-tempo/)
+- [Wikipedia - Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
+- [Wikipedia - Time management](https://en.wikipedia.org/wiki/Time_management)
+
+---
 
 Espero que tenha gostado do artigo e que ele possa te ajudar a gerenciar o seu tempo de forma eficiente. Se tiver alguma dúvida ou sugestão, deixe um comentário abaixo ou entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/ryan25/) ou pela aba de [contato](https://ryan.dev.br/contact/) do meu site.

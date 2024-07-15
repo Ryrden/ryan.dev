@@ -27,7 +27,7 @@ date: '2023-08-18T23:44:11Z'
 - [Gerando uma chave SSH](#gerando-uma-chave-ssh)
   - [Linux](#linux)
   - [Windows](#windows)
-- [Conclusão](#conclusão)
+- [Referências](#referências)
 
 ## O que é uma chave SSH?
 
@@ -129,6 +129,8 @@ se tudo der certo, você vai ver uma mensagem de sucesso e você já pode fazer 
 
 ![Testing ssh key - linux](https://i.imgur.com/OQaJNyj.webp)
 
-## Conclusão
+## Referências
+
+- [Documentação do Github](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh)
 
 Espero que esse tutorial tenha ajudado você a configurar a sua chave SSH no github. Se tiver alguma dúvida ou sugestão, deixe um comentário abaixo ou entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/ryan25/) ou pela aba de [contato](https://ryan.dev.br/contact/) do meu site.

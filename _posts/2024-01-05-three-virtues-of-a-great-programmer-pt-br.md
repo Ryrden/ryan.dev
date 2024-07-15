@@ -28,6 +28,7 @@ date: '2024-01-05T16:49:48Z'
 - [2. Impaciência](#2-impaciência)
 - [3. Arrogância](#3-arrogância)
 - [Conclusão](#conclusão)
+- [Referências](#referências)
 
 ## Você é um bom programador?
 
@@ -84,5 +85,11 @@ Uma boa definição pessoal minha é:
 > Um bom programador é naturalmente preguiçoso, sempre buscando formas de automatizar o repetitivo; instintivamente impaciente, agilizando e aprimorando códigos com rapidez; e suficientemente arrogante para acreditar que sempre pode fazer o código melhor."
 
 Uma coisa importante de ressaltar é que essas virtudes são todas desenvolvidas com o tempo e a experiência, você não precisa se preocupar de que não é um bom programador por não se encaixar em todas elas, isso é normal. O importante é que você esteja sempre buscando melhorar e se aprimorar, e com o tempo você vai desenvolver essas virtudes e se tornar um programador melhor, pelo menos na visão de Larry Wall ;).
+
+## Referências
+
+- [The Three Virtues of a Great Programmer](https://threevirtues.com/)
+
+---
 
 Espero que tenha gostado do artigo e que ele tenha feito você refletir ao menos um pouquinho. Se tiver alguma dúvida ou sugestão, deixe um comentário abaixo ou entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/ryan25/) ou pela aba de [contato](https://ryan.dev.br/contact/) do meu site.

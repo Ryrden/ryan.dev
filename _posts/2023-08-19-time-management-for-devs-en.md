@@ -35,6 +35,8 @@ date: '2024-01-05T16:57:19Z'
     - [Why 25 minutes? Why does Pomodoro work?](#why-25-minutes-why-does-pomodoro-work)
   - [Eisenhower Matrix](#eisenhower-matrix)
 - [All this from a Developer's Perspective](#all-this-from-a-developers-perspective)
+- [The end ?](#the-end-)
+- [References](#references)
 
 Perhaps one of the most common questions I get from people starting to study or work with software development is: "How do you manage to study so many different things and still have time to work and have fun?". The answer is simple: **Time Management**.
 
@@ -173,6 +175,16 @@ We already used a technique in the theory, which was the **Goal-Based Planning**
 
 - **Pomodoro:** I have already talked a lot about Pomodoro, but let's go to my perspective, how do I do it? I use batches of 25 minutes / 5 minutes for tasks that I have a certain notion of what to do and for tasks that I don't even know where to start I first create a 30-minute Pomodoro to learn about the topic and decide if I can do it alone or will need support from someone.
 
+## The end ?
+
 There are many other techniques that I did not mention here that can help such as S.M.A.R.T goals and OKRs, but I believe that the techniques I mentioned here are the most important and that can be applied in practice. It is important to remember that everything listed here is a process of continuous improvement, adapt and find what works best for you.
+
+## References
+
+- [Curso - Gestão de Tempo: como aumentar sua produtividade](https://www.udemy.com/course/gestao-de-tempo/)
+- [Wikipedia - Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
+- [Wikipedia - Time management](https://en.wikipedia.org/wiki/Time_management)
+
+---
 
 I hope you enjoyed the article and that it can help you manage your time efficiently. If you have any questions or suggestions, leave a comment below or contact me through [LinkedIn](https://www.linkedin.com/in/ryan25/) or the [contact](https://ryan.dev.br/contact/) tab on my website.
