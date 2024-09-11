@@ -27,7 +27,7 @@ _Mais informações profissionais podem ser encontradas na aba CV acima e no meu
 ## Curiosidades / Fun facts
 
 - Apesar de cursar Sistemas de Informação, eu já cursei Mecatrônica e tenho um técnico completo na área.
-- Às vezes tento tocar melódica, mas não tenho muito jeito.
+- Às vezes tento tocar escalata, mas não tenho muitas habilidades ainda.
 - Tenho um gato laranja chamado “Simba” e uma gata frajola chamada “Cathy” com a minha namorada.
 - Comecei a correr e estou gostando muito, o meu objetivo é correr uma maratona no futuro.
 - Gosto muito de algoritmos e estruturas de dados, mas não sou muito bom em leetcode.
