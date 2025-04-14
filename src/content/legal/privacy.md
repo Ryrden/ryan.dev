@@ -1,6 +1,6 @@
 ---
 title: "Política de Privacidade"
-date: "12/04/2025"
+date: "04/12/2025"
 ---
 
 Esta Política de Privacidade descreve como o site ryan.dev coleta, utiliza, armazena e protege as informações dos visitantes (“usuário”). Esta política se aplica a todos os visitantes e usuários do site, incluindo o portfólio e o blog.

@@ -1,6 +1,6 @@
 ---
 title: "Termos de Uso"
-date: "12/04/2025"
+date: "04/12/2025"
 ---
 
 Por favor, leia estes Termos de Uso (“Termos”) com atenção antes de utilizar o site ryan.dev (o “Serviço”), operado por Ryan Souza (“eu”, “meu”, “minha”).
