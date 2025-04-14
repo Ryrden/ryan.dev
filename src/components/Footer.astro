@@ -1,6 +1,7 @@
 ---
 import { SITE, SOCIALS } from "@consts"
 import Container from "@components/Container.astro"
+import { date } from "astro:schema"
 ---
 
 <footer class="relative bg-white dark:bg-black">
@@ -57,7 +58,7 @@ import Container from "@components/Container.astro"
               </a>
             </div>
             <div class="text-sm mt-2">
-              &copy; 2024 | Todos os direitos reservados
+              &copy; {new Date().getFullYear()} | Todos os direitos reservados
             </div>
           </div>
   
