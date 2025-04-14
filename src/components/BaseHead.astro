@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from "astro:transitions"
 
 interface Props {
   title: string
@@ -46,8 +45,8 @@ const { title, description, image = "/open-graph.jpg" } = Astro.props
 <!-- Sitemap -->
 <link rel="sitemap" href="/sitemap-index.xml" />
 
-<!-- RSS Feed -->
-<link rel="alternate" type="application/rss+xml" title={title} href={`${Astro.site}rss.xml`}/>
+<!-- Google Search Console -->
+<meta name="google-site-verification" content="HCp1jl4kI2QUPb6FPeGuLeYkceCyGC9jbsiKNk9igqE" />
 
 <!-- Global Scripts -->
 <script is:inline src="/js/theme.js"></script>
