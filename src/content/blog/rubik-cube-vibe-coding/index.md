@@ -284,11 +284,11 @@ E sabe o que é mais legal? Mesmo se eu decidir continuar esse projeto sem o Vib
 
 Claro que, em algum momento, vou querer entender tudo a fundo. E é por isso que **vou escrever outro artigo explicando o funcionamento interno do código** — linha por linha, pra valer. Afinal, por mais legal que seja delegar tarefas para a IA, como dev eu não aceito abrir mão totalmente do entendimento daquilo que estou construindo.
 
-Se você está lendo esse artigo agora e ainda não viu o destrinchando o código, pode me cobrar.
-
 ## Conclusão
 
 A grande lição que tiro dessa experiência é simples:
+
+No final das contas meu objetivo de aprender Three.js não foi alcançado mas me surpreendi com a capacidade da IA em gerar código, além disso, a reflexão abaixo se torna cada vez mais clara:
 
 > **A IA não vai substituir bons programadores** — mas pode sim substituir quem está no projeto só pra fazer o básico.
 
