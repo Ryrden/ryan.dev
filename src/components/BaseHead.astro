@@ -48,6 +48,26 @@ const { title, description, image = "/open-graph.jpg" } = Astro.props
 <!-- Google Search Console -->
 <meta name="google-site-verification" content="HCp1jl4kI2QUPb6FPeGuLeYkceCyGC9jbsiKNk9igqE" />
 
+<!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script is:inline type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-M3M1CXFGDH"></script>
+<script is:inline type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag("consent", "default", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "denied",
+  });
+
+  gtag('config', 'G-M3M1CXFGDH');
+</script>
+
 <!-- Global Scripts -->
 <script is:inline src="/js/theme.js"></script>
 <script is:inline src="/js/scroll.js"></script>
