@@ -39,7 +39,7 @@ A stack utilizada foi simples e eficiente:
 - **GitHub Actions** para automação do deploy  
 - **Domínio personalizado**, com configuração de DNS  
 
-O site era rápido, responsivo e totalmente automatizado — essencial para manter um portfólio sempre atualizado.
+O site era rápido, responsivo e totalmente automatizado.
 
 ---
 
@@ -66,7 +66,7 @@ Esse projeto foi essencial para o meu crescimento técnico. Alguns dos principai
 - Criação de um blog com **Markdown**  
 - Boas práticas de **acessibilidade e performance**  
 
-Além disso, enfrentei (e resolvi) diversos desafios típicos de quem constrói tudo do zero — cada um trouxe uma lição valiosa.
+Além disso, enfrentei (e resolvi) diversos desafios típicos de quem constrói tudo do zero.
 
 ---
 
@@ -76,9 +76,9 @@ Este projeto foi uma mistura de frustração, orgulho e aprendizado.
 
 Meu objetivo inicial era simples: "Ter um site para apresentar meus projetos, contar brevemente minha trajetória e, quem sabe, publicar alguns artigos." Consegui isso, mas logo senti as limitações da stack: queria incluir **snippets de código com destaque**, **imagens com lazy-loading**, **artigos paginados**, **suporte a múltiplos idiomas**, entre outras funcionalidades que exigiriam um esforço desproporcional em um site estático.
 
-Fiz literalmente tudo do zero — desde o `index.html` até as cores, animações, responsividade e cada detalhe do CSS. Um dos maiores desafios foi **configurar e conectar o domínio personalizado**, além de **melhorar o SEO**, **integrar com o Google Analytics** e automatizar o deploy com uma pipeline no **GitHub Actions**.
+Fiz literalmente tudo do zero, desde o `index.html` até as cores, animações, responsividade e cada detalhe do CSS. Um dos maiores desafios foi **configurar e conectar o domínio personalizado**, além de **melhorar o SEO**, **integrar com o Google Analytics** e automatizar o deploy com uma pipeline no **GitHub Actions**.
 
-Cheguei até a criar uma integração com a API do Dev.to para publicar automaticamente os artigos — um aprendizado que rendeu até uma contribuição para o open source (escrevi sobre isso [aqui](link)).
+Cheguei até a criar uma integração com a API do Dev.to para publicar automaticamente os artigos, um aprendizado que rendeu até uma contribuição para o open source (escrevi sobre isso [aqui](link)).
 
 Apesar dos avanços, muitas ideias ficaram pelo caminho, como mostra esse board:
 
@@ -92,7 +92,7 @@ Fiz mais de X tarefas, deixei algumas em andamento e outras tantas ficaram apena
 
 Com o tempo, percebi que fazia mais sentido utilizar um **template moderno** e focar em **conteúdo e backend**, minhas verdadeiras áreas de interesse. O novo site, que você está visitando agora, foi criado com o template [Astro Sphere](https://github.com/markhorn-dev/astro-sphere) e adaptado às minhas necessidades.
 
-Hoje, meu foco está em **desenvolvimento backend e arquitetura de software** — e não fazia mais sentido manter um site 100% feito à mão apenas pela estética. Se meu objetivo fosse seguir carreira em UX/UI, talvez valesse a pena. Mas nesse momento, **ser funcional e escalável fala mais alto.**
+Hoje, meu foco está em **desenvolvimento backend e arquitetura de software**, e não fazia mais sentido manter um site 100% feito à mão apenas pela estética. Se meu objetivo fosse seguir carreira em UX/UI, talvez valesse a pena. Mas nesse momento, **ser funcional e escalável fala mais alto.**
 
 ---
 

@@ -51,7 +51,7 @@ O **frontend** foi construído com **React** e **Typescript**, utilizando **Mate
 
 Esse foi o primeiro projeto em que segui de ponta a ponta as etapas propostas pelo **Design Thinking**. Desde a **captação de ideias** e **benchmarking** com sites do mesmo nicho, até a criação dos wireframes e desenvolvimento do produto final.
 
-Toda a codificação foi feita em **React**, e conseguimos entregar um resultado visualmente satisfatório e funcional do ponto de vista de UX/UI. Por outro lado, o código teve alguns desafios — especialmente com bibliotecas que não ofereciam suporte completo a certos recursos. Um exemplo foi a implementação de um formulário com [**máscara de input**](https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks/blob/b7db37befe82bc72437c01329ba812ea80a6fee3/src/Pages/Checkout/Checkout.tsx#L4-L5), que exigiu soluções alternativas devido à limitação da biblioteca escolhida.
+Toda a codificação foi feita em **React**, e conseguimos entregar um resultado visualmente satisfatório e funcional do ponto de vista de UX/UI. Por outro lado, o código teve alguns desafios, especialmente com bibliotecas que não ofereciam suporte completo a certos recursos. Um exemplo foi a implementação de um formulário com [**máscara de input**](https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks/blob/b7db37befe82bc72437c01329ba812ea80a6fee3/src/Pages/Checkout/Checkout.tsx#L4-L5), que exigiu soluções alternativas devido à limitação da biblioteca escolhida.
 
 Apesar dessas dificuldades, nada comprometeu gravemente o desenvolvimento. Pelo contrário, foi uma ótima oportunidade de aprender na prática e lidar com limitações técnicas reais.
 

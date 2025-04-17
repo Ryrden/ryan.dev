@@ -1,6 +1,6 @@
 ---
 title: "RyCoin: Aprendendo Blockchain com um projeto completo em Solidity, React e Besu"
-summary: "Desenvolvimento prático de um DApp completo para interagir com o token RyCoin — criado com Solidity, deploy em rede privada Besu, frontend em React e integração com MetaMask."
+summary: "Desenvolvimento prático de um DApp completo para interagir com o token RyCoin. Criado com Solidity, deploy em rede privada Besu, frontend em React e integração com MetaMask."
 date: "Nov 13 2024"
 draft: false
 tags:

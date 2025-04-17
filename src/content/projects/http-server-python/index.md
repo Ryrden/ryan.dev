@@ -23,7 +23,7 @@ O objetivo era criar um servidor capaz de:
 - Implementar compressão de conteúdo com **gzip**
 - Manter conexões persistentes entre cliente e servidor
 
-Tudo isso utilizando apenas **Python puro**, sem frameworks ou bibliotecas externas — o que forçou um entendimento aprofundado do protocolo HTTP e do funcionamento da rede.
+Tudo isso utilizando apenas **Python puro**, sem frameworks ou bibliotecas externas, o que forçou um entendimento aprofundado do protocolo HTTP e do funcionamento da rede.
 
 ---
 

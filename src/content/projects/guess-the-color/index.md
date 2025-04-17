@@ -21,7 +21,7 @@ Este foi **meu primeiro projeto com HTML, CSS e Javascript**, criado com o objet
 - Me desafiar a construir algo interativo e funcional  
 - Treinar **responsividade, manipulação do DOM e lógica básica de jogo**
 
-Era um jogo simples de adivinhação baseado em cores RGB — mas, para mim, representou **um passo gigante rumo à autonomia como dev**. Cada linha de código foi escrita manualmente, sem frameworks, só na base do HTML, CSS e JS puro.
+Era um jogo simples de adivinhação baseado em cores RGB, mas, para mim, representou **um passo gigante rumo à autonomia como dev**. Cada linha de código foi escrita manualmente, sem frameworks, só na base do HTML, CSS e JS puro.
 
 ---
 
@@ -54,7 +54,7 @@ Com isso, pratiquei:
 
 Fiz questão de que o jogo funcionasse bem tanto no desktop quanto no mobile. Usei **CSS Grid**, efeitos com `transition` e `transform`, além de uma interface clara e intuitiva para qualquer pessoa testar.
 
-Também implementei **um sistema de collapses com animações**, criando uma seção interativa de ajuda e explicações sobre o jogo — algo que exigiu atenção aos detalhes de UX e usabilidade.
+Também implementei **um sistema de collapses com animações**, criando uma seção interativa de ajuda e explicações sobre o jogo, algo que exigiu atenção aos detalhes de UX e usabilidade.
 
 ---
 

@@ -15,7 +15,7 @@ Este site tem caráter pessoal e tem como objetivo apresentar meu portfólio de 
 
 ## 3. Direitos Autorais e Propriedade Intelectual
 
-Todo o conteúdo publicado neste site — incluindo textos, códigos, imagens e layout — é de minha autoria, salvo quando indicado o contrário. Você pode visualizar e compartilhar o conteúdo para fins pessoais e não comerciais, desde que mencione a fonte. Não é permitido copiar ou reproduzir o conteúdo integralmente sem autorização prévia.
+Todo o conteúdo publicado neste site (incluindo textos, códigos, imagens e layout) é de minha autoria, salvo quando indicado o contrário. Você pode visualizar e compartilhar o conteúdo para fins pessoais e não comerciais, desde que mencione a fonte. Não é permitido copiar ou reproduzir o conteúdo integralmente sem autorização prévia.
 
 ## 4. Conteúdo do Blog
 

@@ -42,7 +42,7 @@ Claro que tive o prazer e a oportunidade de ter a disciplina de `Programação F
 
 O pensamento funcional em poucas palavras é quando passamos a pensar em criar `funções`, `transformar dados` e focar em responder mais `o quê` do que `o como` ao resolver nossos problemas usando programação.
 
-Na verdade, este pensamento é bem familiar para você mas talvez você não saiba. Lembra das funções na matemática? Como `f(x) = y`? E das <a href="https://www.todamateria.com.br/funcao-bijetora/" target="_blank">`funções bijetoras`</a>, onde para cada `x` único existe um `y` único correspondente? Pois bem, esse raciocínio — onde a mesma entrada sempre leva à mesma saída, sem surpresas — é a base das `funções puras` na programação funcional.
+Na verdade, este pensamento é bem familiar para você mas talvez você não saiba. Lembra das funções na matemática? Como `f(x) = y`? E das <a href="https://www.todamateria.com.br/funcao-bijetora/" target="_blank">`funções bijetoras`</a>, onde para cada `x` único existe um `y` único correspondente? Pois bem, esse raciocínio é a base das `funções puras` na programação funcional.
 
 Claro, não quero transformar esse texto em uma aula de matemática, mas é bom saber que muita da elegância do paradigma funcional vem exatamente dessa raiz lógica. Então agora que você já entendeu a essência, vamos direto aos principais pilares que sustentam essa forma de programar.
 
@@ -62,7 +62,7 @@ Esse código parece inofensivo, mas sob a ótica funcional (ou até mesmo matem�
 2. Entramos mais a dentro porque ainda há incógnitas (variáveis)
 3. Temos `x + 1`, mas o que é `x`? **R:** E então retornamos ao passo 1.
 
-Percebe onde isso vai chegar? Um loop infinito, e isso revela um fato: **não existe atribuição mutável em matemática pura**. Em linguagens funcionais, o mesmo princípio se aplica. Por isso, **não usamos loops com variáveis que mudam de estado** — porque o **estado não muda**.
+Percebe onde isso vai chegar? Um loop infinito, e isso revela um fato: **não existe atribuição mutável em matemática pura**. Em linguagens funcionais, o mesmo princípio se aplica. Por isso, **não usamos loops com variáveis que mudam de estado**, porque o **estado não muda**.
 
 ### Então como incrementamos uma variável?
 
@@ -79,7 +79,7 @@ def incrementa_um(x):
 y = incrementa_um(x)
 ```
 
-Nesse exemplo, `x` continua valendo `1`. O que mudou foi que criamos uma nova variável `y`, que representa o valor de `x + 1`. **Não houve mutação** — **houve transformação**.
+Nesse exemplo, `x` continua valendo `1`. O que mudou foi que criamos uma nova variável `y`, que representa o valor de `x + 1`. **Não houve mutação**, **houve transformação**.
 
 Esse é o coração da imutabilidade: **ao invés de mudar as coisas, você cria novas versões delas**.
 
@@ -97,7 +97,7 @@ Mas... e a tal segunda parte da definição?
 
 ### O que são efeitos colaterais (Side Effects)?
 
-Um **efeito colateral** acontece quando a função **faz algo além de apenas devolver um valor** — algo que afeta (ou depende de) o mundo externo.
+Um **efeito colateral** acontece quando a função **faz algo além de apenas devolver um valor**, ela faz algo que afeta (ou depende de) o mundo externo.
 
 Vamos supor o seguinte código:
 
@@ -124,7 +124,7 @@ Isso também se aplica pro conceito anterior da `imutabilidade`, mudar estado ta
 
 Mas aqui você pode pensar: _"Mas nossa, mas ai eu não consigo fazer nada com programação funcional né, tudo é efeito colateral"_, errado! a ideia da programação funcional **não é eliminar os efeitos colaterais**, mas sim **isolá-los**.
 
-Você escreve a maior parte do seu sistema com **funções puras, pequenas e testáveis**, e **centraliza os efeitos colaterais em pontos bem definidos** — geralmente em uma camada externa da aplicação, como o controller ou a borda do sistema.
+Você escreve a maior parte do seu sistema com **funções puras, pequenas e testáveis**, e **centraliza os efeitos colaterais em pontos bem definidos**, geralmente em uma camada externa da aplicação, como o controller ou a borda do sistema.
 
 ### Por que funções puras importam?
 
@@ -134,11 +134,11 @@ Além dos [beneficios da imutabilidade](#imutabilidade), funções puras tornam 
 
 > Uma função pode ser atribuída a uma variável, passada como argumento ou retornada de outra função.
 
-Esse conceito está presente em muitas linguagens — e se você já usou funções como `map`, `filter` ou `reduce`, você já usou funções de primeira classe na prática, posso falar destas funções em outro momento mas hoje quero te apresentar duas técnicas poderosas que tornam essas funções possiveis: **Closure** e **Currying**.
+Esse conceito está presente em muitas linguagens e, se você já usou funções como `map`, `filter` ou `reduce`, você já usou funções de primeira classe na prática, posso falar destas funções em outro momento mas hoje quero te apresentar duas técnicas poderosas que tornam essas funções possiveis: **Closure** e **Currying**.
 
 ### Closure
 
-> Uma função que "lembra" o escopo em que foi criada — mesmo após esse escopo já ter sido executado.
+> Uma função que "lembra" o escopo em que foi criada, mesmo após esse escopo já ter sido executado.
 
 ```python
 def saudacao(nome):
@@ -161,7 +161,7 @@ Isso é closure. E com isso, podemos **criar funções configuráveis, encapsula
 
 > Currying é o ato de transformar uma função que recebe vários argumentos em uma cadeia de chamadas que recebe um argumento por vez.
 
-Agora que entendemos o que é **closure**, o `currying` faz total sentido — ele se apoia nisso pra manter valores salvos entre chamadas parciais.
+Agora que entendemos o que é **closure**, o `currying` faz total sentido.
 
 Olha só esse exemplo em Python:
 
@@ -178,7 +178,7 @@ print(dobro(7))  # 14
 
 Aqui, `multiplica(2)` retorna uma nova função que "lembra" o `a = 2` e espera o próximo argumento. Isso é útil demais quando você quer **reutilizar comportamentos pré-configurados** ou fazer composição de forma fluida.
 
-**💡 Observação:** Estou usando **Python** aqui por ser uma linguagem mais acessível para quem está começando, mas em linguagens funcionais como **Clojure**, **Haskell** ou **Elm**, o suporte a currying já vem praticamente de fábrica — e muitas vezes nem precisamos escrever esse encadeamento manualmente.
+**💡 Observação:** Estou usando **Python** aqui por ser uma linguagem mais acessível para quem está começando, mas em linguagens funcionais como **Clojure**, **Haskell** ou **Elm**, o suporte a currying já vem praticamente pronto.
 
 Por exemplo, no Clojure temos a função `partial`, que faz exatamente isso de forma elegante:
 
@@ -220,7 +220,7 @@ Talvez você esteja se perguntando agora:
 
 > Então funções de primeira classe é só aplicar currying e closure?
 
-Não exatamente. **Currying** e **closure** são técnicas que só funcionam porque as funções são tratadas como valores — e é isso que o conceito de **funções de primeira classe** representa.
+Não exatamente. **Currying** e **closure** são técnicas que só funcionam porque as funções são tratadas como valores e, é isso que o conceito de **funções de primeira classe** representa.
 
 ---
 
@@ -240,11 +240,11 @@ Esse comportamento abre espaço para estruturas mais reutilizáveis, como `map`,
 
 Funções de primeira classe tornam o código:
 
-- Mais modular — porque funções podem ser combinadas e reutilizadas
+- Mais modular: porque funções podem ser combinadas e reutilizadas
 
-- Mais declarativo — porque podemos expressar **o que queremos fazer**, em vez de como fazer
+- Mais declarativo: porque podemos expressar **o que queremos fazer**, em vez de como fazer
 
-- Mais simples de testar — já que passamos lógica como valores, sem depender de contexto externo
+- Mais simples de testar: já que passamos lógica como valores, sem depender de contexto externo
 
 Essas características contribuem para a clareza e organização do código, especialmente quando trabalhamos com dados transformados.
 
@@ -260,7 +260,7 @@ E isso nos leva a uma ideia central:
 
 > Tudo na programação funcional gira em torno de transformar dados
 
-Essa ideia se concretiza quando usamos funções como `map`, `filter` e `reduce`. Elas não são apenas utilitários — são a essência do processo de transformação.
+Essa ideia se concretiza quando usamos funções como `map`, `filter` e `reduce`.
 
 Imagine que você tem uma lista de nomes e quer deixá-los todos em maiúsculo. Em vez de pensar em como fazer isso com um loop, basta declarar o que você quer:
 
@@ -313,7 +313,7 @@ Declarar seu código o deixa **legível**, **testável** e **reutilizável** e p
 
 Bom, esse foi um resumo do que eu entendo por **pensamento funcional** e como ele pode ser aplicado na prática.
 
-Acredito que Pensar funcionalmente é mais do que conhecer `map` ou `reduce` — **é mudar a forma como você modela problemas**.
+Acredito que Pensar funcionalmente é mais do que conhecer `map` ou `reduce`, **é mudar a forma como você modela problemas**.
 
 ## Referências
 

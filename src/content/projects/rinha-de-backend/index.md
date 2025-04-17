@@ -19,7 +19,7 @@ repoUrl: https://github.com/Ryrden/rinha-de-backend-go
 
 A **Rinha de Backend** é uma competição organizada por [@zanfranceschi](https://github.com/zanfranceschi) que desafia desenvolvedores a criar APIs robustas e performáticas sob **restrições severas de recursos**.
 
-Na edição **2024/01**, o objetivo era construir uma API para simular operações financeiras concorrentes, com o sistema todo limitado a **1.5 vCPU e 550MB de RAM** — incluindo banco de dados, proxy reverso, aplicação e ferramentas de teste. Uma proposta simples, mas com execução desafiadora.
+Na edição **2024/01**, o objetivo era construir uma API para simular operações financeiras concorrentes, com o sistema todo limitado a **1.5 vCPU e 550MB de RAM**, incluindo banco de dados, proxy reverso, aplicação e ferramentas de teste. Uma proposta simples, mas com execução desafiadora.
 
 ---
 
@@ -63,7 +63,7 @@ Este projeto foi um verdadeiro **intensivão técnico**. Aprendi muito mais do q
 - Diferenças entre **escalonamento horizontal e vertical**
 - Impacto real do sistema operacional na performance
 
-Consegui entregar uma solução que atingiu **nota máxima no Gatling** — sem penalidades — e isso, por si só, foi uma grande conquista.
+Consegui entregar uma solução que atingiu **nota máxima no Gatling**, sem nenhuma penalidades, e isso, por si só, foi uma grande conquista.
 
 ---
 
@@ -71,9 +71,9 @@ Consegui entregar uma solução que atingiu **nota máxima no Gatling** — sem 
 
 Foi o projeto mais desafiador e empolgante que já fiz como dev backend.
 
-Passei quase **um mês inteiro codando diariamente**, buscando milimetricamente otimizar cada parte da aplicação. Algumas decisões vieram da inspiração em projetos de edições anteriores — especialmente de um dos finalistas em Go, com quem conversei e que gentilmente autorizou o uso da estrutura de pastas e arquitetura como base.
+Passei quase **um mês inteiro codando diariamente**, buscando milimetricamente otimizar cada parte da aplicação. Algumas decisões vieram da inspiração em projetos de edições anteriores, especialmente de um dos finalistas em Go, com quem conversei e que gentilmente autorizou o uso da estrutura de pastas e arquitetura como base.
 
-Na reta final, atingi o limite máximo de otimização possível localmente — mas não conseguia alcançar 100% no Gatling. Após muito investigar, percebi que o problema era o sistema operacional: minha API rodava no **Windows**, que impactava a performance de forma significativa. Ao testar em ambiente Linux, alcancei a **nota máxima**. Missão cumprida!
+Na reta final, atingi o limite máximo de otimização possível localmente, mas não conseguia alcançar 100% no Gatling. Após muito investigar, percebi que o problema era o sistema operacional: minha API rodava no **Windows**, que impactava a performance de forma significativa. Ao testar em ambiente Linux, alcancei a **nota máxima**. Missão cumprida!
 
 ---
 

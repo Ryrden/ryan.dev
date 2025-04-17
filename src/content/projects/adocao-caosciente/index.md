@@ -69,13 +69,13 @@ Durante o projeto, atuei como **Scrum Master** e **desenvolvedor backend**, o qu
 
 ## 🧠 Experiência de desenvolvimento
 
-Este foi um projeto que ocupou toda uma disciplina na USP. Contamos com a mentoria de um agente externo — parceiro da universidade — que atuou como cliente real, participando das aulas e acompanhando o desenvolvimento.
+Este foi um projeto que ocupou toda uma disciplina na USP. Contamos com a mentoria de um agente externo (parceiro da universidade) que atuou como cliente real, participando das aulas e acompanhando o desenvolvimento.
 
 Trabalhamos com **sprints quinzenais** e realizávamos uma reunião por semana: uma para apresentação de progresso e outra para a entrega da **demo**.
 
 Como **Scrum Master**, participei de todas as reuniões ao lado da **Product Manager**, atuando principalmente como ouvinte, mas sempre tentando contribuir com pontos relevantes.
 
-Houve desafios: frequentemente estimávamos e planejávamos além do que conseguíamos entregar, o que sobrecarregou as sprints finais — especialmente para mim. Como nem todos no grupo estavam igualmente engajados, acabei assumindo diversas tarefas. Cometi erros no processo, mas aprendi bastante.
+Houve desafios: frequentemente estimávamos e planejávamos além do que conseguíamos entregar, o que sobrecarregou as sprints finais, especialmente para mim. Como nem todos no grupo estavam igualmente engajados, acabei assumindo diversas tarefas. Cometi erros no processo, mas aprendi bastante.
 
 Apesar dos obstáculos, conseguimos entregar o projeto. Contudo, ele não alcançou completamente as expectativas iniciais. Por esse motivo, em **24 de abril de 2024**, decidi arquivá-lo. Hoje, ele serve como um registro de aprendizado e crescimento.
 
@@ -93,4 +93,4 @@ Acredito que a plataforma tem potencial real para impactar positivamente o traba
 
 ---
 
-Esse projeto foi uma excelente oportunidade de aplicar conhecimento técnico em um contexto socialmente relevante — unindo tecnologia e propósito.
+Esse projeto foi uma excelente oportunidade de aplicar conhecimento técnico em um contexto socialmente relevante, unindo tecnologia e propósito.

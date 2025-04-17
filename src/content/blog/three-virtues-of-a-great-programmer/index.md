@@ -24,7 +24,7 @@ id: 1718439
 
 Você já se pegou pensando se realmente manda bem na programação? No meio de tantas linguagens, bugs e desafios diários, é normal bater aquela dúvida: "Será que eu sou um bom programador?"
 
-Essa pergunta ronda a cabeça de muita gente da área — e spoiler: até os mais experientes se questionam de vez em quando. Mas que tal olhar isso por outro ângulo?
+Essa pergunta ronda a cabeça de muita gente da área. Mas que tal olhar isso por outro ângulo?
 
 Larry Wall, criador da linguagem Perl, definiu três virtudes que, segundo ele, todo bom programador carrega: preguiça, impaciência e arrogância. Pode parecer estranho à primeira vista, mas essas três palavras, quando bem interpretadas, fazem todo o sentido.
 
@@ -63,7 +63,7 @@ Um bom exemplo é criar uma suíte de testes automatizados que roda só os teste
 
 > A qualidade que faz você escrever (e manter) programas sobre os quais as outras pessoas não vão querer falar mal.
 
-A arrogância, nesse caso, é aquela pitada de confiança (bem dosada) que te faz cuidar do seu código com carinho. É querer fazer bem feito, porque você sabe que o que está fazendo importa — e que os outros vão ver.
+A arrogância, nesse caso, é aquela pitada de confiança (bem dosada) que te faz cuidar do seu código com carinho. É querer fazer bem feito, porque você sabe que o que está fazendo importa.
 
 Ela aparece quando você refatora um código bagunçado só porque _"não dava pra deixar daquele jeito"_, ou quando você termina uma função e olha pra ela com um sorrisinho de orgulho ou dá aquela vontade de dizer que você é foda.
 
