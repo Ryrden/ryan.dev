@@ -46,6 +46,8 @@ Na verdade, este pensamento é bem familiar para você mas talvez você não sai
 
 Claro, não quero transformar esse texto em uma aula de matemática, mas é bom saber que muita da elegância do paradigma funcional vem exatamente dessa raiz lógica. Então agora que você já entendeu a essência, vamos direto aos principais pilares que sustentam essa forma de programar.
 
+**⚠️ Aviso:** Neste artigo estarei utilizando **Python** para dar os exemplos de código por ser uma linguagem mais acessível para quem está começando 
+
 ## Imutabilidade
 
 > Dados não são modificados após a sua criação.
@@ -113,7 +115,7 @@ Essa instabilidade externa significa que **a mesma entrada pode produzir resulta
 
 #### Efeitos colaterais comuns
 
-Isso também se aplica pro conceito anterior da `imutabilidade`, mudar estado também é um `efeito colateral`. Vou te dar mais exemplos, `Efeitos colaterais` não ocorrem apenas quando alteramos estados ou há erros: eles também aparecem quando vamos:
+Vou te dar mais exemplos, `Efeitos colaterais` ocorrem também aparecem quando vamos:
 
 - 📤 Escrever na tela (`print`)
 - 📥 Ler inputs do usuário
@@ -178,7 +180,7 @@ print(dobro(7))  # 14
 
 Aqui, `multiplica(2)` retorna uma nova função que "lembra" o `a = 2` e espera o próximo argumento. Isso é útil demais quando você quer **reutilizar comportamentos pré-configurados** ou fazer composição de forma fluida.
 
-**💡 Observação:** Estou usando **Python** aqui por ser uma linguagem mais acessível para quem está começando, mas em linguagens funcionais como **Clojure**, **Haskell** ou **Elm**, o suporte a currying já vem praticamente pronto.
+**💡 Observação:** Em linguagens funcionais como **Clojure**, **Haskell** ou **Elm**, o suporte a currying já vem praticamente pronto.
 
 Por exemplo, no Clojure temos a função `partial`, que faz exatamente isso de forma elegante:
 
@@ -273,7 +275,7 @@ Isso é elegante e direto e o melhor de tudo, sem alterar o estado original nem 
 
 Essa composição de funções pequenas e reutilizáveis é o coração da transformação funcional.
 
-> **Obs:** Para os mais experientes em Python de plantão, o uso de `map` e `filter` não é tão comum assim e muitas vezes é substituído por `list comprehensions`, mas o conceito de transformação de dados ainda se aplica. O importante aqui é entender a ideia de **composição** e **transformação**.
+> **Obs:** Para os mais experientes de Python de plantão, o uso de `map` e `filter` não é tão comum assim e muitas vezes é substituído por `list comprehensions`, mas o conceito de transformação de dados ainda se aplica. O importante aqui é entender a ideia de **composição** e **transformação**.
 
 ## Declaratividade
 
@@ -318,7 +320,7 @@ Acredito que Pensar funcionalmente é mais do que conhecer `map` ou `reduce`, **
 ## Referências
 
 - [Functional Thinking - Ada beat](https://adabeat.com/fp/functional-thinking/)
-- 
+- [Paradigma Funciona Vs OO: Será que exige uma mudança de pensamento drástica mesmo?](https://www.youtube.com/watch?v=pz5DROXzBlQ&t=1049s&ab_channel=DevEficiente)
 
 ---
 
