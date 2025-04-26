@@ -1,56 +1,61 @@
 import type { Site, Page, Links, Socials } from "@types"
+import { defaultLang, ui } from "./i18n/ui"
+import { useTranslations } from "./i18n/utils"
+
+// Use the default language for initial values
+const t = useTranslations(defaultLang)
 
 // Global
 export const SITE: Site = {
-  TITLE: "Ryan Souza",
-  DESCRIPTION: "Blog pessoal de Ryan Souza",
-  AUTHOR: "Ryan Souza",
+  TITLE: t('site.title'),
+  DESCRIPTION: t('site.description'),
+  AUTHOR: t('site.author'),
 }
 
 // Work Page
 export const WORK: Page = {
-  TITLE: "Trabalho",
-  DESCRIPTION: "Por onde já passei e o que já fiz.",
+  TITLE: t('work.title'),
+  DESCRIPTION: t('work.description'),
 }
 
 // Blog Page
 export const BLOG: Page = {
-  TITLE: "Blog",
-  DESCRIPTION: "O que ando pensando e aprendendo.",
+  TITLE: t('blog.title'),
+  DESCRIPTION: t('blog.description'),
 }
 
 // Projects Page 
 export const PROJECTS: Page = {
-  TITLE: "Projetos",
-  DESCRIPTION: "Alguns projetos que já fiz.",
+  TITLE: t('projects.title'),
+  DESCRIPTION: t('projects.description'),
 }
 
 // Search Page
 export const SEARCH: Page = {
-  TITLE: "Busca",
-  DESCRIPTION: "Busque todos as publicações e projetos por palavra-chave.",
+  TITLE: t('search.title'),
+  DESCRIPTION: t('search.description'),
 }
 
 // Links
 export const LINKS: Links = [
   { 
-    TEXT: "Inicio", 
+    TEXT: t('nav.home'), 
     HREF: "/", 
   },
   { 
-    TEXT: "Trabalho", 
+    TEXT: t('nav.work'), 
     HREF: "/work", 
   },
   { 
-    TEXT: "Blog", 
+    TEXT: t('nav.blog'), 
     HREF: "/blog", 
   },
   { 
-    TEXT: "Projetos", 
+    TEXT: t('nav.projects'), 
     HREF: "/projects", 
   },
   {
-    TEXT: "CV ↗",
+    TEXT: t('nav.cv'),
     HREF: "https://drive.google.com/file/d/19pqHEiFgfk3KVx_rZrWjyfyNAXi1a0jI/view?usp=sharing",
     EXTERNAL: true,
   },
