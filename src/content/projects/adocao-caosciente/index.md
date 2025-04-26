@@ -17,7 +17,9 @@ tags:
 - Javascript
 repoUrl: https://github.com/orgs/Projeto-Adocao-Caosciente/repositories
 demoUrl: https://adocao-caosciente-frontend.vercel.app/login
+lang: "pt-br"
 ---
+
 
 ![Capa](https://i.imgur.com/EkDWUfh.png)
 

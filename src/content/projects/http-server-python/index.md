@@ -9,7 +9,9 @@ tags:
 - HTTP
 - Build Your Own
 repoUrl: https://github.com/Ryrden/http-server-python
+lang: "pt-br"
 ---
+
 
 ## 🌐 Sobre o projeto
 

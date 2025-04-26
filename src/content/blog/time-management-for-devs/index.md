@@ -9,7 +9,9 @@ tags:
 - Gestão de Tempo
 - Desenvolvimento
 id: 1573429
+lang: "pt-br"
 ---
+
 
 ![Capa](https://i.imgur.com/oCZcIby.webp)
 

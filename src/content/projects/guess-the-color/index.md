@@ -9,7 +9,9 @@ tags:
 - Javascript
 repoUrl: https://github.com/Ryrden/Guess-the-Color
 demoUrl: https://rgbguesscolor.netlify.app/
+lang: "pt-br"
 ---
+
 
 ![Capa](https://i.imgur.com/JMN1P9B.gif)
 

@@ -12,7 +12,9 @@ tags:
 - CSS
 - Javascript
 repoUrl: https://github.com/Ryrden/SCC0541-Formula1
+lang: "pt-br"
 ---
+
 
 ![Capa](https://i.imgur.com/aA9UWdE.png)
 

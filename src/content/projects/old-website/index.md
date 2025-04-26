@@ -12,7 +12,9 @@ tags:
 - SEO
 repoUrl: https://github.com/Ryrden/old-website
 demoUrl: https://ryrden.github.io/old-website
+lang: "pt-br"
 ---
+
 
 ![Capa](https://i.imgur.com/lB9DAHd.png)
 

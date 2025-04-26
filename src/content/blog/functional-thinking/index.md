@@ -7,6 +7,7 @@ tags:
   - Programação Funcional
   - Paradigma de Programação
   - Programação
+lang: "pt-br"
 ---
 
 ![Capa](https://i.imgur.com/pWBu0iB.png)

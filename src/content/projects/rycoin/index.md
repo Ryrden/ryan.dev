@@ -11,7 +11,9 @@ tags:
 - Besu
 - Hardhat
 repoUrl: https://github.com/Ryrden/RyCoin
+lang: "pt-br"
 ---
+
 
 ![Capa](https://i.imgur.com/uNAjgSV.png)
 

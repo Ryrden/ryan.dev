@@ -11,7 +11,9 @@ tags:
 - Gatling
 - Nginx
 repoUrl: https://github.com/Ryrden/rinha-de-backend-go
+lang: "pt-br"
 ---
+
 
 ![Capa](https://i.imgur.com/NkUgA5g.jpeg)
 

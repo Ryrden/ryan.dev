@@ -9,6 +9,7 @@ tags:
 - Linux
 - Windows
 id: 1572979
+lang: "pt-br"
 ---
 
 ![Capa](https://i.imgur.com/9GC9TvD.webp)
