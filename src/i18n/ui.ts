@@ -10,6 +10,11 @@ export const languageFlags: Record<string, string> = {
   'pt-br': 'flag-br'
 }
 
+export const localeSettings: Record<string, string> = {
+  'en': 'en-US',
+  'pt-br': 'pt-BR'
+}
+
 export const ui: Record<string, { [key: string]: string }> = {
   en: {
     // Navigation & Header
