@@ -13,8 +13,11 @@ export default function ArrowCard({entry, pill, locale}: Props) {
     // Ensure locale is a valid key in the UI object
     const t = useTranslations(locale)
     
+    // Extract the folder name for URL path - just the folder without language
+    const folderName = entry.id.split('/')[0]
+    
     return (
-      <a href={`/${locale}/${entry.collection}/${entry.slug}`} class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out">
+      <a href={`/${locale}/${entry.collection}/${folderName}`} class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out">
       <div class="w-full group-hover:text-black group-hover:dark:text-white blend">
         <div class="flex flex-wrap items-center gap-2">
           {pill &&

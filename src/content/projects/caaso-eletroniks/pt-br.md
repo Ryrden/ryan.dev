@@ -13,6 +13,7 @@ tags:
 - Javascript
 repoUrl: https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks
 demoUrl: https://ryrden.github.io/SCC-0560-Caaso-Eletroniks/
+lang: "pt-br"
 ---
 
 ![Capa](https://i.imgur.com/l16BOuu.png)

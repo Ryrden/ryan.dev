@@ -12,15 +12,22 @@ export async function getStaticPaths() {
 	const projects = await getCollection("projects")
 	const locales = Object.keys(ui)
 	
-	return projects.flatMap((project) => 
-		locales.map((locale) => ({
-			params: { 
-				locale, 
-				slug: project.slug 
-			},
-			props: { project, locale },
-		}))
-	)
+	return projects.flatMap((project) => {
+		// Get folder name (e.g., "adocao-caosciente")
+		const folderName = project.id.split('/')[0]
+		const projectLang = project.data.lang
+		
+		// Only create paths for valid language matches
+		return locales
+			.filter(locale => locale === projectLang)
+			.map((locale) => ({
+				params: { 
+					locale, // The language code in URL (en, pt-br)
+					slug: folderName // Just the folder name without language
+				},
+				props: { project, locale },
+			}))
+	})
 }
 
 // Get the requested project

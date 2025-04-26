@@ -12,15 +12,22 @@ export async function getStaticPaths() {
 	const posts = await getCollection("blog")
 	const locales = Object.keys(languages)
 	
-	return posts.flatMap((post) => 
-		locales.map((locale) => ({
-			params: { 
-				locale, 
-				slug: post.slug 
-			},
-			props: { post, locale },
-		}))
-	)
+	return posts.flatMap((post) => {
+		// Get folder name (e.g., "functional-thinking")
+		const folderName = post.id.split('/')[0]
+		const postLang = post.data.lang
+		
+		// Only create paths for valid language matches
+		return locales
+			.filter(locale => locale === postLang)
+			.map((locale) => ({
+				params: { 
+					locale, // The language code in URL (en, pt-br)
+					slug: folderName // Just the folder name without language
+				},
+				props: { post, locale },
+			}))
+	})
 }
 
 // Get the requested post

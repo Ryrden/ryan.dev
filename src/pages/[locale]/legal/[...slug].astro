@@ -5,19 +5,36 @@ import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
 import { formatDate } from "@lib/utils"
 import { SITE } from "@consts"
+import { ui } from "@i18n/ui"
 
 // Create the static pages for legal docs
 export async function getStaticPaths() {
 	const docs = await getCollection("legal")
-	return docs.map((doc) => ({
-		params: { slug: doc.slug },
-		props: doc,
-	}))
+	const locales = Object.keys(ui)
+	
+  return docs.flatMap((doc) => {
+		const folderName = doc.id.split('/')[0]
+		const docLang = doc.data.lang
+		
+		return locales
+			.filter(locale => locale === docLang)
+			.map((locale) => ({
+				params: { 
+					locale, 
+					slug: folderName 
+				},
+				props: { doc, locale },
+			}))
+	})
 }
 
 // Get the requested legal doc
-type Props = CollectionEntry<"legal">;
-const doc = Astro.props
+interface Props {
+  doc: CollectionEntry<"legal">;
+  locale: string;
+}
+
+const { doc } = Astro.props
 const { title, date } = doc.data
 const { Content } = await doc.render();
 
