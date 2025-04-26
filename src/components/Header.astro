@@ -10,6 +10,21 @@ const route = getRouteFromUrl(Astro.url)
 const t = useTranslations(lang)
 const subpath = pathname.match(/[^/]+/g)
 
+// Get the full path without the language prefix for language switching
+const pathWithoutLang = pathname.replace(new RegExp(`^/${lang}`), '') || '/'
+
+// Function to check if a link is active
+const isLinkActive = (linkPath: string) => {
+  // Exact match
+  if (pathname === linkPath) return true;
+  
+  // For non-home links, check if pathname starts with the link path
+  // This ensures section remains highlighted for nested content
+  if (linkPath !== `/${lang}/` && pathname.startsWith(linkPath)) return true;
+  
+  return false;
+}
+
 // Define links using translations
 const LINKS = [
   { 
@@ -54,7 +69,7 @@ const LINKS = [
       <nav class="hidden md:flex items-center justify-center text-sm gap-1">
         {
           LINKS.map((LINK) => (
-            <a href={LINK.HREF} target={LINK.EXTERNAL ? "_blank" : ""} class={cn("h-8 rounded-full px-3 text-current", "flex items-center justify-center", "transition-colors duration-300 ease-in-out", pathname === LINK.HREF || "/" + subpath?.[0] === LINK.HREF ? "bg-black dark:bg-white text-white dark:text-black" : "hover:bg-black/5 dark:hover:bg-white/20 hover:text-black dark:hover:text-white")}>
+            <a href={LINK.HREF} target={LINK.EXTERNAL ? "_blank" : ""} class={cn("h-8 rounded-full px-3 text-current", "flex items-center justify-center", "transition-colors duration-300 ease-in-out", isLinkActive(LINK.HREF) ? "bg-black dark:bg-white text-white dark:text-black" : "hover:bg-black/5 dark:hover:bg-white/20 hover:text-black dark:hover:text-white")}>
               {LINK.TEXT}
             </a>
           ))
@@ -63,7 +78,7 @@ const LINKS = [
     </div>
 
     <div class="buttons absolute right-0 top-1/2 -translate-y-1/2 flex gap-1">
-      <a href={`/${lang}/search`} aria-label={t('a11y.search')} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out", pathname === `/${lang}/search` || "/" + subpath?.[0] === "search" ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
+      <a href={`/${lang}/search`} aria-label={t('a11y.search')} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out", isLinkActive(`/${lang}/search`) ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
         <svg class="size-full">
           <use href="/ui.svg#search"></use>
         </svg>
@@ -87,7 +102,7 @@ const LINKS = [
         <ul id="language-dropdown" class="hidden absolute right-0 mt-2 py-2 w-40 bg-white dark:bg-neutral-800 rounded-lg shadow-lg border border-black/10 dark:border-white/25 z-50">
           {Object.entries(languages).map(([langCode, label]) => (
             <li>
-              <a href={`/${langCode}/${route || ''}`} class={cn(
+              <a href={`/${langCode}${pathWithoutLang}`} class={cn(
                 "flex items-center px-4 py-2 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors",
                 langCode === lang ? "font-bold" : ""
               )}>
