@@ -5,6 +5,7 @@ import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
 import Search from "@components/Search"
 import { SEARCH } from "@consts"
+import { getLangFromUrl } from "@i18n/utils"
 
 const posts = (await getCollection("blog"))
   .filter(post => !post.data.draft)
@@ -13,6 +14,13 @@ const projects = (await getCollection("projects"))
   .filter(post => !post.data.draft)
 
 const data = [...posts, ...projects] as CollectionEntry<"blog">[]
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'pt-br' } },
+    { params: { locale: 'en' } },
+  ];
+}
 ---
 
 <PageLayout title={SEARCH.TITLE} description={SEARCH.DESCRIPTION}>
@@ -23,7 +31,7 @@ const data = [...posts, ...projects] as CollectionEntry<"blog">[]
   </TopLayout>
   <BottomLayout>
     <div class="animate">
-      <Search client:load data={data}/>
+      <Search client:load data={data} locale={getLangFromUrl(Astro.url)}/>
     </div>
   </BottomLayout>
 </PageLayout>

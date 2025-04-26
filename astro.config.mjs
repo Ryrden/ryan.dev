@@ -15,6 +15,14 @@ export default defineConfig({
     tailwind({ applyBaseStyles: false }), 
     partytown({ config: { forward: ['dataLayer.push'] } })
   ],
+  i18n: {
+    locales: ["pt-br", "en"],
+    defaultLocale: "en",
+
+    routing: {
+      prefixDefaultLocale: true, // Ensures that your default locale is prefixed aswell
+    },
+  },
   // TODO: Add support do Mermaid into blog markdown
   // READ: https://dev.to/fkurz/extending-astrojs-markdown-processing-with-remark-and-rehype-plugins-m1k
 })

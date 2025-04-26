@@ -1,0 +1,25 @@
+---
+import { languages } from '@/i18n/ui';
+import { cn } from "@lib/utils"
+import { getLangFromUrl, getRouteFromUrl, useTranslations } from '../i18n/utils';
+
+const route = getRouteFromUrl(Astro.url);
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<!-- <ul>
+  {Object.entries(languages).map(([lang, label]) => (
+    <li>
+      <a href={`/${lang}/${route || ''}`}>{label}</a>
+    </li>
+  ))}
+</ul> -->
+<button id="header-theme-button" aria-label={t('a11y.theme')} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
+  <svg class="size-full block dark:hidden">
+    <use href="/ui.svg#sun"></use>
+  </svg>
+  <svg class="size-full hidden dark:block">
+    <use href="/ui.svg#moon"></use>
+  </svg>
+</button>

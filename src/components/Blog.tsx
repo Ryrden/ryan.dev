@@ -2,13 +2,20 @@ import type { CollectionEntry } from "astro:content"
 import { createEffect, createMemo, createSignal, For } from "solid-js"
 import ArrowCard from "@components/ArrowCard"
 import { cn } from "@lib/utils"
+import { getLangFromUrl, useTranslations } from "@i18n/utils"
+import { defaultLang, ui } from "@i18n/ui"
 
 type Props = {
   tags: string[]
   data: CollectionEntry<"blog">[]
+  locale: keyof typeof ui
 }
 
-export default function Blog({ data, tags }: Props) {
+export default function Blog({ data, tags, locale }: Props) {
+  // Ensure locale is a valid key in the UI object
+  // const lang = getLangFromUrl(Astro.urlll) || "en"
+  // console.log(lang)
+  const t = useTranslations(locale)
   const [filter, setFilter] = createSignal(new Set<string>())
   const [posts, setPosts] = createSignal<CollectionEntry<"blog">[]>([])
 
@@ -51,7 +58,7 @@ export default function Blog({ data, tags }: Props) {
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
       <div class="col-span-3 sm:col-span-1">
         <div class="sticky top-24">
-          <div class="text-sm font-semibold uppercase mb-2 text-black dark:text-white">Filtros</div>
+          <div class="text-sm font-semibold uppercase mb-2 text-black dark:text-white">{t('blog.filters')}</div>
           <ul class="flex flex-wrap sm:flex-col gap-1.5">
             <For each={sortedTags()}>
               {(tag) => (
@@ -90,13 +97,13 @@ export default function Blog({ data, tags }: Props) {
       <div class="col-span-3 sm:col-span-2">
         <div class="flex flex-col">
           <div class="text-sm uppercase mb-2">
-            EXIBINDO {posts().length} DE {data.length} PUBLICAÇÕES
+            {t('blog.showing').replace('{0}', String(posts().length)).replace('{1}', String(data.length))}
             {/* TODO: Adicionar paginação */}
           </div>
           <ul class="flex flex-col gap-3">
             {posts().map((post) => (
               <li>
-                <ArrowCard entry={post} />
+                <ArrowCard entry={post} locale={locale} />
               </li>
             ))}
           </ul>

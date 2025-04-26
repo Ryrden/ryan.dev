@@ -1,10 +1,15 @@
 ---
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+
 /**
- * Meteors.astro
+ * MeteorShower.astro
  * This component creates meteors that are appended to the galaxy on interval.
  * Meteors are removed from the document after the animation is completed.
  * There are four (4) meteor shower containers, one for each diagonal direction.
  */
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <div id="meteors">

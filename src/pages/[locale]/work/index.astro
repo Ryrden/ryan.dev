@@ -26,6 +26,13 @@ function formatWorkDate(input: Date | string) {
   const year = new Date(input).getFullYear()
   return `${month} ${year}`
 }
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'pt-br' } },
+    { params: { locale: 'en' } },
+  ];
+}
 ---
 
 <PageLayout title={WORK.TITLE} description={WORK.DESCRIPTION}>
