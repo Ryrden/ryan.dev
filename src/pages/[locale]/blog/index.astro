@@ -6,6 +6,7 @@ import BottomLayout from "@layouts/BottomLayout.astro"
 import Blog from "@components/Blog"
 import { BLOG } from "@consts"
 import { getLangFromUrl } from "@i18n/utils"
+import { languages } from "@i18n/ui"
 
 const posts = (await getCollection("blog"))
   .filter(post => !post.data.draft)
@@ -15,10 +16,9 @@ const tags = [...new Set(posts.flatMap(post => post.data.tags))]
   .sort((a, b) => a.localeCompare(b))
 
 export async function getStaticPaths() {
-  return [
-    { params: { locale: 'pt-br' } },
-    { params: { locale: 'en' } },
-  ];
+  return Object.keys(languages).map(locale => ({
+    params: { locale }
+  }));
 }
 ---
 

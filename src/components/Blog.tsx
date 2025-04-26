@@ -43,6 +43,8 @@ export default function Blog({ data, tags, locale }: Props) {
         )
       )
     ))
+    console.log("posts", posts())
+    console.log("Filtered posts count:", posts().length)
   })
 
   function toggleTag(tag: string) {
