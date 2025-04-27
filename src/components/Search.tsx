@@ -1,9 +1,9 @@
-import type { CollectionEntry } from "astro:content"
-import { createEffect, createSignal } from "solid-js"
-import Fuse from "fuse.js"
 import ArrowCard from "@components/ArrowCard"
-import { useTranslations, getLangFromUrl } from "@i18n/utils"
 import type { ui } from "@i18n/ui"
+import { useTranslations } from "@i18n/utils"
+import type { CollectionEntry } from "astro:content"
+import Fuse from "fuse.js"
+import { createEffect, createSignal } from "solid-js"
 
 type Props = {
   data: CollectionEntry<"blog">[]

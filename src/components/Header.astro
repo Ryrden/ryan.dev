@@ -1,31 +1,24 @@
 ---
-import { getLangFromUrl, useTranslations, getRouteFromUrl } from '@i18n/utils'
-import { languageFlags, languages } from '@i18n/ui'
-import { cn } from "@lib/utils"
 import Container from "@components/Container.astro"
+import { languageFlags, languages } from '@i18n/ui'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import { cn } from "@lib/utils"
 
 const { pathname } = Astro.url
 const lang = getLangFromUrl(Astro.url)
-const route = getRouteFromUrl(Astro.url)
 const t = useTranslations(lang)
-const subpath = pathname.match(/[^/]+/g)
 
-// Get the full path without the language prefix for language switching
+// TODO: Refactor to use I18n utils
 const pathWithoutLang = pathname.replace(new RegExp(`^/${lang}`), '') || '/'
 
-// Function to check if a link is active
 const isLinkActive = (linkPath: string) => {
-  // Exact match
   if (pathname === linkPath) return true;
   
-  // For non-home links, check if pathname starts with the link path
-  // This ensures section remains highlighted for nested content
   if (linkPath !== `/${lang}/` && pathname.startsWith(linkPath)) return true;
   
   return false;
 }
 
-// Define navigation links
 const navLinks = [
   { 
     href: `/${lang}/`, 
@@ -160,7 +153,6 @@ const navLinks = [
     drawerButton?.addEventListener("click", toggleDrawer)
   }
 
-  // Language dropdown toggle
   function toggleLanguageDropdown() {
     const dropdown = document.getElementById("language-dropdown")
     dropdown?.classList.toggle("hidden")
@@ -170,7 +162,6 @@ const navLinks = [
     const languageButton = document.getElementById("language-button")
     languageButton?.addEventListener("click", toggleLanguageDropdown)
     
-    // Close dropdown when clicking outside
     document.addEventListener("click", (event) => {
       const dropdown = document.getElementById("language-dropdown")
       const languageButton = document.getElementById("language-button")

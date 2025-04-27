@@ -1,6 +1,4 @@
 ---
-import { getLangFromUrl, useTranslations } from '@i18n/utils'
-
 interface Props {
   title: string
   description: string
@@ -8,8 +6,6 @@ interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
 
 const { title, description, image = "/open-graph.jpg" } = Astro.props
 ---

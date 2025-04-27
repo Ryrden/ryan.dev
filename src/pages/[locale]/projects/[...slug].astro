@@ -1,37 +1,33 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content"
+import { ui } from "@i18n/ui"
+import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro"
+import ArticleTopLayout from "@layouts/ArticleTopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
-import BottomLayout from "@layouts/BottomLayout.astro"
-import ArticleTopLayout from "@layouts/ArticleTopLayout.astro"
-import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro"
-import { ui } from "@i18n/ui"
+import { getCollection } from "astro:content"
 
-// Create the static projects pages
 export async function getStaticPaths() {
 	const projects = await getCollection("projects")
 	const locales = Object.keys(ui)
 	
 	return projects.flatMap((project) => {
-		// Get folder name (e.g., "adocao-caosciente")
 		const folderName = project.id.split('/')[0]
 		const projectLang = project.data.lang
 		
-		// Only create paths for valid language matches
 		return locales
 			.filter(locale => locale === projectLang)
 			.map((locale) => ({
 				params: { 
-					locale, // The language code in URL (en, pt-br)
-					slug: folderName // Just the folder name without language
+					locale,
+					slug: folderName
 				},
 				props: { project, locale },
 			}))
 	})
 }
 
-// Get the requested project
-const { project, locale } = Astro.props
+const { project } = Astro.props
 const { title, summary } = project.data
 ---
 

@@ -28,7 +28,6 @@ export default function Projects({ data, tags, locale }: Props) {
     return counts
   })
 
-  // Ordena as tags pela frequência
   const sortedTags = createMemo(() =>
     [...tags].sort((a, b) => (tagCounts()[b] ?? 0) - (tagCounts()[a] ?? 0))
   )

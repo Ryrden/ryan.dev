@@ -1,9 +1,9 @@
+import ArrowCard from "@components/ArrowCard"
+import { ui } from "@i18n/ui"
+import { useTranslations } from "@i18n/utils"
+import { cn } from "@lib/utils"
 import type { CollectionEntry } from "astro:content"
 import { createEffect, createMemo, createSignal, For } from "solid-js"
-import ArrowCard from "@components/ArrowCard"
-import { cn } from "@lib/utils"
-import { getLangFromUrl, useTranslations } from "@i18n/utils"
-import { defaultLang, ui } from "@i18n/ui"
 
 type Props = {
   tags: string[]
