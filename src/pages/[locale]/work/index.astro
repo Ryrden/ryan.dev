@@ -3,10 +3,11 @@ import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
-import { WORK } from "@consts"
+import { useTranslations } from "@i18n/utils"
 import { defaultLang, localeSettings } from "@i18n/ui"
 
 const { locale } = Astro.params;
+const t = useTranslations(locale);
 
 const allWork = await getCollection("work");
 const collection = allWork.filter(entry => entry.data.lang === locale);
@@ -39,10 +40,10 @@ export async function getStaticPaths() {
 }
 ---
 
-<PageLayout title={WORK.TITLE} description={WORK.DESCRIPTION}>
+<PageLayout title={t('work.title')} description={t('work.description')}>
   <TopLayout>
     <div class="animate page-heading">
-      {WORK.TITLE}
+      {t('work.title')}
     </div>
   </TopLayout>
   <BottomLayout>

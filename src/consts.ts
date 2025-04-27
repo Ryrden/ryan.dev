@@ -1,8 +1,9 @@
 import type { Site, Page, Links, Socials } from "@types"
 import { defaultLang, ui } from "./i18n/ui"
-import { useTranslations } from "./i18n/utils"
+import { getLangFromUrl, useTranslations } from "./i18n/utils"
 
 // Use the default language for initial values
+const lang = getLangFromUrl()
 const t = useTranslations(defaultLang)
 
 // Global

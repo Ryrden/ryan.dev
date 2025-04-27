@@ -23,28 +23,28 @@ const isLinkActive = (linkPath: string) => {
   return false;
 }
 
-// Define links using translations
-const LINKS = [
+// Define navigation links
+const navLinks = [
   { 
-    TEXT: t('nav.home'), 
-    HREF: `/${lang}/`, 
+    href: `/${lang}/`, 
+    text: 'nav.home',
   },
   { 
-    TEXT: t('nav.work'), 
-    HREF: `/${lang}/work`, 
+    href: `/${lang}/work`, 
+    text: 'nav.work',
   },
   { 
-    TEXT: t('nav.blog'), 
-    HREF: `/${lang}/blog`, 
+    href: `/${lang}/blog`, 
+    text: 'nav.blog',
   },
   { 
-    TEXT: t('nav.projects'), 
-    HREF: `/${lang}/projects`, 
+    href: `/${lang}/projects`, 
+    text: 'nav.projects',
   },
   {
-    TEXT: t('nav.cv'),
-    HREF: "https://drive.google.com/file/d/19pqHEiFgfk3KVx_rZrWjyfyNAXi1a0jI/view?usp=sharing",
-    EXTERNAL: true,
+    href: "https://drive.google.com/file/d/19pqHEiFgfk3KVx_rZrWjyfyNAXi1a0jI/view?usp=sharing",
+    text: 'nav.cv',
+    external: true,
   },
 ]
 ---
@@ -52,9 +52,9 @@ const LINKS = [
 <div id="drawer" class="fixed inset-0 h-0 z-40 overflow-hidden flex flex-col items-center justify-center md:hidden bg-neutral-100 dark:bg-neutral-900 transition-[height] duration-300 ease-in-out">
   <nav class="flex flex-col items-center space-y-2">
     {
-      LINKS.map((LINK) => (
-        <a href={LINK.HREF} target={LINK.EXTERNAL ? "_blank" : ""} class={cn("flex items-center justify-center px-3 py-1 rounded-full", "text-current hover:text-black dark:hover:text-white", "hover:bg-black/5 dark:hover:bg-white/20", "transition-colors duration-300 ease-in-out", isLinkActive(LINK.HREF) ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
-          {LINK.TEXT}
+      navLinks.map((link) => (
+        <a href={link.href} target={link.external ? "_blank" : ""} class={cn("flex items-center justify-center px-3 py-1 rounded-full", "text-current hover:text-black dark:hover:text-white", "hover:bg-black/5 dark:hover:bg-white/20", "transition-colors duration-300 ease-in-out", isLinkActive(link.href) ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
+          {t(link.text)}
         </a>
       ))
     }

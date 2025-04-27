@@ -3,7 +3,6 @@ import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import ArrowCard from "@components/ArrowCard"
 import StackCard from "@components/StackCard.astro"
-import { SITE, SOCIALS } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
@@ -46,6 +45,32 @@ const stack = [
     icon: "tailwind", 
     href: "https://tailwindcss.com" 
   },
+  { 
+    text: "i18n", 
+    icon: "i18n", 
+    href: "https://en.wikipedia.org/wiki/Internationalization_and_localization" 
+  },
+]
+
+const socials = [
+  { 
+    NAME: "Email",
+    ICON: "email", 
+    TEXT: "ryanssteles@gmail.com",
+    HREF: "mailto:ryanssteles@gmail.com",
+  },
+  { 
+    NAME: "Github",
+    ICON: "github",
+    TEXT: "ryrden",
+    HREF: "https://github.com/ryrden"
+  },
+  { 
+    NAME: "LinkedIn",
+    ICON: "linkedin",
+    TEXT: "ryan25",
+    HREF: "https://www.linkedin.com/in/ryan25/",
+  },
 ]
 
 export async function getStaticPaths() {
@@ -56,7 +81,7 @@ export async function getStaticPaths() {
 }
 ---
 
-<PageLayout title={t('nav.home')} description={SITE.DESCRIPTION}>
+<PageLayout title={t('nav.home')} description={t('site.description')}>
 
   <!-- Light Mode: Particles -->
   <div class='absolute inset-0 block dark:hidden'>
@@ -211,7 +236,7 @@ export async function getStaticPaths() {
             {t('home.contactText')}
           </p>
           <div class="grid grid-cols-4 gap-y-2 mt-4 auto-cols-min">
-            {SOCIALS.map(social => (
+            {socials.map(social => (
               <div class="col-span-1 flex items-center gap-1">
                 <span class="whitespace-nowrap truncate">
                   {social.NAME}

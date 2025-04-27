@@ -1,10 +1,31 @@
 ---
-import { SITE, SOCIALS } from "@consts"
 import Container from "@components/Container.astro"
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+// Define socials directly in the component
+const socials = [
+  { 
+    name: "Email",
+    icon: "email", 
+    text: "ryanssteles@gmail.com",
+    href: "mailto:ryanssteles@gmail.com",
+  },
+  { 
+    name: "Github",
+    icon: "github",
+    text: "ryrden",
+    href: "https://github.com/ryrden"
+  },
+  { 
+    name: "LinkedIn",
+    icon: "linkedin",
+    text: "ryan25",
+    href: "https://www.linkedin.com/in/ryan25/",
+  },
+]
 ---
 
 <footer class="relative bg-white dark:bg-black">
@@ -66,15 +87,15 @@ const t = useTranslations(lang)
           <div class="order-1 sm:order-2 flex justify-center sm:justify-end">
             <div class="flex flex-wrap gap-1 items-center justify-center">
               {
-                SOCIALS.map((SOCIAL) => (
+                socials.map((social) => (
                   <a 
-                    href={SOCIAL.HREF} 
+                    href={social.href} 
                     target="_blank" 
-                    aria-label={`${t('site.title')} on ${SOCIAL.NAME}`} 
+                    aria-label={`${t('site.title')} on ${social.name}`} 
                     class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend"
                   >
                     <svg class="size-full fill-current group-hover:fill-black group-hover:dark:fill-white blend">
-                      <use href={`/social.svg#${SOCIAL.ICON}`} />
+                      <use href={`/social.svg#${social.icon}`} />
                     </svg>
                   </a>
                 ))

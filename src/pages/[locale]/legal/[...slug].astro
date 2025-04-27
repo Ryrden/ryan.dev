@@ -4,7 +4,7 @@ import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
 import { formatDate } from "@lib/utils"
-import { SITE } from "@consts"
+import { getLangFromUrl, useTranslations } from "@i18n/utils"
 import { ui } from "@i18n/ui"
 
 // Create the static pages for legal docs
@@ -34,13 +34,14 @@ interface Props {
   locale: string;
 }
 
-const { doc } = Astro.props
+const { doc, locale } = Astro.props
 const { title, date } = doc.data
 const { Content } = await doc.render();
+const t = useTranslations(locale);
 
 ---
 
-<PageLayout title={title} description={`${title} for ${SITE.TITLE}`}>
+<PageLayout title={title} description={`${title} for ${t('site.title')}`}>
   <TopLayout>
     <div class="animate">
       <div class="page-heading">

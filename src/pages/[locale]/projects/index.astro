@@ -4,11 +4,11 @@ import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
 import Projects from "@components/Projects"
-import { PROJECTS } from "@consts"
-import { getLangFromUrl } from "@i18n/utils"
+import { getLangFromUrl, useTranslations } from "@i18n/utils"
 import { ui } from "@i18n/ui"
 
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 // Get all projects
 const allProjects = await getCollection("projects");
@@ -30,10 +30,10 @@ export async function getStaticPaths() {
 const { pathname } = Astro.url
 ---
 
-<PageLayout title={PROJECTS.TITLE} description={PROJECTS.DESCRIPTION}>
+<PageLayout title={t('projects.title')} description={t('projects.description')}>
   <TopLayout>
     <div class="animate page-heading">
-      {PROJECTS.TITLE}
+      {t('projects.title')}
     </div>
   </TopLayout>
   <BottomLayout>

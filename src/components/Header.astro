@@ -25,28 +25,28 @@ const isLinkActive = (linkPath: string) => {
   return false;
 }
 
-// Define links using translations
-const LINKS = [
+// Define navigation links
+const navLinks = [
   { 
-    TEXT: t('nav.home'), 
-    HREF: `/${lang}/`, 
+    href: `/${lang}/`, 
+    text: 'nav.home',
   },
   { 
-    TEXT: t('nav.work'), 
-    HREF: `/${lang}/work`, 
+    href: `/${lang}/work`, 
+    text: 'nav.work',
   },
   { 
-    TEXT: t('nav.blog'), 
-    HREF: `/${lang}/blog`, 
+    href: `/${lang}/blog`, 
+    text: 'nav.blog',
   },
   { 
-    TEXT: t('nav.projects'), 
-    HREF: `/${lang}/projects`, 
+    href: `/${lang}/projects`, 
+    text: 'nav.projects',
   },
   {
-    TEXT: t('nav.cv'),
-    HREF: "https://drive.google.com/file/d/19pqHEiFgfk3KVx_rZrWjyfyNAXi1a0jI/view?usp=sharing",
-    EXTERNAL: true,
+    href: "https://drive.google.com/file/d/19pqHEiFgfk3KVx_rZrWjyfyNAXi1a0jI/view?usp=sharing",
+    text: 'nav.cv',
+    external: true,
   },
 ]
 ---
@@ -66,9 +66,9 @@ const LINKS = [
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
       <nav class="hidden md:flex items-center justify-center text-sm gap-1">
         {
-          LINKS.map((LINK) => (
-            <a href={LINK.HREF} target={LINK.EXTERNAL ? "_blank" : ""} class={cn("h-8 rounded-full px-3 text-current", "flex items-center justify-center", "transition-colors duration-300 ease-in-out", isLinkActive(LINK.HREF) ? "bg-black dark:bg-white text-white dark:text-black" : "hover:bg-black/5 dark:hover:bg-white/20 hover:text-black dark:hover:text-white")}>
-              {LINK.TEXT}
+          navLinks.map((link) => (
+            <a href={link.href} target={link.external ? "_blank" : ""} class={cn("h-8 rounded-full px-3 text-current", "flex items-center justify-center", "transition-colors duration-300 ease-in-out", isLinkActive(link.href) ? "bg-black dark:bg-white text-white dark:text-black" : "hover:bg-black/5 dark:hover:bg-white/20 hover:text-black dark:hover:text-white")}>
+              {t(link.text)}
             </a>
           ))
         }
