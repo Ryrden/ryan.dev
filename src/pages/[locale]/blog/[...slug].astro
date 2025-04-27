@@ -1,0 +1,49 @@
+---
+import { languages } from "@i18n/ui"
+import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro"
+import ArticleTopLayout from "@layouts/ArticleTopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+import { getCollection } from "astro:content"
+
+// Create the static blog pages
+export async function getStaticPaths() {
+	const posts = await getCollection("blog")
+	const locales = Object.keys(languages)
+	
+	return posts.flatMap((post) => {
+		// Get folder name (e.g., "functional-thinking")
+		const folderName = post.id.split('/')[0]
+		const postLang = post.data.lang
+		
+		// Only create paths for valid language matches
+		return locales
+			.filter(locale => locale === postLang)
+			.map((locale) => ({
+				params: { 
+					locale, // The language code in URL (en, pt-br)
+					slug: folderName // Just the folder name without language
+				},
+				props: { post, locale },
+			}))
+	})
+}
+
+// Get the requested post
+const { post } = Astro.props
+const { title, summary } = post.data
+---
+
+<PageLayout title={title} description={summary}>
+  <TopLayout>
+    <div class="animate">
+      <ArticleTopLayout entry={post}/>
+    </div>
+  </TopLayout>
+  <BottomLayout>
+    <div class="animate">
+      <ArticleBottomLayout entry={post} />
+    </div>
+  </BottomLayout>
+</PageLayout>

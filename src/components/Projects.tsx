@@ -1,14 +1,19 @@
+import ArrowCard from "@components/ArrowCard"
+import { ui } from "@i18n/ui"
+import { useTranslations } from "@i18n/utils"
+import { cn } from "@lib/utils"
 import type { CollectionEntry } from "astro:content"
 import { createEffect, createMemo, createSignal, For } from "solid-js"
-import ArrowCard from "@components/ArrowCard"
-import { cn } from "@lib/utils"
 
 type Props = {
   tags: string[]
   data: CollectionEntry<"projects">[]
+  locale: keyof typeof ui
 }
 
-export default function Projects({ data, tags }: Props) {
+export default function Projects({ data, tags, locale }: Props) {
+  // Ensure locale is a valid key in the UI object
+  const t = useTranslations(locale)
   const [filter, setFilter] = createSignal(new Set<string>())
   const [projects, setProjects] = createSignal<CollectionEntry<"projects">[]>([])
 
@@ -23,7 +28,6 @@ export default function Projects({ data, tags }: Props) {
     return counts
   })
 
-  // Ordena as tags pela frequência
   const sortedTags = createMemo(() =>
     [...tags].sort((a, b) => (tagCounts()[b] ?? 0) - (tagCounts()[a] ?? 0))
   )
@@ -51,7 +55,7 @@ export default function Projects({ data, tags }: Props) {
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
       <div class="col-span-3 sm:col-span-1">
         <div class="sticky top-24">
-          <div class="text-sm font-semibold uppercase mb-2 text-black dark:text-white">Filtros</div>
+          <div class="text-sm font-semibold uppercase mb-2 text-black dark:text-white">{t('projects.filters')}</div>
           <ul class="flex flex-wrap sm:flex-col gap-1.5">
             <For each={sortedTags()}>
               {(tag) => (
@@ -90,13 +94,13 @@ export default function Projects({ data, tags }: Props) {
       <div class="col-span-3 sm:col-span-2">
         <div class="flex flex-col">
           <div class="text-sm uppercase mb-2">
-            EXIBINDO {projects().length} DE {data.length} PROJETOS
+            {t('projects.showing').replace('{0}', String(projects().length)).replace('{1}', String(data.length))}
             {/* TODO: Adicionar paginação */}
           </div>
           <ul class="flex flex-col gap-3">
             {projects().map((project) => (
               <li>
-                <ArrowCard entry={project} />
+                <ArrowCard entry={project} locale={locale} />
               </li>
             ))}
           </ul>

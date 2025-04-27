@@ -1,21 +1,57 @@
 ---
-import { SITE, LINKS } from "@consts"
-import { cn } from "@lib/utils"
-const { pathname } = Astro.url
-const subpath = pathname.match(/[^/]+/g)
 import Container from "@components/Container.astro"
+import { languageFlags, languages } from '@i18n/ui'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import { cn } from "@lib/utils"
+
+const { pathname } = Astro.url
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+// TODO: Refactor to use I18n utils
+const pathWithoutLang = pathname.replace(new RegExp(`^/${lang}`), '') || '/'
+
+const isLinkActive = (linkPath: string) => {
+  if (pathname === linkPath) return true;
+  
+  if (linkPath !== `/${lang}/` && pathname.startsWith(linkPath)) return true;
+  
+  return false;
+}
+
+const navLinks = [
+  { 
+    href: `/${lang}/`, 
+    text: 'nav.home',
+  },
+  { 
+    href: `/${lang}/work`, 
+    text: 'nav.work',
+  },
+  { 
+    href: `/${lang}/blog`, 
+    text: 'nav.blog',
+  },
+  { 
+    href: `/${lang}/projects`, 
+    text: 'nav.projects',
+  },
+  {
+    href: "https://drive.google.com/file/d/19pqHEiFgfk3KVx_rZrWjyfyNAXi1a0jI/view?usp=sharing",
+    text: 'nav.cv',
+    external: true,
+  },
+]
 ---
 
 <header id="header" class="fixed top-0 w-full h-16 z-50 ">
   <Container size="md">
     <div class="relative h-full w-full">
       <div class="absolute left-0 top-1/2 -translate-y-1/2 flex gap-1 font-semibold">
-        <a href="/" class="flex gap-1 text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
-          <svg class="size-6 fill-current">
-            <use href="/favicon.svg"></use>
-          </svg>
+        <a href={`/${lang}/`} class="flex gap-1 text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
+          <img src="/favicon.png" alt="Memoji" class="size-6" />
           <div>
-            {SITE.TITLE}
+            {t('site.title')}
           </div>
         </a>
       </div>
@@ -23,9 +59,9 @@ import Container from "@components/Container.astro"
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
       <nav class="hidden md:flex items-center justify-center text-sm gap-1">
         {
-          LINKS.map((LINK) => (
-            <a href={LINK.HREF} target={LINK.EXTERNAL ? "_blank" : ""} class={cn("h-8 rounded-full px-3 text-current", "flex items-center justify-center", "transition-colors duration-300 ease-in-out", pathname === LINK.HREF || "/" + subpath?.[0] === LINK.HREF ? "bg-black dark:bg-white text-white dark:text-black" : "hover:bg-black/5 dark:hover:bg-white/20 hover:text-black dark:hover:text-white")}>
-              {LINK.TEXT}
+          navLinks.map((link) => (
+            <a href={link.href} target={link.external ? "_blank" : ""} class={cn("h-8 rounded-full px-3 text-current", "flex items-center justify-center", "transition-colors duration-300 ease-in-out", isLinkActive(link.href) ? "bg-black dark:bg-white text-white dark:text-black" : "hover:bg-black/5 dark:hover:bg-white/20 hover:text-black dark:hover:text-white")}>
+              {t(link.text)}
             </a>
           ))
         }
@@ -33,15 +69,13 @@ import Container from "@components/Container.astro"
     </div>
 
     <div class="buttons absolute right-0 top-1/2 -translate-y-1/2 flex gap-1">
-      <a href="/search" aria-label={`Search blog posts and projects on ${SITE.TITLE}`} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out", pathname === "/search" || "/" + subpath?.[0] === "/search" ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
+      <a href={`/${lang}/search`} aria-label={t('a11y.search')} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out", isLinkActive(`/${lang}/search`) ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
         <svg class="size-full">
           <use href="/ui.svg#search"></use>
         </svg>
       </a>
-      
-      <!-- TODO: Allow i18n here -->
 
-      <button id="header-theme-button" aria-label={`Toggle light and dark theme`} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
+      <button id="header-theme-button" aria-label={t('a11y.theme')} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
         <svg class="size-full block dark:hidden">
           <use href="/ui.svg#sun"></use>
         </svg>
@@ -50,7 +84,32 @@ import Container from "@components/Container.astro"
         </svg>
       </button>
 
-      <button id="header-drawer-button" aria-label={`Toggle drawer open and closed`} class={cn("flex md:hidden", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
+      <div class="relative" aria-label={t('a11y.language')}>
+        <button id="language-button" aria-label="Change language" class={cn("hidden md:flex", "size-9 rounded-full p-1.5 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
+          <svg class="size-full">
+            <use href={`/ui.svg#${languageFlags[lang]}`}></use>
+          </svg>
+        </button>
+        <ul id="language-dropdown" class="hidden absolute right-0 mt-2 py-2 w-40 bg-white dark:bg-neutral-800 rounded-lg shadow-lg border border-black/10 dark:border-white/25 z-50">
+          {Object.entries(languages).map(([langCode, label]) => (
+            <li>
+              <a href={`/${langCode}${pathWithoutLang}`} class={cn(
+                "flex items-center px-4 py-2 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors",
+                langCode === lang ? "font-bold" : ""
+              )}>
+                <div class="w-5 h-4 mr-2 flex-shrink-0">
+                  <svg class="size-full">
+                    <use href={`/ui.svg#${languageFlags[langCode]}`}></use>
+                  </svg>
+                </div>
+                <span>{label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <button id="header-drawer-button" aria-label={t('a11y.drawer')} class={cn("flex md:hidden", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
         <svg id="drawer-open" class="size-full">
           <use href="/ui.svg#menu"></use>
         </svg>
@@ -94,6 +153,29 @@ import Container from "@components/Container.astro"
     drawerButton?.addEventListener("click", toggleDrawer)
   }
 
-  document.addEventListener("astro:after-swap", initializeDrawerButton)
+  function toggleLanguageDropdown() {
+    const dropdown = document.getElementById("language-dropdown")
+    dropdown?.classList.toggle("hidden")
+  }
+
+  function initializeLanguageButton() {
+    const languageButton = document.getElementById("language-button")
+    languageButton?.addEventListener("click", toggleLanguageDropdown)
+    
+    document.addEventListener("click", (event) => {
+      const dropdown = document.getElementById("language-dropdown")
+      const languageButton = document.getElementById("language-button")
+      if (!languageButton?.contains(event.target) && !dropdown?.contains(event.target)) {
+        dropdown?.classList.add("hidden")
+      }
+    })
+  }
+
+  document.addEventListener("astro:after-swap", () => {
+    initializeDrawerButton()
+    initializeLanguageButton()
+  })
+  
   initializeDrawerButton()
+  initializeLanguageButton()
 </script>

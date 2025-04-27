@@ -1,0 +1,60 @@
+---
+import { ui } from "@i18n/ui"
+import { useTranslations } from "@i18n/utils"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+import { formatDate } from "@lib/utils"
+import { type CollectionEntry, getCollection } from "astro:content"
+
+// Create the static pages for legal docs
+export async function getStaticPaths() {
+	const docs = await getCollection("legal")
+	const locales = Object.keys(ui)
+	
+  return docs.flatMap((doc) => {
+		const folderName = doc.id.split('/')[0]
+		const docLang = doc.data.lang
+		
+		return locales
+			.filter(locale => locale === docLang)
+			.map((locale) => ({
+				params: { 
+					locale, 
+					slug: folderName 
+				},
+				props: { doc, locale },
+			}))
+	})
+}
+
+// Get the requested legal doc
+interface Props {
+  doc: CollectionEntry<"legal">;
+  locale: string;
+}
+
+const { doc, locale } = Astro.props
+const { title, date } = doc.data
+const { Content } = await doc.render();
+const t = useTranslations(locale);
+
+---
+
+<PageLayout title={title} description={`${title} for ${t('site.title')}`}>
+  <TopLayout>
+    <div class="animate">
+      <div class="page-heading">
+        {title}
+      </div>
+      <p class="font-normal opacity-75">
+        Ultima vez modificado: {formatDate(date)}
+      </p>
+    </div>
+  </TopLayout>
+  <BottomLayout>
+    <article class="animate">
+      <Content/>
+    </article>
+  </BottomLayout>
+</PageLayout>
