@@ -17,13 +17,18 @@ lang: "pt-br"
 - [Imutabilidade e seu impacto real](#imutabilidade-e-seu-impacto-real)
   - [Estruturas de dados persistentes](#estruturas-de-dados-persistentes)
 - [Analisando com Big O e benchmarking](#analisando-com-big-o-e-benchmarking)
-  - [O que é Big O?](#o-que-é-big-o)
   - [Comparando abordagens imperativas e funcionais](#comparando-abordagens-imperativas-e-funcionais)
     - [Análise de complexidade](#análise-de-complexidade)
   - [Comparando abordagens com análise empírica](#comparando-abordagens-com-análise-empírica)
     - [O que podemos concluir?](#o-que-podemos-concluir)
 - [Quando a imutabilidade é um problema real](#quando-a-imutabilidade-é-um-problema-real)
+  - [Sistemas com computação numericamente intensiva](#sistemas-com-computação-numericamente-intensiva)
+  - [Sistemas com restrições de recursos](#sistemas-com-restrições-de-recursos)
+  - [Sistemas que possuem Hot paths de alta frequência](#sistemas-que-possuem-hot-paths-de-alta-frequência)
+  - [Desenvolvimento de Jogos e aplicações de baixo nível](#desenvolvimento-de-jogos-e-aplicações-de-baixo-nível)
 - [Quando a imutabilidade é uma vantagem](#quando-a-imutabilidade-é-uma-vantagem)
+  - [Concorrência e sistemas distribuídos](#concorrência-e-sistemas-distribuídos)
+  - [Rastreabilidade e cacheamento](#rastreabilidade-e-cacheamento)
 - [Conclusão](#conclusão)
 - [Referências](#referências)
 
@@ -64,15 +69,9 @@ Linguagens como Clojure, Scala, Haskell e até mesmo bibliotecas JavaScript como
 
 ## Analisando com Big O e benchmarking
 
-Para entender o impacto real da imutabilidade na performance, precisamos de uma métrica comum. É aí que entra a notação **Big O**.
-
-### O que é Big O?
-
-Big O é uma forma de medir como o tempo de execução ou uso de memória de um algoritmo cresce conforme o tamanho da entrada aumenta. Em outras palavras, é uma maneira matemática de responder à pergunta: "O que acontece quando eu executo este algoritmo com 1 milhão de itens em vez de apenas 10?"
-
 ![Diagrama Big O](https://assets.dio.me/RNsJ1ZhYYRdguyQaSZvHeoKCxt-097L-52x-BpEWG98/f:webp/q:80/L2FydGljbGVzL2NvdmVyLzg0ZTJkYWEyLWMwNzEtNGUwMC1hOWNlLTRkMTEwMDU2YmUxOC5qcGc)
 
-> **Recomendação:** Para um mergulho mais profundo na análise de complexidade, recomendo o [excelente guia sobre Big O Notation](https://neetcode.io/courses/lessons/big-o-notation).
+> **Recomendação:** Caso não tenha familiariadade com Big O, recomendo este [Tutorial do Geeks ForGeeks sobre sobre Big O Notation](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/), caso já tenha alguma familiariadade e não se lembra, recomendo esta [folha de consulta do Neetcode](https://neetcode.io/courses/lessons/big-o-notation).
 
 ### Comparando abordagens imperativas e funcionais
 
@@ -179,45 +178,42 @@ De acordo com essa discussão, a imutabilidade permite um compartilhamento muito
 
 Embora o impacto da imutabilidade geralmente seja superestimado, existem cenários onde ela pode representar um gargalo real:
 
-- **Computação numericamente intensiva**:
-  - Bibliotecas como NumPy e Pandas usam operações mutáveis "in-place" para maior eficiência
-  - Operações repetidas milhões de vezes podem ser até 10x mais lentas com estruturas imutáveis
+### Sistemas com computação numericamente intensiva
 
-- **Sistemas com restrições de recursos**:
-  - Dispositivos IoT, sistemas embarcados e aplicações móveis com memória limitada
-  - Funções serverless com limites de tempo/memória
-  - Exemplo: sistemas IoT com arrays mutáveis podem consumir metade da memória comparado a abordagens imutáveis
+Vamos imaginar um cenário de computação gráfica por exemplo, onde precisamos aplicar uma transformação em uma imagem, como isso funciona?
 
-- **Hot paths de alta frequência**:
-  - Partes do código executadas milhões de vezes por segundo
-  - Exemplo: plataformas de trading onde cada microssegundo conta
+Na prática uma imagem na computação é representada como uma matriz de pixels (ou array), onde cada pixel é representado por um vetor de cores (RGB). Para aplicar uma transformação, como um filtro, precisamos iterar sobre cada pixel e aplicar a transformação desejada.
 
-- **Aplicações de baixo nível**:
-  - Drivers de dispositivos, compiladores, motores de jogos e processamento de vídeo
-  - O Unreal Engine usa mutabilidade extensivamente para alcançar alta performance em jogos
+É certo imaginar que, se tivermos uma imagem de 1920x1080 pixels, isso significa que teremos 2.073.600 pixels para processar. Se cada pixel for representado por um vetor de 3 cores (RGB), teremos 6.220.800 valores para processar.
+
+Se todas as vezes que a imagem for alterada, tivermos que criar uma nova matriz de pixels, isso pode ser extremamente custoso em termos de performance. Por isso, muitas bibliotecas de computação gráfica ou até mesmo de Machine Learning como `NumPy` e `Pandas` usam operações mutáveis "in-place" para aplicar transformações, pois, operações repetidas milhões de vezes podem ser até 10x mais lentas com estruturas imutáveis.
+
+### Sistemas com restrições de recursos
+
+A muito tempo atrás, quando a memória RAM era extremamente cara, mutabilidade era uma necessidade, no caso, o famoso termo `escovar bits` (bit brushing) era uma prática comum. Ainda hoje, em sistemas com recursos limitados, como `dispositivos IoT`, `sistemas embarcados` e `aplicações móveis`, essa prática ainda é comum.
+
+Acredito que não seja necessário desenvolver muito sobre o porquê da imutabilidade não ser uma boa ideia no geral para esses sistemas, mas pense um pouco quais são as linguagens de programação que são mais utilizadas para estes sistemas? O que todas elas têm em comum?
+
+### Sistemas que possuem Hot paths de alta frequência
+
+> `Hot paths` são trechos de código que são executados com frequência extrema.
+
+Vamos imaginar uma empresa que possui um bróker de ações, onde existe oferecimento da funcionalidade de `Trading` (Compra e venda de ações em um curto período de tempo). Nesse cenário, o sistema precisa processar milhões de ordens por segundo, e cada milissegundo conta. Nesse caso, a alocação de novos objetos e a pressão sobre o garbage collector podem ser problemáticas.
+
+Aqui, na realidade o que mais entra em cena é a questão do `paralelismo` em `baixa latência`, onde o sistema precisa processar várias ordens simultaneamente, garantindo consistência e integridade dos dados. Consegue imaginar um cenário deste com `imutabilidade`?
+
+### Desenvolvimento de Jogos e aplicações de baixo nível
+
+Este tema está conectado com o tema de [`Sistemas com computação numericamente intensiva`](#sistemas-com-computação-numericamente-intensiva), mas é um pouco mais específico. Em jogos, principalmente os `multiplataformas` (que rodam em diferentes tipos de hardware), ter um controle eficiente da memória é importantíssimo, já jogou aquele jogo que tem um gráfico mediano mas tem um desempenho horrível? Isso pode ser um sinal de que o jogo não está utilizando a memória de forma eficiente, isto é, está havendo alto reprocessamento de objetos, alocação desnecessária de memória e entre outros problemas os quais a imutabilidade pode e vai causar.
 
 ## Quando a imutabilidade é uma vantagem
 
-A imutabilidade oferece benefícios claros em diversos cenários:
+Agora que você viu alguns cenários onde a imutabilidade pode não ser uma boa escolha se você precisa de performance, vamos explorar os cenários onde a imutabilidade realmente brilha e traz benefícios significativos.
 
-- **Concorrência e paralelismo**:
-  - Leitura concorrente: Threads podem ler com segurança sem locks
-  - Leitura/escrita: Leitores nunca são bloqueados; escritores criam novas versões
-  - Escrita concorrente: Reduz pontos de sincronização necessários
-  - Ainda é necessário alguma estratégia de sincronização para decidir qual versão é a oficial diante de muitas operações simultâneas
-- **Rastreabilidade**:
-  - Facilita auditoria e histórico de mudanças
-  - Permite recuperar estados anteriores do sistema
-  - Sistemas como Datomic usam imutabilidade para criar bancos de dados temporais
-- **Cacheamento e memoization**:
-  - Estruturas imutáveis são perfeitamente cacheáveis
-  - Facilita implementação de lazy evaluation
-  - Otimiza cálculos repetidos com mesmos parâmetros
-- **Sistemas distribuidos**
-  - As vantagens anteriores se aplicam aqui
-  - Replicação de dados é menos complexa
+### Concorrência e sistemas distribuídos
 
-No final do dia, a verdadeira vantagem é a **segurança** mesmo. Não existe nada mais _assustador_ que alterar estado de um elemento do sistema sem entender se está informação é compartilhada e requisitada em outro lugar para algum outro tipo de processamento, isso gera bugs difíceis de rastrear e resolver, quero que você se imagine trabalhando com um sistema inteiro onde você não tem conhecimento e precisa realizar manutenção e/ou criar uma nova funcionalidade para entender o que estou dizendo.
+### Rastreabilidade e cacheamento
+
 
 ## Conclusão
 
