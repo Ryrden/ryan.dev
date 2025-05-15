@@ -1,12 +1,12 @@
 ---
 title: "Imutabilidade prejudica a performance?"
 summary: "Neste artigo, vou explorar a relação entre imutabilidade (um pilar da programação funcional) e performance de código"
-date: "May 01 2025"
-draft: true
+date: "May 15 2025"
+draft: false
 tags:
   - Programação Funcional
   - Performance de Código
-  - Big O Notation
+  - Notação Big O
   - Paradigma de Programação
 lang: "pt-br"
 ---
