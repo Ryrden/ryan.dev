@@ -79,7 +79,9 @@ Como **Scrum Master**, participei de todas as reuniões ao lado da **Product Man
 
 Houve desafios: frequentemente estimávamos e planejávamos além do que conseguíamos entregar, o que sobrecarregou as sprints finais, especialmente para mim. Como nem todos no grupo estavam igualmente engajados, acabei assumindo diversas tarefas. Cometi erros no processo, mas aprendi bastante.
 
-Apesar dos obstáculos, conseguimos entregar o projeto. Contudo, ele não alcançou completamente as expectativas iniciais. Por esse motivo, em **24 de abril de 2024**, decidi arquivá-lo. Hoje, ele serve como um registro de aprendizado e crescimento.
+Uma sprint em específico ficou marcada: nos comprometemos com o fluxo completo do formulário de adoção, o gerenciamento de usuários NGO e o upload de documentos — três features em uma semana. Entregamos o formulário e parte do gerenciamento de usuários. Nada do upload. Subestimei o quanto de validação backend um formulário de adoção em múltiplas etapas realmente precisa quando você se preocupa com correção. Como Scrum Master, deveria ter cortado escopo no terceiro dia, não no sétimo.
+
+Apesar dos obstáculos, conseguimos entregar o projeto. Em **24 de abril de 2024**, seis meses após o prazo, decidi arquivá-lo — não com derrota, mas com clareza. A plataforma funciona, o código está lá, os testes rodam. Se uma ONG entrar em contato querendo usar, reabrira em um dia. Mas manter "ativo" sem que ninguém faça manutenção seria desonesto.
 
 ---
 

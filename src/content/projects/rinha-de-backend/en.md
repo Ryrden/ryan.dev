@@ -65,7 +65,7 @@ This project was a true **technical intensive**. I learned much more than I imag
 - Differences between **horizontal and vertical scaling**
 - Real impact of the operating system on performance
 
-I managed to deliver a solution that achieved **maximum score in Gatling**, with no penalties, and that, in itself, was a great achievement.
+I managed to deliver a solution that achieved **maximum score in Gatling**, with no penalties — **61,503 requests processed, zero failures**. p99 latency of 6ms across all requests; the balance validation endpoint (the most complex one) hit 54ms p99 across its 123 executions. All operations concurrent: 19,860 credits, 39,660 debits, 1,860 statement reads. In itself, a great achievement.
 
 ---
 
@@ -73,7 +73,7 @@ I managed to deliver a solution that achieved **maximum score in Gatling**, with
 
 It was the most challenging and exciting project I've ever done as a backend developer.
 
-I spent almost **an entire month coding daily**, meticulously optimizing each part of the application. Some decisions came from inspiration in projects from previous editions, especially from one of the Go finalists, with whom I spoke and who kindly authorized the use of the folder structure and architecture as a base.
+I spent almost **an entire month coding daily**, meticulously optimizing each part of the application. Some decisions came from inspiration in projects from previous editions, especially from one of the Go finalists. I reached out to them directly — explained I was studying the problem and wanted to understand their architectural decisions. They replied the same day, shared context on their folder structure and the reasoning behind each choice, and authorized me to use it as a reference. That conversation taught me as much as weeks of solo debugging.
 
 In the final stretch, I reached the maximum possible optimization locally, but I couldn't reach 100% in Gatling. After much investigation, I realized the problem was the operating system: my API was running on **Windows**, which significantly impacted performance. When testing in a Linux environment, I achieved the **maximum score**. Mission accomplished!
 

@@ -19,6 +19,8 @@ lang: "pt-br"
 
 ## 🌐 Sobre o projeto
 
+Construí o RyCoin porque via o termo "smart contract" em dezenas de vagas e discussões técnicas e não entendia de verdade o que significava — não de forma abstrata, mas mecanicamente. O que o Solidity compila? Onde fica o estado? Como o MetaMask "conecta" em qualquer coisa? A única forma de descobrir é construindo.
+
 Este projeto marca minha primeira imersão prática no ecossistema de **blockchain**. O objetivo era construir um **DApp completo** para criação e interação com o token **RyCoin**, utilizando **Solidity** para o contrato inteligente, **React** no frontend, **Hardhat** para automação do deploy e uma rede blockchain privada com **Hyperledger Besu**.
 
 O RyCoin permite funcionalidades como:
@@ -83,9 +85,14 @@ Esse projeto me proporcionou aprendizados valiosos sobre o ecossistema de blockc
 
 ## 💡 Desafios enfrentados
 
-Alguns dos principais desafios:
+Fazer a rede de peers Besu realmente se formar foi a parte que quase matou o projeto. O Node1 subiu sem problemas. O Node2 conectou. O Node3 ficava caindo dos peers. Depois de duas horas de debug, o problema era um único caractere truncado na URL do enode — um caractere errado e o peer discovery falha silenciosamente. Nenhuma mensagem de erro. Apenas: sem peers.
 
-- Configurar a rede Besu corretamente com múltiplos nós e manter a sincronização
+Além disso:
+
 - Gerenciar a comunicação entre os nós com enode e arquivos de configuração
 - Depurar erros de conexão entre frontend e contrato
 - Ajustar o contrato e o frontend para uso com carteiras reais (MetaMask)
+
+---
+
+Acho que blockchain é o futuro de tudo? Sou cético. Mas agora entendo a mecânica — o que um "smart contract" realmente compila, por que o gas existe, como o consenso descentralizado funciona no nível do protocolo. Esse entendimento é meu para sempre, independente de para onde a tecnologia vai.

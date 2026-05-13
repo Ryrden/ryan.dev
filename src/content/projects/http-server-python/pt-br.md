@@ -13,9 +13,17 @@ lang: "pt-br"
 ---
 
 
+## 🤔 Por que construir isso?
+
+Usava FastAPI e Flask há anos, mas não conseguia responder uma pergunta simples: o que o `uvicorn` realmente faz? O que acontece entre um pacote TCP bruto e minha função recebendo um objeto `Request`?
+
+O desafio [CodeCrafters](https://app.codecrafters.io/courses/http-server/overview) foi a resposta. Sem frameworks. Sem bibliotecas. Apenas sockets TCP, uma RFC e Python.
+
+---
+
 ## 🌐 Sobre o projeto
 
-Este foi um projeto bem legal, construi um **servidor HTTP do zero** como parte do desafio do [CodeCrafters](https://app.codecrafters.io/courses/http-server/overview).
+Este foi construir um **servidor HTTP do zero**.
 
 O objetivo era criar um servidor capaz de:
 
@@ -46,7 +54,7 @@ Cada etapa do projeto exigiu o domínio de conceitos fundamentais, desde o parsi
 
 Ao longo do desenvolvimento, aprofundei meu conhecimento em diversas áreas importantes:
 
-- **Recebimento incremental de dados com `recv()`**, entendendo que a rede pode entregar pacotes incompletos
+- **`recv()` pode entregar pacotes parciais** — assumi que um `send()` do cliente = um `recv()` do meu lado. Essa suposição quebrou meu parser em qualquer requisição acima de ~1KB. Corrigir isso me ensinou mais sobre TCP do que qualquer capítulo de livro que eu já tinha lido.
 - **Gzip e compressão de conteúdo**, respondendo corretamente de acordo com o header `Accept-Encoding`
 - **Persistência de conexões HTTP/1.1**, mantendo o socket aberto para múltiplas requisições
 - **Organização de um servidor multithread** com cuidado para evitar conflitos ou perdas de desempenho
@@ -68,7 +76,7 @@ Cada um desses pontos exigiu testes e bastante tentativa e erro.
 
 ## 🔁 Próximos passos
 
-Com a base pronta, tenho planos para expandir este servidor:
+Agora quando leio o código-fonte do FastAPI ou vejo um erro "connection reset by peer" em logs de produção, tenho um modelo mental. Esse entendimento é permanente. Com a base pronta, tenho planos para expandir este servidor:
 
 - Adicionar suporte a **HTTPS** com certificados TLS/SSL
 - Criar **logs acessíveis e bem estruturados** para cada requisição

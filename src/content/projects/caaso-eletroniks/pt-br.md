@@ -52,7 +52,9 @@ O **frontend** foi construído com **React** e **Typescript**, utilizando **Mate
 
 Esse foi o primeiro projeto em que segui de ponta a ponta as etapas propostas pelo **Design Thinking**. Desde a **captação de ideias** e **benchmarking** com sites do mesmo nicho, até a criação dos wireframes e desenvolvimento do produto final.
 
-Toda a codificação foi feita em **React**, e conseguimos entregar um resultado visualmente satisfatório e funcional do ponto de vista de UX/UI. Por outro lado, o código teve alguns desafios, especialmente com bibliotecas que não ofereciam suporte completo a certos recursos. Um exemplo foi a implementação de um formulário com [**máscara de input**](https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks/blob/b7db37befe82bc72437c01329ba812ea80a6fee3/src/Pages/Checkout/Checkout.tsx#L4-L5), que exigiu soluções alternativas devido à limitação da biblioteca escolhida.
+Toda a codificação foi feita em **React**, e conseguimos entregar um resultado visualmente satisfatório e funcional do ponto de vista de UX/UI. A fase de testes de usabilidade foi onde mais aprendi — os usuários ignoravam consistentemente elementos que eu achava óbvios e clicavam em coisas que eu nunca esperava. Uma sessão reordenou completamente nossa lista de prioridades. Esse loop de feedback de usuários reais, não de suposições, é algo que tento carregar em todo projeto desde então.
+
+Por outro lado, o código teve desafios reais. Um exemplo foi a implementação de um formulário com [**máscara de input**](https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks/blob/b7db37befe82bc72437c01329ba812ea80a6fee3/src/Pages/Checkout/Checkout.tsx#L4-L5) para documentos brasileiros — a biblioteca que escolhemos tinha um problema de compatibilidade com nossa versão do React. O workaround está no código e funciona, mas é o tipo de código que você não quer ter que explicar num code review.
 
 Apesar dessas dificuldades, nada comprometeu gravemente o desenvolvimento. Pelo contrário, foi uma ótima oportunidade de aprender na prática e lidar com limitações técnicas reais.
 
