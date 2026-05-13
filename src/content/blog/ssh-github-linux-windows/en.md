@@ -14,6 +14,10 @@ lang: "en"
 
 ![Cover](https://i.imgur.com/9GC9TvD.webp)
 
+I've set up SSH keys on a dozen machines across five years of development. Every time, I went back to three different browser tabs. I wrote this to have one place — for me and for you.
+
+**The trap I see most often:** people generate the key correctly but copy the wrong file to GitHub. The file you share is `id_ed25519.pub` — the one with `.pub`. The other one (`id_ed25519`, no extension) is your private key. Never share that.
+
 - [What is an SSH key?](#what-is-an-ssh-key)
 - [Generating an SSH key](#generating-an-ssh-key)
   - [Linux](#linux)

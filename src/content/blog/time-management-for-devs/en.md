@@ -166,6 +166,8 @@ We have already used a technique in the theoretical part, which was **Planning b
 
 - **Pomodoro:** I've talked a lot about Pomodoro, but let's look at my perspective, how do I do it? I use lots of 25 minutes / 5 minutes for tasks that I have a certain notion of what I should do, and for tasks that I don't even know where to start, I first create a 30-minute Pomodoro to learn about the topic and decide if I can do it alone or will need support from someone.
 
+My actual setup for all of this: **Slack reminders** for recurring tasks, **Chrome tab groups** to keep work contexts separate (one group per active stream), a **physical notepad** for daily task lists (nothing beats the tactile commitment of crossing something out), and a Pomodoro timer app. No complex system — just these four things, used consistently.
+
 ## The End?
 
 There are many other techniques I didn't mention here that can help, such as <abbr title="Specific, Measurable, Achievable, Relevant, Time-bound">S.M.A.R.T</abbr> goals and <abbr title="Objectives and Key Results">OKRs</abbr>, but I believe that the techniques I mentioned here are the most important and can be applied in practice. It's important to remember that everything listed here is a process of continuous improvement, adapt and find what works best for you.
