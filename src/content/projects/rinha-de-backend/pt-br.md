@@ -65,7 +65,7 @@ Este projeto foi um verdadeiro **intensivão técnico**. Aprendi muito mais do q
 - Diferenças entre **escalonamento horizontal e vertical**
 - Impacto real do sistema operacional na performance
 
-Consegui entregar uma solução que atingiu **nota máxima no Gatling**, sem nenhuma penalidade — **61.503 requisições processadas, zero falhas**. p99 de 6ms em todas as requisições; o endpoint de validação de saldo (o mais complexo) atingiu 54ms de p99 em suas 123 execuções. Tudo concorrente: 19.860 créditos, 39.660 débitos, 1.860 leituras de extrato. Por si só, uma grande conquista.
+Consegui entregar uma solução que atingiu **nota máxima no Gatling**, sem nenhuma penalidade, **61.503 requisições processadas, zero falhas**. p99 de 6ms em todas as requisições; o endpoint de validação de saldo (o mais complexo) atingiu 54ms de p99 em suas 123 execuções. Tudo concorrente: 19.860 créditos, 39.660 débitos, 1.860 leituras de extrato. Por si só, uma grande conquista.
 
 ---
 
@@ -73,7 +73,7 @@ Consegui entregar uma solução que atingiu **nota máxima no Gatling**, sem nen
 
 Foi o projeto mais desafiador e empolgante que já fiz como dev backend.
 
-Passei quase **um mês inteiro codando diariamente**, buscando milimetricamente otimizar cada parte da aplicação. Algumas decisões vieram da inspiração em projetos de edições anteriores, especialmente de um dos finalistas em Go. Entrei em contato direto — expliquei que estava estudando o problema e queria entender as decisões arquiteturais dele. A resposta veio no mesmo dia, com contexto sobre a estrutura de pastas e o raciocínio por trás de cada escolha, e autorização para usar como referência. Essa conversa me ensinou tanto quanto semanas de depuração solo.
+Passei quase **um mês inteiro codando diariamente**, buscando milimetricamente otimizar cada parte da aplicação. Algumas decisões vieram da inspiração em projetos de edições anteriores, especialmente de um dos finalistas em Go, com quem conversei e que gentilmente autorizou o uso da estrutura de pastas e arquitetura como base.
 
 Na reta final, atingi o limite máximo de otimização possível localmente, mas não conseguia alcançar 100% no Gatling. Após muito investigar, percebi que o problema era o sistema operacional: minha API rodava no **Windows**, que impactava a performance de forma significativa. Ao testar em ambiente Linux, alcancei a **nota máxima**. Missão cumprida!
 

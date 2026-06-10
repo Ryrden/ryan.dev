@@ -66,7 +66,7 @@ It was a practical and straightforward exercise, focused on the robustness and p
 
 ## 🧠 Development experience
 
-Without a doubt, **it was the most intense project of my undergraduate studies**. Three of us — all coding together, every session. We discovered mob programming out of necessity: one person drove, the rest navigated, rotating every hour on Discord voice + VS Code Live Share. When you have only one week, context-switching between people is too expensive — so we just stayed on the same screen. From day one, hands-on with the code.
+Without a doubt, **it was the most intense project of my undergraduate studies**. We had only one week to deliver everything, and fortunately, I was alongside people I trust a lot for coding. From day one, we were already hands-on with the code.
 
 Based on the course requirements, we identified two pillars:
 
@@ -77,9 +77,7 @@ The choice of Flask came from my personal experience trying to create a website 
 
 Of course, under pressure, some practices were set aside. For example, we used **static classes** without instantiation to streamline the logic (example [here](https://github.com/Ryrden/SCC0541-Formula1/blob/10868f7c8e76177398fc6c78c4c7d9474ce1550c/proj_labbd/interactor/racing_team.py#L5-L29)) and we didn't implement automated tests. But the focus was singular: **make it work**, and we did.
 
-In the end, we delivered a complete, functional system. **The grade was 9.5 out of 10 — the highest in the class**. That result represented a lot to me in terms of technical learning and teamwork. If we had more time and technical maturity at the time, I'm sure we could have applied good practices without losing productivity.
-
-> 📄 I still have the original project PDF with requirements, ER diagrams, and the full spec — if you're studying database courses at a Brazilian university, it might be useful. Contact me if you'd like a copy.
+In the end, we delivered a complete, functional system. **The grade was 9.5 out of 10**. That result represented a lot to me in terms of technical learning and teamwork. If we had more time and technical maturity at the time, I'm sure we could have applied good practices without losing productivity.
 
 ---
 

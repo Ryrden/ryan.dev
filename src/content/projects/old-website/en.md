@@ -80,13 +80,13 @@ My initial goal was simple: "Have a site to present my projects, briefly tell my
 
 I literally did everything from scratch, from the `index.html` to the colors, animations, responsiveness, and every detail of the CSS. One of the biggest challenges was **configuring and connecting the custom domain**, as well as **improving SEO**, **integrating with Google Analytics**, and automating deployment with a pipeline in **GitHub Actions**.
 
-I even built an integration with the Dev.to API to automatically cross-post articles — a side project that led to my first open source contribution. That story deserves its own post someday.
+I even built an integration with the Dev.to API to automatically cross-post articles, a side project that led to my first open source contribution.
 
 Despite the progress, many ideas were left behind, as shown in this board:
 
 ![board-image](https://i.imgur.com/qwl35NI.png)
 
-Looking at that board now: dozens done, a handful stuck in progress, and a graveyard of ideas in the backlog. That's the honest picture of a solo project with no deadline — not failure, just reality.
+Looking at that board now: dozens done, a handful stuck in progress, and a graveyard of ideas in the backlog. That's the honest picture of a solo project with no deadline, just reality.
 
 ---
 

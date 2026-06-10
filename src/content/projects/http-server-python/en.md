@@ -12,18 +12,9 @@ repoUrl: https://github.com/Ryrden/http-server-python
 lang: "en"
 ---
 
-
-## 🤔 Why build this?
-
-I'd been using FastAPI and Flask for years but couldn't answer a simple question: what does `uvicorn` actually do? What happens between a raw TCP packet and my function receiving a `Request` object?
-
-This [CodeCrafters](https://app.codecrafters.io/courses/http-server/overview) challenge was the answer. No frameworks. No libraries. Just TCP sockets, an RFC, and Python.
-
----
-
 ## 🌐 About the project
 
-This was building an **HTTP server from scratch**.
+This was a really cool project where I built an **HTTP server from scratch** as part of the [CodeCrafters](https://app.codecrafters.io/courses/http-server/overview) challenge.
 
 The goal was to create a server capable of:
 
@@ -54,7 +45,7 @@ Each stage of the project required mastery of fundamental concepts, from parsing
 
 Throughout the development, I deepened my knowledge in several important areas:
 
-- **`recv()` can deliver partial packets** — I assumed one `send()` from the client = one `recv()` on my side. That assumption broke my parser on any request over ~1KB. Fixing this single issue taught me more about TCP than any book chapter I'd read before.
+- **Incremental data reception with `recv()`**, understanding that the network can deliver incomplete packets
 - **Gzip and content compression**, responding correctly according to the `Accept-Encoding` header
 - **HTTP/1.1 connection persistence**, keeping the socket open for multiple requests
 - **Organization of a multithreaded server** with care to avoid conflicts or performance losses

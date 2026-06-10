@@ -166,7 +166,7 @@ Já usamos uma técnica na teórica que foi o **Planejamento por Objetivos** cri
 
 - **Pomodoro:** Já falei bastante do pomodoro mas vamos a minha perspectiva, como eu faço? Eu uso lotes de 25 minutos / 5 minutos para tarefas que eu tenho uma certa noção do que devo fazer e para tasks que não sei nem por onde começar eu antes crio um pomodoro de 30 minutos para aprender sobre o tema e decidir se consigo a fazer sozinha ou vou precisar de apoio de alguém.
 
-Meu setup real para tudo isso: **lembretes do Slack** para tarefas recorrentes, **grupos de abas do Chrome** para manter contextos de trabalho separados, um **bloco de notas físico** para listas de tarefas do dia (nada supera a satisfação tátil de riscar algo), e um app de timer Pomodoro. Sem sistema complexo — só essas quatro coisas, usadas consistentemente.
+Meu setup real para tudo isso: **lembretes do Slack** para tarefas recorrentes, **grupos de abas do Chrome** para manter contextos de trabalho separados, um **bloco de notas físico** para listas de tarefas do dia (nada supera a satisfação tátil de riscar algo), e um app de timer Pomodoro. Sem sistema complexo, só essas quatro coisas, usadas consistentemente.
 
 ## Fim ?
 

@@ -17,7 +17,7 @@ lang: "pt-br"
 
 ## 🎮 Sobre o projeto
 
-Construí esse jogo porque acabei de terminar um curso de JavaScript e precisava fazer algo de verdade — não mais uma página estática ou outro Todo app. Encontrei um jogo de adivinhação de cores RGB online, achei que conseguiria replicar em um final de semana, e levou três. A cada tarde eu recarregava o navegador e me sentia mais capaz do que no dia anterior.
+Construí esse jogo porque acabei de terminar um curso de JavaScript e precisava fazer algo de verdade, não mais uma página estática ou outro Todo app. Encontrei um jogo de adivinhação de cores RGB online, achei que conseguiria replicar em um final de semana, e levou três. A cada tarde eu recarregava o navegador e me sentia mais capaz do que no dia anterior.
 
 Este foi **meu primeiro projeto com HTML, CSS e Javascript**, criado com o objetivo de:
 
@@ -71,4 +71,4 @@ Esse projeto me ensinou mais do que só sintaxe:
 - A importância de **modo escuro/acessibilidade**  
 - E principalmente, como é gratificante ver algo seu **funcionando de verdade** no navegador
 
-Olhando esse código hoje, consigo ver cada má prática que aprendi a evitar desde então — event listeners no escopo errado, sem separação de responsabilidades, CSS que só funciona porque nada quebra. Mas também consigo ver o commit em que o toggle de modo escuro finalmente funcionou e recarreguei a página dez vezes só pra ver mudar. Essa sensação é exatamente por que ainda estou fazendo isso.
+Olhando esse código hoje, consigo ver cada má prática que aprendi a evitar desde então, event listeners no escopo errado, sem separação de responsabilidades, CSS que só funciona porque nada quebra. Mas também consigo ver o commit em que o toggle de modo escuro finalmente funcionou e recarreguei a página dez vezes só pra ver mudar. Essa sensação é exatamente por que ainda estou fazendo isso.

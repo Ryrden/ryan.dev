@@ -36,9 +36,9 @@ lang: "pt-br"
 
 ## Introdução
 
-Depois de publicar meu post sobre [Pensamento Funcional](/pt-br/blog/functional-thinking), duas pessoas me fizeram a mesma pergunta na mesma semana: "mas e a performance? Imutabilidade não significa copiar tudo?" Eu não tinha uma resposta rigorosa — então fui medir.
+Se você já ouviu que "programação funcional é mais lenta" ou "usar imutabilidade custa muito em performance", você não está sozinho. É uma dúvida genuína sobre o paradigmas de programação funcional. Mas será que essa premissa é realmente verdadeira?
 
-Neste artigo, vou explorar a relação entre imutabilidade (um pilar da programação funcional) e performance de código, usando análise de complexidade Big O e benchmarks reais. É um complemento perfeito ao post de Pensamento Funcional — leia aquele primeiro se ainda não fez.
+Neste artigo, vou explorar a relação entre imutabilidade (um pilar da programação funcional) e performance de código, usando análise de complexidade Big O e benchmarks reais. Se você já leu meu [artigo sobre Pensamento Funcional](/pt-br/blog/functional-thinking), esse texto é um complemento perfeito para aprofundar seu entendimento sobre as práticas da programação funcional.
 
 ## Imutabilidade e seu impacto real
 

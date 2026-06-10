@@ -52,9 +52,7 @@ The **frontend** was built with **React** and **Typescript**, using **Material U
 
 This was the first project where I followed the steps proposed by **Design Thinking** from end to end. From **gathering ideas** and **benchmarking** with sites in the same niche, to creating wireframes and developing the final product.
 
-All coding was done in **React**, and we managed to deliver a visually satisfying and functional result from a UX/UI perspective. The usability testing phase was where I learned the most — users consistently ignored elements I thought were obvious and clicked on things I never expected. One session completely reordered our priority list. That feedback loop from real users, not assumptions, is something I try to carry into every project since.
-
-On the other hand, the code had real challenges. One example was the implementation of a form with [**input masking**](https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks/blob/b7db37befe82bc72437c01329ba812ea80a6fee3/src/Pages/Checkout/Checkout.tsx#L4-L5) for Brazilian documents — the library we chose had a compatibility issue with our React version. The workaround is in the code and it works, but it's the kind of code you don't want to explain in a code review.
+All coding was done in **React**, and we managed to deliver a visually satisfying and functional result from a UX/UI perspective. On the other hand, the code had some challenges, especially with libraries that didn't offer full support for certain features. One example was the implementation of a form with [**input masking**](https://github.com/Ryrden/SCC-0560-Caaso-Eletroniks/blob/b7db37befe82bc72437c01329ba812ea80a6fee3/src/Pages/Checkout/Checkout.tsx#L4-L5), which required alternative solutions due to the limitations of the chosen library.
 
 Despite these difficulties, nothing seriously compromised the development. On the contrary, it was a great opportunity to learn in practice and deal with real technical limitations.
 

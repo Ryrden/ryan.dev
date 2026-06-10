@@ -12,8 +12,6 @@ lang: "en"
 
 ![Cover](https://i.imgur.com/pWBu0iB.png)
 
-Since I started working at Nubank, I began reviewing Clojure PRs without a mental model for what I was reading. The functions were small, nothing mutated, and there were no loops — yet the code was expressive and clear. That discomfort sent me here.
-
 - [Introduction](#introduction)
 - [After all, What is Functional Thinking?](#after-all-what-is-functional-thinking)
 - [Immutability](#immutability)
@@ -319,8 +317,6 @@ Declaring your code makes it **readable**, **testable**, and **reusable**, and m
 Well, that was a summary of what I understand by **functional thinking** and how it can be applied in practice.
 
 I believe that thinking functionally is more than knowing `map` or `reduce`, **it's changing the way you model problems**.
-
-What changed in my day-to-day? I reach for `map`/`filter` before a loop. I ask "does this function have side effects?" as a reflex. I write much smaller functions. And I can finally read a Clojure PR without feeling lost.
 
 ## References
 

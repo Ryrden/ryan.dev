@@ -79,9 +79,7 @@ As a **Scrum Master**, I participated in all meetings alongside the **Product Ma
 
 There were challenges: we often estimated and planned beyond what we could deliver, which overloaded the final sprints, especially for me. As not everyone in the group was equally engaged, I ended up taking on various tasks. I made mistakes in the process, but I learned a lot.
 
-One sprint sticks out: we committed to the complete adoption form flow, NGO user management, and document upload — three features in one week. We shipped the form and part of user management. Nothing on document upload. I had underestimated how much backend validation a multi-step adoption form actually needs when you care about correctness. As Scrum Master, I should have cut scope on day three, not day seven.
-
-Despite the obstacles, we managed to deliver the project. On **April 24, 2024**, six months after the deadline, I archived it — not with defeat, but with clarity. The platform works, the code is there, the tests run. If an NGO ever reaches out wanting to use it, I'd reopen it in a day. But keeping it "active" while nobody maintains it would be dishonest.
+Despite the obstacles, we managed to deliver the project. However, it did not fully meet the initial expectations. For this reason, on **April 24, 2024**, I decided to archive it. Today, it serves as a record of learning and growth.
 
 ---
 

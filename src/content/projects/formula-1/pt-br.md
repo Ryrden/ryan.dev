@@ -66,7 +66,7 @@ Foi um exercício prático e direto ao ponto, focado na robustez e poder dos ban
 
 ## 🧠 Experiência de desenvolvimento
 
-Sem dúvida, **foi o projeto mais intenso da graduação**. Éramos três — e codamos juntos em cada sessão. Descobrimos o mob programming por necessidade: uma pessoa no teclado, as outras navegando, rodando a cada hora no Discord com voz + VS Code Live Share. Quando você tem apenas uma semana, troca de contexto entre pessoas é caro demais — então ficamos na mesma tela. Desde o primeiro dia, já estávamos com a mão no código.
+Sem dúvida, **foi o projeto mais intenso da graduação**. Tínhamos apenas uma semana para entregar tudo, e felizmente eu estava ao lado de pessoas em quem confio muito para codar. Desde o primeiro dia, já estávamos com a mão no código.
 
 Com base nos requisitos da disciplina, identificamos dois pilares:
 
@@ -77,9 +77,7 @@ A escolha de Flask veio da minha experiência pessoal tentando criar um site do 
 
 Claro que, sob pressão, algumas práticas foram deixadas de lado. Por exemplo, utilizamos **classes estáticas** sem instanciamento para agilizar a lógica (exemplo [aqui](https://github.com/Ryrden/SCC0541-Formula1/blob/10868f7c8e76177398fc6c78c4c7d9474ce1550c/proj_labbd/interactor/racing_team.py#L5-L29)) e deixamos de implementar testes automatizados. Mas o foco era um só: **fazer funcionar**, e fizemos.
 
-No fim, entregamos um sistema completo e funcional. **A nota foi 9,5 de 10 — a maior da turma**. Isso representou muito para mim em termos de aprendizado técnico e trabalho em equipe. Se tivéssemos mais tempo e maturidade técnica na época, tenho certeza de que conseguiríamos aplicar as boas práticas sem perder produtividade.
-
-> 📄 Ainda tenho o PDF original do projeto com os requisitos, diagramas ER e o enunciado completo — se você está estudando disciplinas de banco de dados em uma universidade brasileira, pode ser útil. Entre em contato se quiser uma cópia.
+No fim, entregamos um sistema completo e funcional. **A nota foi 9,5 de 10**. Isso representou muito para mim em termos de aprendizado técnico e trabalho em equipe. Se tivéssemos mais tempo e maturidade técnica na época, tenho certeza de que conseguiríamos aplicar as boas práticas sem perder produtividade.
 
 ---
 

@@ -80,13 +80,13 @@ Meu objetivo inicial era simples: "Ter um site para apresentar meus projetos, co
 
 Fiz literalmente tudo do zero, desde o `index.html` até as cores, animações, responsividade e cada detalhe do CSS. Um dos maiores desafios foi **configurar e conectar o domínio personalizado**, além de **melhorar o SEO**, **integrar com o Google Analytics** e automatizar o deploy com uma pipeline no **GitHub Actions**.
 
-Cheguei até a criar uma integração com a API do Dev.to para publicar artigos automaticamente — um projeto paralelo que rendeu minha primeira contribuição para o open source. Essa história merece um post próprio algum dia.
+Cheguei até a criar uma integração com a API do Dev.to para publicar artigos automaticamente, um projeto paralelo que rendeu minha primeira contribuição para o open source. 
 
 Apesar dos avanços, muitas ideias ficaram pelo caminho, como mostra esse board:
 
 ![imagem-board](https://i.imgur.com/qwl35NI.png)
 
-Olhando o board hoje: dezenas concluídas, algumas travadas em andamento e um cemitério de ideias no backlog. Esse é o quadro honesto de um projeto solo sem prazo — não fracasso, apenas realidade.
+Olhando o board hoje: dezenas concluídas, algumas travadas em andamento e um cemitério de ideias no backlog. Esse é o quadro honesto de um projeto solo sem prazo, apenas realidade.
 
 ---
 

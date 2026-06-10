@@ -14,10 +14,6 @@ lang: "pt-br"
 
 ![Capa](https://i.imgur.com/9GC9TvD.webp)
 
-Já configurei chaves SSH em uma dúzia de máquinas ao longo de cinco anos de desenvolvimento. Toda vez, voltava para três abas diferentes no navegador. Escrevi isso para ter um lugar só — pra mim e pra você.
-
-**A armadilha mais comum:** as pessoas geram a chave corretamente mas copiam o arquivo errado para o GitHub. O arquivo que você compartilha é `id_ed25519.pub` — o que tem `.pub`. O outro (`id_ed25519`, sem extensão) é sua chave privada. Nunca compartilhe esse.
-
 - [O que é uma chave SSH?](#o-que-é-uma-chave-ssh)
 - [Gerando uma chave SSH](#gerando-uma-chave-ssh)
   - [Linux](#linux)

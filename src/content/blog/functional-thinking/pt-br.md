@@ -12,8 +12,6 @@ lang: "pt-br"
 
 ![Capa](https://i.imgur.com/pWBu0iB.png)
 
-Desde que comecei a trabalhar no Nubank, fiquei revisando PRs em Clojure sem ter um modelo mental do que estava lendo. As funções eram pequenas, nada mutava e não havia loops — mesmo assim o código era expressivo e claro. Esse desconforto me trouxe até aqui.
-
 - [Introdução](#introdução)
 - [Afinal, O que é Pensamento Funcional?](#afinal-o-que-é-pensamento-funcional)
 - [Imutabilidade](#imutabilidade)
@@ -319,8 +317,6 @@ Declarar seu código o deixa **legível**, **testável** e **reutilizável** e p
 Bom, esse foi um resumo do que eu entendo por **pensamento funcional** e como ele pode ser aplicado na prática.
 
 Acredito que Pensar funcionalmente é mais do que conhecer `map` ou `reduce`, **é mudar a forma como você modela problemas**.
-
-O que mudou no meu dia a dia? Chego ao `map`/`filter` antes do loop. Pergunto "essa função tem efeitos colaterais?" como reflexo. Escrevo funções muito menores. E finalmente consigo ler um PR em Clojure sem me sentir perdido.
 
 ## Referências
 

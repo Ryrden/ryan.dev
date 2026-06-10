@@ -17,7 +17,7 @@ lang: "en"
 
 ## 🎮 About the project
 
-I built this because I'd just finished a JavaScript course and needed something to actually make — not another static page or Todo app. I found a similar RGB color game online, thought I could rebuild it over a weekend, and it took three. Each evening I'd reload the browser and feel more capable than the day before.
+I built this because I'd just finished a JavaScript course and needed something to actually make, not another static page or Todo app. I found a similar RGB color game online, thought I could rebuild it over a weekend, and it took three. Each evening I'd reload the browser and feel more capable than the day before.
 
 This was **my first project with HTML, CSS, and Javascript**, created with the goal of:
 
@@ -71,4 +71,4 @@ This project taught me more than just syntax:
 - The importance of **dark mode/accessibility**
 - And mainly, how gratifying it is to see something of your own **actually working** in the browser
 
-Looking at this code today, I can see every bad practice I've learned to avoid since — event listeners in the wrong scope, no separation of concerns, CSS held together by coincidence. But I can also see the commit where the dark mode toggle finally worked and I reloaded the page ten times to watch it switch. That feeling is exactly why I'm still doing this.
+Looking at this code today, I can see every bad practice I've learned to avoid since, event listeners in the wrong scope, no separation of concerns, CSS held together by coincidence. But I can also see the commit where the dark mode toggle finally worked and I reloaded the page ten times to watch it switch. That feeling is exactly why I'm still doing this.
