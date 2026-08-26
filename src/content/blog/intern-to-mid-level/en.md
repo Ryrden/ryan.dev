@@ -21,7 +21,7 @@ lang: "en"
 
 ## Introduction
 
-That week I received the notice that I got promoted to mid level software engineer, considering that i work with software engineering since the middle beginning of 2022, I felt kinda like I'm at the wrong level, if I only consider the years of experience (YoE), but, suddenly after I feel that, I reflected about the >> real << experience I've ever adquired during those last 4 YoE.
+That week I received the notice that I got promoted to mid level software engineer, considering that i work with software engineering since the middle beginning of 2022, I felt kinda like I'm at the wrong level, if I only consider the years of experience (YoE), but, suddenly, after I feel that, I reflected about the >> real << experience I've ever adquired during those last 4 YoE.
 
 Then, I decided to write that article to share my experience from Intern to Mid Level inside a big company like Nubank, so, what's exactly changes between a level to another? it's the capacity of writing excelent code? the capacity of orchestrate AI Agents currently? let's talk about it.
 
@@ -43,15 +43,15 @@ After the end of the classes, I joined at BTG Pactual for a short job, I worked 
 
 8 months later, after try some challenged internship i got a offer to start at Nubank! Maybe you're probably asking right now: "Why you don't tried a Junior role direcly?" and my answer is: I really tried, my CV was refused in all jobs cause the ATS system (that was starting to get very used at the time), since I only had internship experiences, no company wanted me! then I aim to get a great software engineer internship, and then i got it, and I'll tell more about right now! -->
 
-To get start it, i didn't joined Nubank as a blank page, i had worked at three places before: a company where i built chatbots on a low-code platform, a startup where I and other interns built a internal system from scratch by following [software development principles](https://www.geeksforgeeks.org/software-engineering/scrum-software-development/) by book and actually we rolled it out to the stakeholders, and also at a big company called BTG Pactual where I deployed and shipped Go code to production almost every day for a few months.
+To get start it, i didn't joined Nubank as a blank page, i had worked at three places before: a company where i built chatbots on a low-code platform, a startup where I and other interns built a internal system from scratch by following [Software Development Life Cycle (SDLC)](https://www.geeksforgeeks.org/software-engineering/software-development-life-cycle-sdlc/) and actually we rolled it out to the stakeholders, and also at a big company called BTG Pactual where I deployed and shipped Go code to production almost every day for a few months.
 
 So, I already had written code that real people used. That I'm sure about.
 
 I also knew what my weak spot was. At some point I realized communication was going to hold me back, so I did something about it and taught HTML, CSS and JavaScript classes to freshers at university. On purpose, to force myself to explain things out loud.
 
-Maybe you're asking why I didn't just apply for a junior role after bring all that experience to the table. Well, I did it. My CV got rejected eveywhere, because ATS filters were getting popular and my cv only had internships on it. So, beyond applying junior roles, I aimed for the best internships I could find.
+Maybe you're asking why I didn't just apply for a junior role instead join nubank as intern after bring all that experience to the table. Well, I did it. My CV got rejected eveywhere, because [ATS filters](https://www.geeksforgeeks.org/hr/applicant-tracking-system-ats-meaning-working-and-users/) were getting popular and my cv only had internships on it. So, beyond applying junior roles, I aimed for the best internships I could find.
 
-Then, i got the Nubank offer as Software Engineer Intern, and almost nothing I brought seemed to help. Go; Java; Python. Everything I had ever written was imperative and object oriented and Nubank runs on [Clojure](https://clojure.org/).
+Then, i got the Nubank offer as Software Engineer Intern, and almost all the technical experience I brought not seemed to help. Go; Java; Python. Everything I had ever written was imperative and object oriented and Nubank runs on [Clojure](https://clojure.org/).
 
 That worried me!
 
@@ -67,9 +67,9 @@ I followed developing features and later I also wrote a [article about functiona
 
 "Back to square one."
 
-That was my first thought reading the internal docs. Clojure everywhere. Parentheses everywhere. Nothing I had spent the last years getting good at seemed to apply, That was my main thoughts.
+That was my first thought reading the internal docs and trying to learn Clojure, it has parentheses almost everywhere and was very very hard to code review the team pull requests, but I really tried! Actually, I bet all that I only will learn clojure by only doing the work cause at the fews weeks I was there, my cowork peers said that Clojure outside nubank was one thing but inside was completely different, and that was true, actually, nubank has a very specific way to write Clojure code, also, all the tooling around it is also very specific.
 
-Actually, it was not that bad. Fortunately, I had the opportunity to learn functional programming at university by using Haskell and that helped a lot to ramp up. Afterwards, I also wrote a [blog post](https://ryan.dev.br/en/blog/functional-thinking) about functional thinking, which helped me to solidify my knowledge and also to share with others.
+One thing that helped, fortunately, was that I had the opportunity to learn [functional programming at university](https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=SSC0960&codcur=55051&codhab=4) by using Haskell and that helped a lot to ramp up. Afterwards, I also wrote a [blog post about functional thinking](https://ryan.dev.br/en/blog/functional-thinking), which helped me to solidify my knowledge and also to share with others.
 
 The real challenge came when I got my first real task, and it looked easy: take a unique identifier from the database and render it on the screen.
 
@@ -77,13 +77,15 @@ Simple, right?
 
 The identifier lived in the backend. The screen lived in the frontend. Between them there was a BFF. Three repositories, two languages I had just learned, and a designer I had to talk to before touching anything, because someone had to decide where that information would appear and whether we were even allowed to change that screen.
 
-> NOTE: I made this without AI, just to clarify
-
-Before Nubank my past experiences was only with monolithic architecture or with a few microservices, 100% backend based, and I had never worked with a BFF before. I had to learn what it was, how it worked, and how to wire it up to the backend and frontend.
+Before Nubank, the most complex thing i had built was a backend talking to a frontend. No layer in between. This wasn't passing an ID along three times. Each layer needed its own structure to carry it: a GraphQL schema in the BFF, its own types on each side of it. I had to decide what that shape looked like, what to name it, what to expose and what to keep inside, three times over. And the domain core wasn't allowed to know anything about the layers around it, because the codebase followed [hexagonal archictecture](https://www.geeksforgeeks.org/system-design/hexagonal-architecture-system-design/), which I had read about and never actually worked in. Those are modeling decisions, it wasn't just a matter of writing code.
 
 I shipped it. It took much longer than it should have.
 
-After that task I got the feedback that should have raised my hand as soon as possible. That moment I kinda disagree but by talking with coworkers I discovered that many steps of my code could be simplier and the process could be easier thougt. I going to research about that, "When to raise my hand as software engineer" and came across with that amazing article from Lucas Faria: ["How to make questions that speed up your career"](https://newsletter.nagringa.dev/p/como-fazer-perguntas) (That article is Brazillian portuguese), changed my mind and I strong recommend the reading.
+After that task I got the feedback that I should have raised my hand [as soon as possible] earlier. The thing is, I [was] (had been) asking, not just in a way that helped. Every time I got stuck I was spending hours trying to solve it alone first, and only then send a DM to one person, in private. When I finally talked with someone about my last deliver, I realized that several steps I could have used a simplier approach, also by coding, i mean, the way to code.
+
+So, I decided to research about that, "When to raise my hand as software engineer" and came across with somes articles and videos about the right way to ask, and I had been doing it wrong. I don't have exactly the articles I read but that one by Lucas Faria is very good: [How to make questions that speed up your career](https://newsletter.nagringa.dev/p/como-fazer-perguntas).
+
+After those learning, I started to ask my questions in public channels, instead of sending private messages. This not only helped me get faster responses but also allowed others to benefit from the answers.
 
 Months went by and another tasks came, I picked them up and finished them well now asking good questions when needed. The business unit got restructured and I changed teams. And then, I realized that all my knowledge about the codebase got lost, I had to learn the new codebase and talk with the new team, so was when I flipped a switch, the hard part of working was to get close to the team, after many 1:1 meetings and my first tasks actually came in the team got restructured again and I got moved to another team cause the seniority of the current team was too high for me and no purely execution tasks were being available in mid-term.
 
