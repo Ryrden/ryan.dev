@@ -21,13 +21,15 @@ lang: "en"
 
 ## Introduction
 
-That week I received the notice that I got promoted to mid level software engineer, considering that i work with software engineering since the middle beginning of 2022, I felt kinda like I'm at the wrong level, if I only consider the years of experience (YoE), but, suddenly, after I feel that, I reflected about the >> real << experience I've ever adquired during those last 4 YoE.
+This week I got the news that I got promoted to mid level software engineer. Considering that I have been working with software engineering since the middle of 2022, I felt like I was at the wrong level, if I only considered the years of experience (YoE), but, suddenly, after I felt that, I reflected on the real experience I've ever acquired during those last 4 YoE.
 
-Then, I decided to write that article to share my experience from Intern to Mid Level inside a big company like Nubank, so, what's exactly changes between a level to another? it's the capacity of writing excelent code? the capacity of orchestrate AI Agents currently? let's talk about it.
+Then, I decided to write this article to share my experience from Intern to Mid Level inside a big company like Nubank. So, what exactly changes from one level to another? Is it the capacity of writing excellent code? Is it the capacity to orchestrate AI Agents currently? Let's talk about it.
 
 ## Point of start
 
-<!-- Before I join Nubank I had the pleasure to work with other great companies which taught me a lot, thinking in an abstract way, they taught me, at least, taught me that my code can really solve a real problem.
+<!-- 
+
+Before I join Nubank I had the pleasure to work with other great companies which taught me a lot, thinking in an abstract way, they taught me, at least, taught me that my code can really solve a real problem.
 
 My first job actually was at 2022 as Chatbot Developer when I get the opportunity to create BOTs via a low-code platform where I literrally was joining big blocks of action with others and using a old javascript inside them (when I mean old, was old knowing that I was not able to use methods like `map` and `filter`), I knew great people there, taught me a lot, I learn things like the [Levesthein distance algorithm](https://en.wikipedia.org/wiki/Levenshtein_distance) used to measure the distance from what the user had typed from the expected command, pretty awesome thing I learned since I was at the second year of the university learning data structures and algorithms and, afterwards I got one of my best [open source contribuitions](https://github.com/levxyca/diciotech/pull/319) at `diciotech`. I worked only 4 months there cause another amazing unexpected opportunity came!
 
