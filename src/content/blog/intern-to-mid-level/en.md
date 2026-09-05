@@ -69,7 +69,7 @@ I followed developing features and later I also wrote a [article about functiona
 
 "Back to square one."
 
-That was my first thought reading the internal docs and trying to learn Clojure, it has parentheses almost everywhere and was very very hard to code review the team pull requests, but I really tried! Actually, I bet all that I only will learn clojure by only doing the work cause at the fews weeks I was there, my cowork peers said that Clojure outside nubank was one thing but inside was completely different, and that was true, actually, nubank has a very specific way to write Clojure code, also, all the tooling around it is also very specific.
+That was my first thought reading the internal docs and trying to learn Clojure, it had parentheses almost everywhere and was very very hard to code review the team pull requests, but I really tried! Actually, I bet all that I only will learn clojure by only doing the work cause at the fews weeks I was there, my cowork peers said that Clojure outside nubank was one thing but inside was completely different, and that was true, actually, nubank has a very specific way to write Clojure code, also, all the tooling around it is also very specific.
 
 One thing that helped, fortunately, was that I had the opportunity to learn [functional programming at university](https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=SSC0960&codcur=55051&codhab=4) by using Haskell and that helped a lot to ramp up. Afterwards, I also wrote a [blog post about functional thinking](https://ryan.dev.br/en/blog/functional-thinking), which helped me to solidify my knowledge and also to share with others.
 
