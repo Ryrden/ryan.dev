@@ -25,7 +25,7 @@ This week I got the news that I got promoted to mid level software engineer. Con
 
 Then, I decided to write this article to share my experience from Intern to Mid Level inside a big company like Nubank. So, what exactly changes from one level to another? Is it the capacity of writing excellent code? Is it the capacity to orchestrate AI Agents currently? Let's talk about it.
 
-## Point of start
+## Starting point
 
 <!-- 
 
@@ -45,15 +45,15 @@ After the end of the classes, I joined at BTG Pactual for a short job, I worked 
 
 8 months later, after try some challenged internship i got a offer to start at Nubank! Maybe you're probably asking right now: "Why you don't tried a Junior role direcly?" and my answer is: I really tried, my CV was refused in all jobs cause the ATS system (that was starting to get very used at the time), since I only had internship experiences, no company wanted me! then I aim to get a great software engineer internship, and then i got it, and I'll tell more about right now! -->
 
-To get start it, i didn't joined Nubank as a blank page, i had worked at three places before: a company where i built chatbots on a low-code platform, a startup where I and other interns built a internal system from scratch by following [Software Development Life Cycle (SDLC)](https://www.geeksforgeeks.org/software-engineering/software-development-life-cycle-sdlc/) and actually we rolled it out to the stakeholders, and also at a big company called BTG Pactual where I deployed and shipped Go code to production almost every day for a few months.
+To get it started, I haven't joined Nubank as a blank page, I had worked at three places before: a company where I’ve built chatbots on a low-code platform; a startup where other interns and I built an internal system from scratch by following [Software Development Life Cycle (SDLC)](https://www.geeksforgeeks.org/software-engineering/software-development-life-cycle-sdlc/), which we actually rolled it out to the stakeholders; and also at a big company called BTG Pactual where I deployed and shipped Go code to production almost every day for a few months.
 
-So, I already had written code that real people used. That I'm sure about.
+Then, I had already written a code that real people used. That I'm sure of.
 
-I also knew what my weak spot was. At some point I realized communication was going to hold me back, so I did something about it and taught HTML, CSS and JavaScript classes to freshers at university. On purpose, to force myself to explain things out loud.
+I also knew what my weak spot was. At some point I realized communication was going to hold me back, so I did something about it and taught HTML, CSS and JavaScript classes to freshers at university. With the purpose of forcing myself to explain things out loud.
 
-Maybe you're asking why I didn't just apply for a junior role instead join nubank as intern after bring all that experience to the table. Well, I did it. My CV got rejected eveywhere, because [ATS filters](https://www.geeksforgeeks.org/hr/applicant-tracking-system-ats-meaning-working-and-users/) were getting popular and my cv only had internships on it. So, beyond applying junior roles, I aimed for the best internships I could find.
+Maybe you're asking why I didn't just apply for a junior role instead of joining Nubank as an intern after bringing all that experience to the table. Well, I did it. My CV got rejected everywhere else, because [ATS filters](https://www.geeksforgeeks.org/hr/applicant-tracking-system-ats-meaning-working-and-users/) was getting popular and my CV only had internships on it. So, beyond applying for junior roles, I aimed for the best internships I could find.
 
-Then, i got the Nubank offer as Software Engineer Intern, and almost all the technical experience I brought not seemed to help. Go; Java; Python. Everything I had ever written was imperative and object oriented and Nubank runs on [Clojure](https://clojure.org/).
+Then, I got the offer as a Software Engineer Intern from Nubank, and almost all the technical experience I brought did not seem to help. Golang; Java; Python. Everything I had ever written was imperative and object oriented and Nubank runs on [Clojure](https://clojure.org/).
 
 That worried me!
 
@@ -69,7 +69,9 @@ I followed developing features and later I also wrote a [article about functiona
 
 "Back to square one."
 
-That was my first thought reading the internal docs and trying to learn Clojure, it had parentheses almost everywhere and was very very hard to code review the team pull requests, but I really tried! Actually, I bet all that I only will learn clojure by only doing the work cause at the fews weeks I was there, my cowork peers said that Clojure outside nubank was one thing but inside was completely different, and that was true, actually, nubank has a very specific way to write Clojure code, also, all the tooling around it is also very specific.
+That was my first thought reading the internal docs and trying to learn Clojure, it had parentheses almost everywhere and was very very hard to code review the team pull requests, but I really tried! 
+
+Actually, I bet all that I only will learn Clojure by only doing the work cause at the fews weeks I was there, my coworker said that Clojure outside Nubank was one thing but inside was completely different, and that was true, actually, Nubank has a very specific way to write Clojure code, also, all the tooling around it is also very specific.
 
 One thing that helped, fortunately, was that I had the opportunity to learn [functional programming at university](https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=SSC0960&codcur=55051&codhab=4) by using Haskell and that helped a lot to ramp up. Afterwards, I also wrote a [blog post about functional thinking](https://ryan.dev.br/en/blog/functional-thinking), which helped me to solidify my knowledge and also to share with others.
 
