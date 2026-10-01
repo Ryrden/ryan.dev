@@ -118,11 +118,11 @@ const socials = [
     })
   }
 
-  function inintializeBackToTop() {
+  function initializeBackToTop() {
     const backToTop = document.getElementById("back-to-top")
     backToTop?.addEventListener("click", goBackToTop)
   }
 
-  document.addEventListener("astro:after-swap", inintializeBackToTop)
-  inintializeBackToTop()
+  document.addEventListener("astro:after-swap", initializeBackToTop)
+  initializeBackToTop()
 </script>

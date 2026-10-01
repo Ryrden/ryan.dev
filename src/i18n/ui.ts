@@ -50,6 +50,10 @@ export const ui: Record<string, { [key: string]: string }> = {
     'blog.filters': 'Filters',
     'blog.showing': 'SHOWING {0} OF {1} POSTS',
     'blog.back': 'Back to blog',
+    'blog.search': 'Search posts',
+    'projects.search': 'Search projects',
+    'collection.ascending': 'Ascending',
+    'collection.descending': 'Descending',
     'arrowCard.post': 'post',
     'arrowCard.project': 'project',
     
@@ -129,6 +133,10 @@ export const ui: Record<string, { [key: string]: string }> = {
     'blog.filters': 'Filtros',
     'blog.showing': 'EXIBINDO {0} DE {1} PUBLICAÇÕES',
     'blog.back': 'Voltar para o blog',
+    'blog.search': 'Buscar publicações',
+    'projects.search': 'Buscar projetos',
+    'collection.ascending': 'Crescente',
+    'collection.descending': 'Decrescente',
     'arrowCard.post': 'post',
     'arrowCard.project': 'projeto',
     
