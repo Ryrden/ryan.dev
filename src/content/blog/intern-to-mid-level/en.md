@@ -81,5 +81,6 @@ After those 1:1, I scheduled weekly 1:1 with the product manager and I was takin
 That was when the promotion to Junior Software Engineer came, ten months after I joined.
 
 ## Junior
-
+ 
+ 
 ## Mid Level
