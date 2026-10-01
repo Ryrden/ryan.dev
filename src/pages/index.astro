@@ -1,0 +1,23 @@
+---
+// Root has no locale because astro.config.mjs sets prefixDefaultLocale: true.
+// Redirect "/" to a locale: honor the browser language, default to pt-br.
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="0; url=/pt-br" />
+    <link rel="canonical" href="https://ryan.dev.br/pt-br" />
+    <script is:inline>
+      const locale = (navigator.language || "").toLowerCase().startsWith("pt")
+        ? "pt-br"
+        : "en"
+      window.location.replace("/" + locale)
+    </script>
+  </head>
+  <body>
+    <a href="/pt-br">Continuar / Continue</a>
+  </body>
+</html>
