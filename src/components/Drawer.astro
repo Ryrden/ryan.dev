@@ -2,6 +2,7 @@
 import { languageFlags, languages } from '@i18n/ui'
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 import { cn } from "@lib/utils"
+import { CV_URL } from "@consts"
 
 const { pathname } = Astro.url
 const lang = getLangFromUrl(Astro.url)
@@ -36,7 +37,7 @@ const navLinks = [
     text: 'nav.projects',
   },
   {
-    href: "https://drive.google.com/file/d/19pqHEiFgfk3KVx_rZrWjyfyNAXi1a0jI/view?usp=sharing",
+    href: CV_URL,
     text: 'nav.cv',
     external: true,
   },
