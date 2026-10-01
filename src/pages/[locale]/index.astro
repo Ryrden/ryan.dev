@@ -146,11 +146,27 @@ export async function getStaticPaths() {
 
       <!-- About Section -->
       <section class="animate">
-        <article>
+        <article class="space-y-4">
           <p set:html={t('home.aboutP1')} />
           <p set:html={t('home.aboutP2')} />
-          <p set:html={t('home.aboutP3')} />
-          <p set:html={t('home.aboutP4').replace('{locale}', lang)} />
+          <div class="flex flex-col sm:flex-row gap-4 items-start">
+            <div class="flex-1">
+              <p set:html={t('home.aboutP3')} />
+            </div>
+            <div class="shrink-0 mx-auto sm:mx-0">
+              <iframe 
+                height='160' 
+                width='300' 
+                frameborder='0' 
+                allowtransparency='true' 
+                scrolling='no' 
+                src='https://www.strava.com/athletes/130079670/activity-summary/3c259b1cfef01d72cd9c0204801f26e46d0e2c61'
+                class="rounded-md opacity-90 hover:opacity-100 transition-opacity"
+              ></iframe>
+            </div>
+          </div>
+          <p set:html={t('home.aboutP4')} />
+          <p set:html={t('home.aboutP5').replace('{locale}', lang)} />
         </article>
       </section>
 
