@@ -1,7 +1,7 @@
 ---
 company: "BTG Pactual"
 role: "Software Engineer Intern"
-dateStart: "08/01/2023"
+dateStart: "07/01/2023"
 dateEnd: "11/01/2023"
 lang: "en"
 ---
