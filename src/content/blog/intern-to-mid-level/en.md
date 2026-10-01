@@ -78,7 +78,7 @@ After those 1:1, I scheduled weekly 1:1 with the product manager and I was takin
 - I was able to get tasks and deliver it under supervision
 - I, also, have exceeded their expectations with my adaptability given the many team changes, I was able to deliver tasks without much code review with a few weeks of ramp up.
 
-That was when the promotion to Junior Software Engineer came.
+That was when the promotion to Junior Software Engineer came, ten months after I joined.
 
 ## Junior
 
