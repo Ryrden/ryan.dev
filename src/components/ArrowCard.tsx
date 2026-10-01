@@ -1,6 +1,6 @@
 import { ui } from "@i18n/ui"
 import { useTranslations } from "@i18n/utils"
-import { formatDate } from "@lib/utils"
+import { formatDate, truncateText } from "@lib/utils"
 import type { CollectionEntry } from "astro:content"
 
 type Props = {
@@ -29,7 +29,7 @@ export default function ArrowCard({entry, pill, locale}: Props) {
             {formatDate(entry.data.date)}
           </div>
         </div>
-        <div class="font-semibold mt-3 text-black dark:text-white">
+        <div class="font-semibold mt-3 text-black dark:text-white line-clamp-2">
           {entry.data.title}
         </div>
 
@@ -38,8 +38,8 @@ export default function ArrowCard({entry, pill, locale}: Props) {
         </div>
         <ul class="flex flex-wrap mt-2 gap-1">
           {entry.data.tags.map((tag:string) => (
-            <li class="text-xs uppercase py-0.5 px-1 rounded bg-black/5 dark:bg-white/20 text-black/75 dark:text-white/75">
-              {tag}
+            <li class="text-xs uppercase py-0.5 px-2 rounded bg-black/5 dark:bg-white/20 text-black/75 dark:text-white/75">
+              {truncateText(tag, 20)}
             </li>
           ))}
         </ul>

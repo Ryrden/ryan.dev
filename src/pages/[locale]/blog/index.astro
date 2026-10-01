@@ -3,7 +3,7 @@ import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
-import Blog from "@components/Blog"
+import SearchCollection from "@components/SearchCollection"
 import { getLangFromUrl, useTranslations } from "@i18n/utils"
 import { languages } from "@i18n/ui"
 
@@ -21,6 +21,9 @@ const posts = allPosts
 const tags = [...new Set(posts.flatMap(post => post.data.tags))]
   .sort((a, b) => a.localeCompare(b))
 
+const estimated_initial_size =
+  28 + posts.length * 158 + (posts.length - 1) * 12
+
 export async function getStaticPaths() {
   return Object.keys(languages).map(locale => ({
     params: { locale }
@@ -35,8 +38,18 @@ export async function getStaticPaths() {
     </div>
   </TopLayout>
   <BottomLayout>
-    <div class="animate">
-      <Blog client:load tags={tags} data={posts} locale={getLangFromUrl(Astro.url)} />
+    <div
+      id="search-collection-wrapper"
+      class="animate"
+      style={{ minHeight: `${estimated_initial_size}px` }}
+    >
+      <SearchCollection
+        client:load
+        entry_name="blog"
+        tags={tags}
+        data={posts}
+        locale={lang}
+      />
     </div>
   </BottomLayout>
 </PageLayout>
