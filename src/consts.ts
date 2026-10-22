@@ -1,1 +1,2 @@
-export const CV_URL = "https://drive.google.com/file/d/1smANQBt_hDVxyM0UzeNl6VcLPNvbMyna/view?usp=drive_link"
+// Built from github.com/Ryrden/cv and published on every push
+export const CV_URL = "https://ryrden.github.io/cv/Ryan_Teles_CV.pdf"
