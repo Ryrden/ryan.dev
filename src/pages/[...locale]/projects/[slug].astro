@@ -1,5 +1,6 @@
 ---
 import { ui } from "@i18n/ui"
+import { getLocaleParam } from "@i18n/utils"
 import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro"
 import ArticleTopLayout from "@layouts/ArticleTopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
@@ -18,8 +19,8 @@ export async function getStaticPaths() {
 		return locales
 			.filter(locale => locale === projectLang)
 			.map((locale) => ({
-				params: { 
-					locale,
+				params: {
+					locale: getLocaleParam(locale),
 					slug: folderName
 				},
 				props: { project, locale },

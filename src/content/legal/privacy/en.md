@@ -5,7 +5,7 @@ lang: "en"
 ---
 
 
-This Privacy Policy describes how the ryan.dev website collects, uses, stores, and protects visitors' information ("user"). This policy applies to all visitors and users of the site, including the portfolio and blog.
+This Privacy Policy describes how the ryansouza.dev website collects, uses, stores, and protects visitors' information ("user"). This policy applies to all visitors and users of the site, including the portfolio and blog.
 
 ## 1. Personal Identification Information
 

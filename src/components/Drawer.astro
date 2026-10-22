@@ -1,6 +1,6 @@
 ---
 import { languageFlags, languages } from '@i18n/ui'
-import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import { getLangFromUrl, getPathWithoutLang, localizePath, useTranslations } from '@i18n/utils'
 import { cn } from "@lib/utils"
 import { CV_URL } from "@consts"
 
@@ -8,32 +8,32 @@ const { pathname } = Astro.url
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-// TODO: Refactor to use I18n utils
-const pathWithoutLang = pathname.replace(new RegExp(`^/${lang}`), '') || '/'
+const pathWithoutLang = getPathWithoutLang(Astro.url)
+const homeHref = localizePath(lang, "/")
 
 const isLinkActive = (linkPath: string) => {
   if (pathname === linkPath) return true;
   
-  if (linkPath !== `/${lang}/` && pathname.startsWith(linkPath)) return true;
+  if (linkPath !== homeHref && pathname.startsWith(linkPath)) return true;
   
   return false;
 }
 
 const navLinks = [
   { 
-    href: `/${lang}/`, 
+    href: localizePath(lang, "/"), 
     text: 'nav.home',
   },
   { 
-    href: `/${lang}/work`, 
+    href: localizePath(lang, "/work"), 
     text: 'nav.work',
   },
   { 
-    href: `/${lang}/blog`, 
+    href: localizePath(lang, "/blog"), 
     text: 'nav.blog',
   },
   { 
-    href: `/${lang}/projects`, 
+    href: localizePath(lang, "/projects"), 
     text: 'nav.projects',
   },
   {
@@ -56,7 +56,7 @@ const navLinks = [
   </nav>
 
   <div class="flex gap-1 mt-5">
-    <a href={`/${lang}/search`} aria-label={t('a11y.search')} class={cn("size-9 rounded-full p-2 items-center justify-center bg-transparent hover:bg-black/5 dark:hover:bg-white/20 stroke-current hover:stroke-black hover:dark:stroke-white border border-black/10 dark:border-white/25 transition-colors duration-300 ease-in-out", isLinkActive(`/${lang}/search`) ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
+    <a href={localizePath(lang, "/search")} aria-label={t('a11y.search')} class={cn("size-9 rounded-full p-2 items-center justify-center bg-transparent hover:bg-black/5 dark:hover:bg-white/20 stroke-current hover:stroke-black hover:dark:stroke-white border border-black/10 dark:border-white/25 transition-colors duration-300 ease-in-out", isLinkActive(localizePath(lang, "/search")) ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
       <svg class="size-full">
         <use href="/ui.svg#search"></use>
       </svg>
@@ -91,7 +91,7 @@ const navLinks = [
     <div class="p-1 flex flex-col">
       {Object.entries(languages).map(([langCode, label]) => (
       <a 
-        href={`/${langCode}${pathWithoutLang}`}
+        href={localizePath(langCode, pathWithoutLang)}
         class={cn(
         "flex items-center gap-2 px-3 py-2 rounded",
         "hover:bg-black/5 dark:hover:bg-white/10",

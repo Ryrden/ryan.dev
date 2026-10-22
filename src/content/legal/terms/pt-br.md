@@ -5,7 +5,7 @@ lang: "pt-br"
 ---
 
 
-Por favor, leia estes Termos de Uso (“Termos”) com atenção antes de utilizar o site ryan.dev (o “Serviço”), operado por Ryan Souza (“eu”, “meu”, “minha”).
+Por favor, leia estes Termos de Uso (“Termos”) com atenção antes de utilizar o site ryansouza.dev (o “Serviço”), operado por Ryan Souza (“eu”, “meu”, “minha”).
 
 ## 1. Aceitação dos Termos
 
@@ -45,4 +45,4 @@ Estes Termos serão regidos e interpretados de acordo com as leis brasileiras, i
 
 ---
 
-Se tiver dúvidas sobre estes Termos de Uso, entre em contato comigo por meio do e-mail disponibilizado na [página inicial](/) do meu site.
+Se tiver dúvidas sobre estes Termos de Uso, entre em contato comigo por meio do e-mail disponibilizado na [página inicial](/pt-br/) do meu site.

@@ -7,7 +7,7 @@ import partytown from "@astrojs/partytown"
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://ryan.dev.br",
+  site: "https://ryansouza.dev",
   integrations: [
     mdx(), 
     sitemap(),
@@ -20,7 +20,7 @@ export default defineConfig({
     defaultLocale: "en",
 
     routing: {
-      prefixDefaultLocale: true, // Ensures that your default locale is prefixed aswell
+      prefixDefaultLocale: false, // English lives at the root ("/blog"), Portuguese under "/pt-br"
     },
   },
   // TODO: Add support do Mermaid into blog markdown

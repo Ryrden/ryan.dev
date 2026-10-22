@@ -5,7 +5,7 @@ lang: "pt-br"
 ---
 
 
-Esta Política de Privacidade descreve como o site ryan.dev coleta, utiliza, armazena e protege as informações dos visitantes (“usuário”). Esta política se aplica a todos os visitantes e usuários do site, incluindo o portfólio e o blog.
+Esta Política de Privacidade descreve como o site ryansouza.dev coleta, utiliza, armazena e protege as informações dos visitantes (“usuário”). Esta política se aplica a todos os visitantes e usuários do site, incluindo o portfólio e o blog.
 
 ## 1. Informações de Identificação Pessoal
 
@@ -49,4 +49,4 @@ Esta política pode ser atualizada ocasionalmente. A versão mais recente estar�
 
 ---
 
-Se tiver qualquer dúvida sobre esta Política de Privacidade, entre em contato através do e-mail disponível na [página inicial](/) do meu site.
+Se tiver qualquer dúvida sobre esta Política de Privacidade, entre em contato através do e-mail disponível na [página inicial](/pt-br/) do meu site.
