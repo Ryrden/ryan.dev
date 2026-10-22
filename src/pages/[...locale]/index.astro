@@ -5,7 +5,7 @@ import ArrowCard from "@components/ArrowCard"
 import StackCard from "@components/StackCard.astro"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
-import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import { getLangFromUrl, getLocaleStaticPaths, localizePath, getLocalePrefix, useTranslations } from '@/i18n/utils';
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -73,11 +73,8 @@ const socials = [
   },
 ]
 
-export async function getStaticPaths() {
-  return [
-    { params: { locale: 'pt-br' } },
-    { params: { locale: 'en' } },
-  ];
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
 }
 ---
 
@@ -129,10 +126,10 @@ export async function getStaticPaths() {
             {t('home.role')}
           </p>
           <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
-            <a href={`/${lang}/blog`} class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
+            <a href={localizePath(lang, "/blog")} class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
               {t('home.ctaBlog')}
             </a>
-            <a href={`/${lang}/work`} class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
+            <a href={localizePath(lang, "/work")} class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
               {t('home.ctaWork')}
             </a>
           </div>
@@ -166,7 +163,7 @@ export async function getStaticPaths() {
             </div>
           </div>
           <p set:html={t('home.aboutP4')} />
-          <p set:html={t('home.aboutP5').replace('{locale}', lang)} />
+          <p set:html={t('home.aboutP5').replace(/\{base\}/g, getLocalePrefix(lang))} />
         </article>
       </section>
 
@@ -177,7 +174,7 @@ export async function getStaticPaths() {
             <p class="font-semibold text-black dark:text-white">
               {t('home.recentPosts')}
             </p>
-            <a href={`/${lang}/blog`} class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+            <a href={localizePath(lang, "/blog")} class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
                 {t('home.allPosts')}
               </span>
@@ -226,7 +223,7 @@ export async function getStaticPaths() {
             <p class="font-semibold text-black dark:text-white">
               {t('home.recentProjects')}
             </p>
-            <a href={`/${lang}/projects`} class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+            <a href={localizePath(lang, "/projects")} class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
                 {t('home.allProjects')}
               </span>

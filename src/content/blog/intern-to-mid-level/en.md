@@ -45,7 +45,7 @@ That worried me!
 
 That was my first thought reading the internal docs and trying to learn Clojure, it had parentheses almost everywhere and was a painstaking process to code review the team pull requests.
 
-Actually, I betted all I will learn Clojure only by doing the work, I thought that because after my first 1:1's with team, I was told that try to learn Clojure outside Nubank it will be ineffective due to Nubank has its own way to use the language. One thing that helped, fortunately, was that I had the opportunity to learn [functional programming at university](https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=SSC0960&codcur=55051&codhab=4) by using Haskell and that helped a lot to ramp up. Afterwards, I also wrote a [blog post about functional thinking](https://ryan.dev.br/en/blog/functional-thinking).
+Actually, I betted all I will learn Clojure only by doing the work, I thought that because after my first 1:1's with team, I was told that try to learn Clojure outside Nubank it will be ineffective due to Nubank has its own way to use the language. One thing that helped, fortunately, was that I had the opportunity to learn [functional programming at university](https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=SSC0960&codcur=55051&codhab=4) by using Haskell and that helped a lot to ramp up. Afterwards, I also wrote a [blog post about functional thinking](https://ryansouza.dev/blog/functional-thinking).
 
 The real challenge came when I got my first real task, and it looked easy: take a unique identifier from the database and render it on the screen.
 

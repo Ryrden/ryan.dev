@@ -38,7 +38,7 @@ lang: "en"
 
 If you've ever heard that "functional programming is slower" or "using immutability costs too much in performance," you're not alone. It's a genuine concern about functional programming paradigms. But is this premise actually true?
 
-In this article, I'll explore the relationship between immutability (a pillar of functional programming) and code performance, using Big O complexity analysis and real benchmarks. If you've already read my [article on Functional Thinking](/en/blog/functional-thinking), this text is a perfect complement to deepen your understanding of functional programming practices.
+In this article, I'll explore the relationship between immutability (a pillar of functional programming) and code performance, using Big O complexity analysis and real benchmarks. If you've already read my [article on Functional Thinking](/blog/functional-thinking), this text is a perfect complement to deepen your understanding of functional programming practices.
 
 ## Immutability and Its Real Impact
 

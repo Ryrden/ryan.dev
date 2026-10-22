@@ -73,7 +73,7 @@ Com base nos requisitos da disciplina, identificamos dois pilares:
 - **Banco de dados**: o centro de tudo
 - **Interface**: poderia ser via terminal, mas optamos por um website completo com **SSR usando Flask e Jinja2**
 
-A escolha de Flask veio da minha experiência pessoal tentando criar um site do zero em HTML/CSS puro (falei mais sobre isso no projeto [Website Antigo](/projects/old-website)). O conhecimento acumulado foi essencial para que conseguíssemos entregar algo funcional rapidamente.
+A escolha de Flask veio da minha experiência pessoal tentando criar um site do zero em HTML/CSS puro (falei mais sobre isso no projeto [Website Antigo](/pt-br/projects/old-website)). O conhecimento acumulado foi essencial para que conseguíssemos entregar algo funcional rapidamente.
 
 Claro que, sob pressão, algumas práticas foram deixadas de lado. Por exemplo, utilizamos **classes estáticas** sem instanciamento para agilizar a lógica (exemplo [aqui](https://github.com/Ryrden/SCC0541-Formula1/blob/10868f7c8e76177398fc6c78c4c7d9474ce1550c/proj_labbd/interactor/racing_team.py#L5-L29)) e deixamos de implementar testes automatizados. Mas o foco era um só: **fazer funcionar**, e fizemos.
 

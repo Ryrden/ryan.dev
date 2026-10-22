@@ -4,7 +4,7 @@ import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
 import Search from "@components/Search"
-import { getLangFromUrl, useTranslations } from "@i18n/utils"
+import { getLangFromUrl, getLocaleStaticPaths, useTranslations } from "@i18n/utils"
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -17,11 +17,8 @@ const projects = (await getCollection("projects"))
 
 const data = [...posts, ...projects] as CollectionEntry<"blog">[]
 
-export async function getStaticPaths() {
-  return [
-    { params: { locale: 'pt-br' } },
-    { params: { locale: 'en' } },
-  ];
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
 }
 ---
 

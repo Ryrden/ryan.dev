@@ -3,10 +3,10 @@ import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
-import { useTranslations } from "@i18n/utils"
-import { defaultLang, localeSettings } from "@i18n/ui"
+import { getLangFromUrl, getLocaleStaticPaths, useTranslations } from "@i18n/utils"
+import { localeSettings } from "@i18n/ui"
 
-const { locale } = Astro.params;
+const locale = getLangFromUrl(Astro.url);
 const t = useTranslations(locale);
 
 const allWork = await getCollection("work");
@@ -24,7 +24,7 @@ const work = await Promise.all(
 function formatWorkDate(input: Date | string) {
   if (typeof input === "string") return input
 
-  const month = input.toLocaleDateString(localeSettings[locale || defaultLang], {
+  const month = input.toLocaleDateString(localeSettings[locale], {
     month: "short",
   })
 
@@ -32,11 +32,8 @@ function formatWorkDate(input: Date | string) {
   return `${month} ${year}`
 }
 
-export async function getStaticPaths() {
-  return [
-    { params: { locale: 'pt-br' } },
-    { params: { locale: 'en' } },
-  ];
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
 }
 ---
 

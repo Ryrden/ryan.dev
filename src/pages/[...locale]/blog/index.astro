@@ -4,37 +4,34 @@ import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
 import SearchCollection from "@components/SearchCollection"
-import { getLangFromUrl, useTranslations } from "@i18n/utils"
-import { ui } from "@i18n/ui"
+import { getLangFromUrl, getLocaleStaticPaths, useTranslations } from "@i18n/utils"
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-// Get all projects
-const allProjects = await getCollection("projects");
+// Get all blog posts
+const allPosts = await getCollection("blog");
 
-// Filter projects by language
-const projects = allProjects
-  .filter(project => !project.data.draft && project.data.lang === lang)
+// Filter posts by language
+const posts = allPosts
+  .filter(post => !post.data.draft && post.data.lang === lang)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
-const tags = [...new Set(projects.flatMap(project => project.data.tags))]
+const tags = [...new Set(posts.flatMap(post => post.data.tags))]
   .sort((a, b) => a.localeCompare(b))
 
 const estimated_initial_size =
-  28 + projects.length * 158 + (projects.length - 1) * 12
+  28 + posts.length * 158 + (posts.length - 1) * 12
 
-export async function getStaticPaths() {
-  return Object.keys(ui).map(locale => ({
-    params: { locale }
-  }));
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
 }
 ---
 
-<PageLayout title={t('projects.title')} description={t('projects.description')}>
+<PageLayout title={t('blog.title')} description={t('blog.description')}>
   <TopLayout>
     <div class="animate page-heading">
-      {t('projects.title')}
+      {t('blog.title')}
     </div>
   </TopLayout>
   <BottomLayout>
@@ -45,11 +42,13 @@ export async function getStaticPaths() {
     >
       <SearchCollection
         client:load
-        entry_name="projects"
+        entry_name="blog"
         tags={tags}
-        data={projects}
+        data={posts}
         locale={lang}
       />
     </div>
   </BottomLayout>
 </PageLayout>
+
+

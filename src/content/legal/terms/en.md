@@ -5,7 +5,7 @@ lang: "en"
 ---
 
 
-Please read these Terms of Use ("Terms") carefully before using the ryan.dev website (the "Service"), operated by Ryan Souza ("I", "me", "my").
+Please read these Terms of Use ("Terms") carefully before using the ryansouza.dev website (the "Service"), operated by Ryan Souza ("I", "me", "my").
 
 ## 1. Acceptance of Terms
 

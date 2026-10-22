@@ -1,7 +1,7 @@
 ---
 import Container from "@components/Container.astro"
 import { languageFlags, languages } from '@i18n/ui'
-import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import { getLangFromUrl, getPathWithoutLang, localizePath, useTranslations } from '@i18n/utils'
 import { cn } from "@lib/utils"
 import { CV_URL } from "@consts"
 
@@ -9,32 +9,32 @@ const { pathname } = Astro.url
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-// TODO: Refactor to use I18n utils
-const pathWithoutLang = pathname.replace(new RegExp(`^/${lang}`), '') || '/'
+const pathWithoutLang = getPathWithoutLang(Astro.url)
+const homeHref = localizePath(lang, "/")
 
 const isLinkActive = (linkPath: string) => {
   if (pathname === linkPath) return true;
   
-  if (linkPath !== `/${lang}/` && pathname.startsWith(linkPath)) return true;
+  if (linkPath !== homeHref && pathname.startsWith(linkPath)) return true;
   
   return false;
 }
 
 const navLinks = [
   { 
-    href: `/${lang}/`, 
+    href: localizePath(lang, "/"), 
     text: 'nav.home',
   },
   { 
-    href: `/${lang}/work`, 
+    href: localizePath(lang, "/work"), 
     text: 'nav.work',
   },
   { 
-    href: `/${lang}/blog`, 
+    href: localizePath(lang, "/blog"), 
     text: 'nav.blog',
   },
   { 
-    href: `/${lang}/projects`, 
+    href: localizePath(lang, "/projects"), 
     text: 'nav.projects',
   },
   {
@@ -49,7 +49,7 @@ const navLinks = [
   <Container size="md">
     <div class="relative h-full w-full">
       <div class="absolute left-0 top-1/2 -translate-y-1/2 flex gap-1 font-semibold">
-        <a href={`/${lang}/`} class="flex gap-1 text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
+        <a href={localizePath(lang, "/")} class="flex gap-1 text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
           <img src="/favicon.png" alt="Memoji" class="size-6" />
           <div>
             {t('site.title')}
@@ -70,7 +70,7 @@ const navLinks = [
     </div>
 
     <div class="buttons absolute right-0 top-1/2 -translate-y-1/2 flex gap-1">
-      <a href={`/${lang}/search`} aria-label={t('a11y.search')} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out", isLinkActive(`/${lang}/search`) ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
+      <a href={localizePath(lang, "/search")} aria-label={t('a11y.search')} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out", isLinkActive(localizePath(lang, "/search")) ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
         <svg class="size-full">
           <use href="/ui.svg#search"></use>
         </svg>
@@ -94,7 +94,7 @@ const navLinks = [
         <ul id="language-dropdown" class="hidden absolute right-0 mt-2 py-2 w-40 bg-white dark:bg-neutral-800 rounded-lg shadow-lg border border-black/10 dark:border-white/25 z-50">
           {Object.entries(languages).map(([langCode, label]) => (
             <li>
-              <a href={`/${langCode}${pathWithoutLang}`} class={cn(
+              <a href={localizePath(langCode, pathWithoutLang)} class={cn(
                 "flex items-center px-4 py-2 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors",
                 langCode === lang ? "font-bold" : ""
               )}>
