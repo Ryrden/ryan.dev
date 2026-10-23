@@ -3,5 +3,8 @@
   "redirects": [
     { "source": "/en", "destination": "/", "permanent": true },
     { "source": "/en/:path*", "destination": "/:path*", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/cv", "destination": "https://ryrden.github.io/cv/Ryan_Teles_CV.pdf" }
   ]
 }
